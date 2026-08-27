@@ -1,0 +1,3306 @@
+{
+  "schema": "so101-camera-registration-corpus-v2",
+  "evidence_scope": "production",
+  "intrinsics": {
+    "model": "pinhole_brown_conrady",
+    "matrix": [
+      203.09316001774184,
+      0.0,
+      346.02504481505235,
+      0.0,
+      200.00000000080868,
+      288.26046977056325,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "units": "pixels"
+  },
+  "distortion": {
+    "model": "brown_conrady",
+    "coefficients": [
+      -0.08867350861287014,
+      0.029711860927773146,
+      -0.02512872004284252,
+      0.0003561068259851535,
+      -0.010511711067512534
+    ],
+    "order": [
+      "k1",
+      "k2",
+      "p1",
+      "p2",
+      "k3"
+    ]
+  },
+  "camera_to_table": {
+    "direction": "camera_to_table",
+    "matrix": [
+      -0.9993005758375281,
+      0.011414853500716733,
+      -0.03560983361856729,
+      0.21482476559107846,
+      0.012328219402985082,
+      0.9995978825410237,
+      -0.02553601820671822,
+      0.4063246277484493,
+      0.03530402437593669,
+      -0.02595716354032461,
+      -0.9990394644476284,
+      0.2591560196713182,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "translation_units": "meters",
+    "camera_axes": "x_right_y_down_z_forward",
+    "table_axes": "x_right_y_forward_z_up"
+  },
+  "physical_to_sim": {
+    "direction": "physical_table_to_simulation_table",
+    "matrix_2x3": [
+      0.003737638037189061,
+      -0.9999930150065564,
+      0.6097998469447979,
+      0.9999930150065564,
+      0.003737638037188937,
+      -0.20905103341095557
+    ],
+    "physical_units": "meters",
+    "simulation_units": "meters"
+  },
+  "physical_to_sim_se2": [
+    0.003737638037189061,
+    -0.9999930150065564,
+    0.6097998469447979,
+    0.9999930150065564,
+    0.003737638037188937,
+    -0.20905103341095557
+  ],
+  "sim_to_physical_se2": [
+    0.003737638037189061,
+    0.9999930150065564,
+    0.20677036208784488,
+    -0.9999930150065564,
+    0.003737638037188937,
+    0.6105769445910556
+  ],
+  "members": [
+    {
+      "member_id": "strict-fit-1",
+      "path": "members/strict-fit-1.png",
+      "role": "calibration_fit",
+      "sha256": "941c22420c67366be6274c571fe728e96f8b4673e4da6c73c82ca22d8d545ffe",
+      "timestamp": "2026-08-27T07:04:39.125125Z"
+    },
+    {
+      "member_id": "strict-fit-2",
+      "path": "members/strict-fit-2.png",
+      "role": "calibration_fit",
+      "sha256": "0ed983c435f675f3421119181fb0ca6020ba0f8e5d6910bc83624dbe87270450",
+      "timestamp": "2026-08-27T07:06:29.667711Z"
+    },
+    {
+      "member_id": "strict-fit-3",
+      "path": "members/strict-fit-3.png",
+      "role": "calibration_fit",
+      "sha256": "47ac866c6dd6ee6b73b608e21ceb4accfa1321eb335cc9de171efbf92ffc0eda",
+      "timestamp": "2026-08-27T07:11:51.672755Z"
+    },
+    {
+      "member_id": "strict-held-1",
+      "path": "members/strict-held-1.png",
+      "role": "checkpoint_held_out",
+      "sha256": "01d057fff84ed29d8ef660039009874b98edd5c31fa9bbfb55209d63b181f3bc",
+      "timestamp": "2026-08-27T07:20:13.057580Z"
+    },
+    {
+      "member_id": "strict-held-2",
+      "path": "members/strict-held-2.png",
+      "role": "checkpoint_held_out",
+      "sha256": "b3db74a9adf7971b169860000ee3b72fbe96499aff30b399a1b95a2ff90929a6",
+      "timestamp": "2026-08-27T07:16:36.461819Z"
+    }
+  ],
+  "fit_correspondences": [
+    {
+      "correspondence_id": "strict-fit-1-00",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        366.8324788411458,
+        110.95731608072917
+      ],
+      "table_point_m": [
+        0.176,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4444588307482549,
+        -0.032431814855628294
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-01",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        385.1407877604167,
+        111.6490987141927
+      ],
+      "table_point_m": [
+        0.151,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4443653897973251,
+        -0.0574316402307922
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-02",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        403.5280354817708,
+        111.92235310872395
+      ],
+      "table_point_m": [
+        0.12599999999999997,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4442719488463954,
+        -0.08243146560595613
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-03",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        421.631103515625,
+        112.8103739420573
+      ],
+      "table_point_m": [
+        0.10099999999999998,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.44417850789546565,
+        -0.10743129098112005
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-04",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        438.9737141927083,
+        113.43381754557292
+      ],
+      "table_point_m": [
+        0.07599999999999998,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.444085066944536,
+        -0.13243111635628396
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-05",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        456.4126790364583,
+        114.16062418619792
+      ],
+      "table_point_m": [
+        0.05099999999999996,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4439916259936062,
+        -0.15743094173144787
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-06",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        473.113525390625,
+        114.95389811197917
+      ],
+      "table_point_m": [
+        0.025999999999999968,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4438981850426765,
+        -0.18243076710661177
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-07",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        366.9142659505208,
+        128.82637532552084
+      ],
+      "table_point_m": [
+        0.176,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.41945900537309094,
+        -0.03233837390469857
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-08",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        385.7300618489583,
+        129.57579549153647
+      ],
+      "table_point_m": [
+        0.151,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4193655644221612,
+        -0.05733819927986247
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-09",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        404.0042317708333,
+        129.84737141927084
+      ],
+      "table_point_m": [
+        0.12599999999999997,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4192721234712315,
+        -0.0823380246550264
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-10",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        422.1864013671875,
+        130.62310791015625
+      ],
+      "table_point_m": [
+        0.10099999999999998,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.41917868252030177,
+        -0.10733785003019032
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-11",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        439.8233642578125,
+        130.88787841796875
+      ],
+      "table_point_m": [
+        0.07599999999999998,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.41908524156937205,
+        -0.13233767540535424
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-12",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        457.3678792317708,
+        131.86897786458334
+      ],
+      "table_point_m": [
+        0.05099999999999996,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4189918006184423,
+        -0.15733750078051814
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-13",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        474.1670735677083,
+        132.703125
+      ],
+      "table_point_m": [
+        0.025999999999999968,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.41889835966751254,
+        -0.18233732615568204
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-14",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        367.5249837239583,
+        147.60167439778647
+      ],
+      "table_point_m": [
+        0.176,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.394459179997927,
+        -0.032244932953768846
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-15",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        385.9651285807292,
+        147.78857421875
+      ],
+      "table_point_m": [
+        0.151,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3943657390469973,
+        -0.05724475832893275
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-16",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        404.7320963541667,
+        148.29021199544272
+      ],
+      "table_point_m": [
+        0.12599999999999997,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.39427229809606756,
+        -0.08224458370409668
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-17",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        422.8576253255208,
+        148.7799072265625
+      ],
+      "table_point_m": [
+        0.10099999999999998,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.39417885714513784,
+        -0.1072444090792606
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-18",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        440.8635660807292,
+        149.07241821289062
+      ],
+      "table_point_m": [
+        0.07599999999999998,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3940854161942081,
+        -0.13224423445442451
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-19",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        458.3561197916667,
+        149.75261433919272
+      ],
+      "table_point_m": [
+        0.05099999999999996,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.39399197524327834,
+        -0.15724405982958842
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-20",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        475.4176432291667,
+        150.09068806966147
+      ],
+      "table_point_m": [
+        0.025999999999999968,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.39389853429234867,
+        -0.18224388520475232
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-21",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        367.7737630208333,
+        166.17081705729166
+      ],
+      "table_point_m": [
+        0.176,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36945935462276314,
+        -0.03215149200283912
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-22",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        386.7437337239583,
+        166.6288859049479
+      ],
+      "table_point_m": [
+        0.151,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36936591367183336,
+        -0.057151317378003025
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-23",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        405.1722412109375,
+        166.77767944335938
+      ],
+      "table_point_m": [
+        0.12599999999999997,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3692724727209037,
+        -0.08215114275316696
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-24",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        423.6708577473958,
+        167.03633626302084
+      ],
+      "table_point_m": [
+        0.10099999999999998,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3691790317699739,
+        -0.10715096812833087
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-25",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        441.5808919270833,
+        167.6297810872396
+      ],
+      "table_point_m": [
+        0.07599999999999998,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36908559081904424,
+        -0.1321507935034948
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-26",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        458.9239908854167,
+        167.90409342447916
+      ],
+      "table_point_m": [
+        0.05099999999999996,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36899214986811446,
+        -0.1571506188786587
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-27",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        476.0746663411458,
+        167.9569091796875
+      ],
+      "table_point_m": [
+        0.025999999999999968,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36889870891718474,
+        -0.1821504442538226
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-28",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        367.8816731770833,
+        185.14312744140625
+      ],
+      "table_point_m": [
+        0.176,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3444595292475992,
+        -0.0320580510519094
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-29",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        386.8860677083333,
+        185.6233927408854
+      ],
+      "table_point_m": [
+        0.151,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3443660882966695,
+        -0.0570578764270733
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-30",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        405.6719970703125,
+        185.7078857421875
+      ],
+      "table_point_m": [
+        0.12599999999999997,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.34427264734573976,
+        -0.08205770180223723
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-31",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        423.8531901041667,
+        185.8125
+      ],
+      "table_point_m": [
+        0.10099999999999998,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.34417920639481003,
+        -0.10705752717740115
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-32",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        441.9072672526042,
+        186.07682291666666
+      ],
+      "table_point_m": [
+        0.07599999999999998,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3440857654438803,
+        -0.13205735255256507
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-33",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        459.8368326822917,
+        186.3367716471354
+      ],
+      "table_point_m": [
+        0.05099999999999996,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3439923244929506,
+        -0.15705717792772897
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-1-34",
+      "member_id": "strict-fit-1",
+      "timestamp": "2026-08-27T07:04:39.125125Z",
+      "image_point_px": [
+        476.7737630208333,
+        186.6348673502604
+      ],
+      "table_point_m": [
+        0.025999999999999968,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.34389888354202086,
+        -0.18205700330289287
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-00",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        272.5806070963542,
+        109.80548095703125
+      ],
+      "table_point_m": [
+        0.3,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.44492229786486626,
+        0.0915673190051847
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-01",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        291.3954671223958,
+        109.92991129557292
+      ],
+      "table_point_m": [
+        0.27499999999999997,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4448288569139366,
+        0.06656749363002076
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-02",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        310.06475830078125,
+        109.90201822916667
+      ],
+      "table_point_m": [
+        0.24999999999999997,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4447354159630068,
+        0.04156766825485683
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-03",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        328.9057210286458,
+        110.0348409016927
+      ],
+      "table_point_m": [
+        0.22499999999999998,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.44464197501207714,
+        0.016567842879692957
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-04",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        347.8157958984375,
+        110.50732421875
+      ],
+      "table_point_m": [
+        0.19999999999999998,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.44454853406114736,
+        -0.008431982495470947
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-05",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        366.819580078125,
+        110.9763692220052
+      ],
+      "table_point_m": [
+        0.17499999999999996,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4444550931102177,
+        -0.03343180787063488
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-06",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        385.0423990885417,
+        111.34535725911458
+      ],
+      "table_point_m": [
+        0.14999999999999997,
+        0.166,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4443616521592879,
+        -0.05843163324579878
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-07",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        271.9177652994792,
+        127.84154256184895
+      ],
+      "table_point_m": [
+        0.3,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4199224724897024,
+        0.09166075995611442
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-08",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        290.8926595052083,
+        127.89224243164062
+      ],
+      "table_point_m": [
+        0.27499999999999997,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.41982903153877266,
+        0.06666093458095049
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-09",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        309.9083251953125,
+        127.89053344726562
+      ],
+      "table_point_m": [
+        0.24999999999999997,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.41973559058784293,
+        0.041661109205786556
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-10",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        328.9604085286458,
+        128.4193115234375
+      ],
+      "table_point_m": [
+        0.22499999999999998,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4196421496369132,
+        0.01666128383062268
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-11",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        348.1004638671875,
+        128.7696329752604
+      ],
+      "table_point_m": [
+        0.19999999999999998,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.4195487086859835,
+        -0.008338541544541223
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-12",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        366.8823649088542,
+        128.89437866210938
+      ],
+      "table_point_m": [
+        0.17499999999999996,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.41945526773505376,
+        -0.033338366919705154
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-13",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        385.8303629557292,
+        129.5045369466146
+      ],
+      "table_point_m": [
+        0.14999999999999997,
+        0.191,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.41936182678412404,
+        -0.05833819229486906
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-14",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        271.73614501953125,
+        146.6811319986979
+      ],
+      "table_point_m": [
+        0.3,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.39492264711453845,
+        0.09175420090704414
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-15",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        290.9005940755208,
+        146.71586100260416
+      ],
+      "table_point_m": [
+        0.27499999999999997,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3948292061636087,
+        0.06675437553188021
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-16",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        309.86065673828125,
+        146.85432942708334
+      ],
+      "table_point_m": [
+        0.24999999999999997,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.394735765212679,
+        0.04175455015671628
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-17",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        329.09206136067706,
+        146.8160603841146
+      ],
+      "table_point_m": [
+        0.22499999999999998,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3946423242617493,
+        0.016754724781552405
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-18",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        348.3368733723958,
+        146.96805826822916
+      ],
+      "table_point_m": [
+        0.19999999999999998,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.39454888331081955,
+        -0.008245100593611498
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-19",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        367.4814860026042,
+        147.31110636393228
+      ],
+      "table_point_m": [
+        0.17499999999999996,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.39445544235988983,
+        -0.03324492596877543
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-20",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        386.0264078776042,
+        147.82050577799478
+      ],
+      "table_point_m": [
+        0.14999999999999997,
+        0.21600000000000003,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3943620014089601,
+        -0.05824475134393933
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-21",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        271.75063069661456,
+        165.69732666015625
+      ],
+      "table_point_m": [
+        0.3,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3699228217393745,
+        0.09184764185797387
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-22",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        290.7794189453125,
+        165.51885986328125
+      ],
+      "table_point_m": [
+        0.27499999999999997,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36982938078844485,
+        0.06684781648280994
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-23",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        309.8815511067708,
+        165.6866658528646
+      ],
+      "table_point_m": [
+        0.24999999999999997,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36973593983751507,
+        0.041847991107646004
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-24",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        329.1083170572917,
+        165.86515299479166
+      ],
+      "table_point_m": [
+        0.22499999999999998,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3696424988865854,
+        0.01684816573248213
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-25",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        348.5467122395833,
+        165.88477579752603
+      ],
+      "table_point_m": [
+        0.19999999999999998,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3695490579356556,
+        -0.008151659642681774
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-26",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        367.7570393880208,
+        166.0293986002604
+      ],
+      "table_point_m": [
+        0.17499999999999996,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36945561698472595,
+        -0.033151485017845705
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-27",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        386.7051595052083,
+        166.31770833333334
+      ],
+      "table_point_m": [
+        0.14999999999999997,
+        0.24100000000000002,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3693621760337962,
+        -0.05815131039300961
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-28",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        270.8572998046875,
+        184.49930826822916
+      ],
+      "table_point_m": [
+        0.3,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3449229963642107,
+        0.09194108280890359
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-29",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        290.69960530598956,
+        184.8333740234375
+      ],
+      "table_point_m": [
+        0.27499999999999997,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3448295554132809,
+        0.06694125743373966
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-30",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        309.80678304036456,
+        184.78253173828125
+      ],
+      "table_point_m": [
+        0.24999999999999997,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3447361144623512,
+        0.04194143205857573
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-31",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        329.168701171875,
+        184.80814615885416
+      ],
+      "table_point_m": [
+        0.22499999999999998,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.34464267351142147,
+        0.016941606683411853
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-32",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        348.796630859375,
+        184.84187825520834
+      ],
+      "table_point_m": [
+        0.19999999999999998,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.34454923256049175,
+        -0.00805821869175205
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-33",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        367.7996826171875,
+        185.01385498046875
+      ],
+      "table_point_m": [
+        0.17499999999999996,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.344455791609562,
+        -0.03305804406691598
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-2-34",
+      "member_id": "strict-fit-2",
+      "timestamp": "2026-08-27T07:06:29.667711Z",
+      "image_point_px": [
+        386.7808024088542,
+        185.40482584635416
+      ],
+      "table_point_m": [
+        0.14999999999999997,
+        0.266,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3443623506586323,
+        -0.058057869442079885
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-00",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        271.7500406901042,
+        195.19429524739584
+      ],
+      "table_point_m": [
+        0.3,
+        0.28,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33092309415411886,
+        0.0919934097414242
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-01",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        290.8572591145833,
+        195.18914794921875
+      ],
+      "table_point_m": [
+        0.27499999999999997,
+        0.28,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3308296532031891,
+        0.06699358436626027
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-02",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        310.84678141276044,
+        195.07952880859375
+      ],
+      "table_point_m": [
+        0.24999999999999997,
+        0.28,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33073621225225935,
+        0.04199375899109639
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-03",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        329.8280436197917,
+        195.1436971028646
+      ],
+      "table_point_m": [
+        0.22499999999999998,
+        0.28,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33064277130132963,
+        0.01699393361593249
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-04",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        349.6005452473958,
+        195.16129557291666
+      ],
+      "table_point_m": [
+        0.19999999999999998,
+        0.28,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3305493303503999,
+        -0.008005891759231415
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-05",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        368.7748209635417,
+        195.2518107096354
+      ],
+      "table_point_m": [
+        0.17499999999999996,
+        0.28,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3304558893994702,
+        -0.033005717134395346
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-06",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        387.8448893229167,
+        195.21893310546875
+      ],
+      "table_point_m": [
+        0.14999999999999997,
+        0.28,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33036244844854046,
+        -0.05800554250955925
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-07",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        271.53369140625,
+        214.7897745768229
+      ],
+      "table_point_m": [
+        0.3,
+        0.30500000000000005,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3059232687789549,
+        0.09208685069235392
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-08",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        290.85943603515625,
+        214.8093058268229
+      ],
+      "table_point_m": [
+        0.27499999999999997,
+        0.30500000000000005,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.30582982782802515,
+        0.06708702531718999
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-09",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        310.7969970703125,
+        214.7972208658854
+      ],
+      "table_point_m": [
+        0.24999999999999997,
+        0.30500000000000005,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3057363868770954,
+        0.042087199942026116
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-10",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        329.91709391276044,
+        214.86555989583334
+      ],
+      "table_point_m": [
+        0.22499999999999998,
+        0.30500000000000005,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3056429459261657,
+        0.017087374566862212
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-11",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        349.8082682291667,
+        214.8451131184896
+      ],
+      "table_point_m": [
+        0.19999999999999998,
+        0.30500000000000005,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.305549504975236,
+        -0.007912450808301691
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-12",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        368.8716227213542,
+        214.7315673828125
+      ],
+      "table_point_m": [
+        0.17499999999999996,
+        0.30500000000000005,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.30545606402430625,
+        -0.03291227618346562
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-13",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        387.9418538411458,
+        214.5795694986979
+      ],
+      "table_point_m": [
+        0.14999999999999997,
+        0.30500000000000005,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3053626230733765,
+        -0.057912101558629525
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-14",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        271.5340169270833,
+        234.20452880859375
+      ],
+      "table_point_m": [
+        0.3,
+        0.33,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.28092344340379105,
+        0.09218029164328365
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-15",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        290.96429443359375,
+        234.31070963541666
+      ],
+      "table_point_m": [
+        0.27499999999999997,
+        0.33,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.28083000245286127,
+        0.06718046626811972
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-16",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        310.7757568359375,
+        234.2532958984375
+      ],
+      "table_point_m": [
+        0.24999999999999997,
+        0.33,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.28073656150193155,
+        0.04218064089295584
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-17",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        330.2349853515625,
+        234.17228190104166
+      ],
+      "table_point_m": [
+        0.22499999999999998,
+        0.33,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2806431205510018,
+        0.017180815517791936
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-18",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        349.83544921875,
+        234.02685546875
+      ],
+      "table_point_m": [
+        0.19999999999999998,
+        0.33,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2805496796000721,
+        -0.007819009857371967
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-19",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        369.1838785807292,
+        233.84769694010416
+      ],
+      "table_point_m": [
+        0.17499999999999996,
+        0.33,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2804562386491424,
+        -0.0328188352325359
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-20",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        388.3988850911458,
+        233.8121337890625
+      ],
+      "table_point_m": [
+        0.14999999999999997,
+        0.33,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.28036279769821265,
+        -0.0578186606076998
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-21",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        271.6224772135417,
+        253.83441162109375
+      ],
+      "table_point_m": [
+        0.3,
+        0.35500000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2559236180286271,
+        0.09227373259421337
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-22",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        291.00840250651044,
+        253.81404622395834
+      ],
+      "table_point_m": [
+        0.27499999999999997,
+        0.35500000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.25583017707769734,
+        0.06727390721904944
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-23",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        310.82550048828125,
+        253.835205078125
+      ],
+      "table_point_m": [
+        0.24999999999999997,
+        0.35500000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2557367361267676,
+        0.042274081843885564
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-24",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        330.4491780598958,
+        253.8124796549479
+      ],
+      "table_point_m": [
+        0.22499999999999998,
+        0.35500000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2556432951758379,
+        0.01727425646872166
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-25",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        349.8575846354167,
+        253.66162109375
+      ],
+      "table_point_m": [
+        0.19999999999999998,
+        0.35500000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.25554985422490817,
+        -0.007725568906442243
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-26",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        369.2813720703125,
+        253.50830078125
+      ],
+      "table_point_m": [
+        0.17499999999999996,
+        0.35500000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.25545641327397844,
+        -0.032725394281606174
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-27",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        388.6942952473958,
+        253.04410807291666
+      ],
+      "table_point_m": [
+        0.14999999999999997,
+        0.35500000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2553629723230487,
+        -0.05772521965677008
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-28",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        271.63686116536456,
+        273.2502848307292
+      ],
+      "table_point_m": [
+        0.3,
+        0.38,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.23092379265346324,
+        0.0923671735451431
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-29",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        290.99949137369794,
+        273.46258544921875
+      ],
+      "table_point_m": [
+        0.27499999999999997,
+        0.38,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.23083035170253347,
+        0.06736734816997916
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-30",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        310.82533772786456,
+        273.39963785807294
+      ],
+      "table_point_m": [
+        0.24999999999999997,
+        0.38,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.23073691075160374,
+        0.04236752279481529
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-31",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        330.6832682291667,
+        273.2445068359375
+      ],
+      "table_point_m": [
+        0.22499999999999998,
+        0.38,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.23064346980067402,
+        0.017367697419651384
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-32",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        349.8988850911458,
+        272.93320719401044
+      ],
+      "table_point_m": [
+        0.19999999999999998,
+        0.38,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2305500288497443,
+        -0.007632127955512519
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-33",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        369.4795328776042,
+        272.8205159505208
+      ],
+      "table_point_m": [
+        0.17499999999999996,
+        0.38,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.23045658789881457,
+        -0.03263195333067645
+      ]
+    },
+    {
+      "correspondence_id": "strict-fit-3-34",
+      "member_id": "strict-fit-3",
+      "timestamp": "2026-08-27T07:11:51.672755Z",
+      "image_point_px": [
+        388.7031656901042,
+        272.5211588541667
+      ],
+      "table_point_m": [
+        0.14999999999999997,
+        0.38,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.23036314694788484,
+        -0.05763177870584035
+      ]
+    }
+  ],
+  "held_out_correspondences": [
+    {
+      "correspondence_id": "strict-held-1-00",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        320.78289794921875,
+        152.71694946289062
+      ],
+      "table_point_m": [
+        0.238,
+        0.223,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.38769096245118684,
+        0.029780797442897966
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-01",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        340.28163655598956,
+        152.78591918945312
+      ],
+      "table_point_m": [
+        0.213,
+        0.223,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.38759752150025717,
+        0.004780972067734063
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-02",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        359.4296468098958,
+        152.8364054361979
+      ],
+      "table_point_m": [
+        0.18799999999999997,
+        0.223,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3875040805493274,
+        -0.020218853307429868
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-03",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        377.9759521484375,
+        152.83094278971353
+      ],
+      "table_point_m": [
+        0.16299999999999998,
+        0.223,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3874106395983977,
+        -0.04521867868259377
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-04",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        396.8606770833333,
+        153.24020385742188
+      ],
+      "table_point_m": [
+        0.13799999999999998,
+        0.223,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.38731719864746794,
+        -0.07021850405775767
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-05",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        415.484375,
+        153.7872314453125
+      ],
+      "table_point_m": [
+        0.11299999999999996,
+        0.223,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3872237576965383,
+        -0.0952183294329216
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-06",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        433.3412679036458,
+        153.86223347981772
+      ],
+      "table_point_m": [
+        0.08799999999999997,
+        0.223,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3871303167456085,
+        -0.12021815480808551
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-07",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        320.94081624348956,
+        171.2547607421875
+      ],
+      "table_point_m": [
+        0.238,
+        0.248,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36269113707602296,
+        0.02987423839382769
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-08",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        340.41025797526044,
+        171.4942830403646
+      ],
+      "table_point_m": [
+        0.213,
+        0.248,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36259769612509324,
+        0.004874413018663787
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-09",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        359.8052571614583,
+        171.73490397135416
+      ],
+      "table_point_m": [
+        0.18799999999999997,
+        0.248,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3625042551741635,
+        -0.020125412356500144
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-10",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        378.7996012369792,
+        171.80902099609375
+      ],
+      "table_point_m": [
+        0.16299999999999998,
+        0.248,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3624108142232338,
+        -0.04512523773166405
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-11",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        397.53369140625,
+        171.87261962890625
+      ],
+      "table_point_m": [
+        0.13799999999999998,
+        0.248,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36231737327230407,
+        -0.07012506310682795
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-12",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        415.8923746744792,
+        172.09916178385416
+      ],
+      "table_point_m": [
+        0.11299999999999996,
+        0.248,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36222393232137434,
+        -0.09512488848199188
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-13",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        433.908447265625,
+        172.4803466796875
+      ],
+      "table_point_m": [
+        0.08799999999999997,
+        0.248,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3621304913704446,
+        -0.12012471385715578
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-14",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        321.05377197265625,
+        190.6849161783854
+      ],
+      "table_point_m": [
+        0.238,
+        0.273,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33769131170085903,
+        0.029967679344757414
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-15",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        340.80133056640625,
+        190.81732177734375
+      ],
+      "table_point_m": [
+        0.213,
+        0.273,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3375978707499293,
+        0.004967853969593511
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-16",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        359.8258463541667,
+        190.8228963216146
+      ],
+      "table_point_m": [
+        0.18799999999999997,
+        0.273,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3375044297989996,
+        -0.02003197140557042
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-17",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        378.8909505208333,
+        190.78694661458334
+      ],
+      "table_point_m": [
+        0.16299999999999998,
+        0.273,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33741098884806986,
+        -0.04503179678073432
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-18",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        397.8221435546875,
+        190.87821451822916
+      ],
+      "table_point_m": [
+        0.13799999999999998,
+        0.273,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33731754789714014,
+        -0.07003162215589823
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-19",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        416.6067301432292,
+        190.88448079427084
+      ],
+      "table_point_m": [
+        0.11299999999999996,
+        0.273,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3372241069462104,
+        -0.09503144753106216
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-20",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        434.8351643880208,
+        190.95831298828125
+      ],
+      "table_point_m": [
+        0.08799999999999997,
+        0.273,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3371306659952807,
+        -0.12003127290622606
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-21",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        321.0857340494792,
+        209.83453369140625
+      ],
+      "table_point_m": [
+        0.238,
+        0.29800000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3126914863256951,
+        0.030061120295687138
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-22",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        340.7821858723958,
+        209.87603759765625
+      ],
+      "table_point_m": [
+        0.213,
+        0.29800000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3125980453747654,
+        0.005061294920523235
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-23",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        359.8946126302083,
+        209.82183837890625
+      ],
+      "table_point_m": [
+        0.18799999999999997,
+        0.29800000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.31250460442383565,
+        -0.019938530454640696
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-24",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        379.1328125,
+        209.9035441080729
+      ],
+      "table_point_m": [
+        0.16299999999999998,
+        0.29800000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.31241116347290593,
+        -0.0449383558298046
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-25",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        398.0131022135417,
+        209.7978515625
+      ],
+      "table_point_m": [
+        0.13799999999999998,
+        0.29800000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3123177225219762,
+        -0.0699381812049685
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-26",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        416.8089599609375,
+        209.87957763671875
+      ],
+      "table_point_m": [
+        0.11299999999999996,
+        0.29800000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3122242815710465,
+        -0.09493800658013243
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-27",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        434.9659423828125,
+        209.8087158203125
+      ],
+      "table_point_m": [
+        0.08799999999999997,
+        0.29800000000000004,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.31213084062011676,
+        -0.11993783195529634
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-28",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        321.0932210286458,
+        229.45841471354166
+      ],
+      "table_point_m": [
+        0.238,
+        0.323,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2876916609505312,
+        0.030154561246616862
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-29",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        340.85198974609375,
+        229.49371337890625
+      ],
+      "table_point_m": [
+        0.213,
+        0.323,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2875982199996015,
+        0.005154735871452959
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-30",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        360.0893961588542,
+        229.4525349934896
+      ],
+      "table_point_m": [
+        0.18799999999999997,
+        0.323,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2875047790486718,
+        -0.019845089503710972
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-31",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        379.4986165364583,
+        229.36505126953125
+      ],
+      "table_point_m": [
+        0.16299999999999998,
+        0.323,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.28741133809774205,
+        -0.044844914878874875
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-32",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        398.5124104817708,
+        229.11307779947916
+      ],
+      "table_point_m": [
+        0.13799999999999998,
+        0.323,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.28731789714681233,
+        -0.06984474025403878
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-33",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        417.0038655598958,
+        228.90730794270834
+      ],
+      "table_point_m": [
+        0.11299999999999996,
+        0.323,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2872244561958826,
+        -0.09484456562920271
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-1-34",
+      "member_id": "strict-held-1",
+      "timestamp": "2026-08-27T07:20:13.057580Z",
+      "image_point_px": [
+        435.4821370442708,
+        228.86763509114584
+      ],
+      "table_point_m": [
+        0.08799999999999997,
+        0.323,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2871310152449529,
+        -0.11984439100436661
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-00",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        364.0806884765625,
+        174.02083333333334
+      ],
+      "table_point_m": [
+        0.18,
+        0.25,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3604743680398529,
+        -0.0281178812004782
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-01",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        382.9856363932292,
+        173.9757080078125
+      ],
+      "table_point_m": [
+        0.155,
+        0.25,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36038092708892316,
+        -0.053117706575642104
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-02",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        401.8790283203125,
+        174.07857259114584
+      ],
+      "table_point_m": [
+        0.12999999999999998,
+        0.25,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.36028748613799344,
+        -0.07811753195080604
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-03",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        420.348876953125,
+        174.211181640625
+      ],
+      "table_point_m": [
+        0.10499999999999998,
+        0.25,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3601940451870637,
+        -0.10311735732596994
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-04",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        438.5312093098958,
+        174.42022705078125
+      ],
+      "table_point_m": [
+        0.07999999999999999,
+        0.25,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.360100604236134,
+        -0.12811718270113384
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-05",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        456.0064290364583,
+        174.6454060872396
+      ],
+      "table_point_m": [
+        0.054999999999999966,
+        0.25,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3600071632852042,
+        -0.15311700807629777
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-06",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        473.2792154947917,
+        174.83662923177084
+      ],
+      "table_point_m": [
+        0.02999999999999997,
+        0.25,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.35991372233427454,
+        -0.17811683345146168
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-07",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        364.6780192057292,
+        192.93011474609375
+      ],
+      "table_point_m": [
+        0.18,
+        0.275,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33547454266468896,
+        -0.028024440249548477
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-08",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        383.832275390625,
+        192.86480712890625
+      ],
+      "table_point_m": [
+        0.155,
+        0.275,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33538110171375923,
+        -0.05302426562471238
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-09",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        402.6938069661458,
+        192.94571940104166
+      ],
+      "table_point_m": [
+        0.12999999999999998,
+        0.275,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3352876607628295,
+        -0.07802409099987631
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-10",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        420.9009195963542,
+        192.9028523763021
+      ],
+      "table_point_m": [
+        0.10499999999999998,
+        0.275,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3351942198118998,
+        -0.10302391637504021
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-11",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        438.9046223958333,
+        192.87019856770834
+      ],
+      "table_point_m": [
+        0.07999999999999999,
+        0.275,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33510077886097006,
+        -0.12802374175020412
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-12",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        456.8524576822917,
+        192.86785888671875
+      ],
+      "table_point_m": [
+        0.054999999999999966,
+        0.275,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.33500733791004034,
+        -0.15302356712536805
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-13",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        473.9218343098958,
+        192.83465576171875
+      ],
+      "table_point_m": [
+        0.02999999999999997,
+        0.275,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3349138969591106,
+        -0.17802339250053195
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-14",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        364.7890218098958,
+        212.5951944986979
+      ],
+      "table_point_m": [
+        0.18,
+        0.3,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3104747172895251,
+        -0.027930999298618753
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-15",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        383.8473714192708,
+        212.3301798502604
+      ],
+      "table_point_m": [
+        0.155,
+        0.3,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.31038127633859536,
+        -0.052930824673782656
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-16",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        402.8774820963542,
+        212.159423828125
+      ],
+      "table_point_m": [
+        0.12999999999999998,
+        0.3,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.31028783538766563,
+        -0.07793065004894659
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-17",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        421.5851643880208,
+        211.94207763671875
+      ],
+      "table_point_m": [
+        0.10499999999999998,
+        0.3,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3101943944367359,
+        -0.10293047542411049
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-18",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        439.8012288411458,
+        211.8432413736979
+      ],
+      "table_point_m": [
+        0.07999999999999999,
+        0.3,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.3101009534858062,
+        -0.1279303007992744
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-19",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        457.7264811197917,
+        211.8455607096354
+      ],
+      "table_point_m": [
+        0.054999999999999966,
+        0.3,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.31000751253487646,
+        -0.15293012617443832
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-20",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        474.7865397135417,
+        211.76078287760416
+      ],
+      "table_point_m": [
+        0.02999999999999997,
+        0.3,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.30991407158394674,
+        -0.17792995154960223
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-21",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        364.975830078125,
+        231.7856241861979
+      ],
+      "table_point_m": [
+        0.18,
+        0.325,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.28547489191436115,
+        -0.02783755834768903
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-22",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        384.302734375,
+        231.8028564453125
+      ],
+      "table_point_m": [
+        0.155,
+        0.325,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2853814509634314,
+        -0.05283738372285293
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-23",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        403.3074137369792,
+        231.3352254231771
+      ],
+      "table_point_m": [
+        0.12999999999999998,
+        0.325,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2852880100125017,
+        -0.07783720909801686
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-24",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        421.8472086588542,
+        231.062744140625
+      ],
+      "table_point_m": [
+        0.10499999999999998,
+        0.325,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.285194569061572,
+        -0.10283703447318077
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-25",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        439.982177734375,
+        230.79842122395834
+      ],
+      "table_point_m": [
+        0.07999999999999999,
+        0.325,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.28510112811064225,
+        -0.12783685984834467
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-26",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        457.8259684244792,
+        230.59842936197916
+      ],
+      "table_point_m": [
+        0.054999999999999966,
+        0.325,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.28500768715971253,
+        -0.1528366852235086
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-27",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        475.40087890625,
+        229.9885050455729
+      ],
+      "table_point_m": [
+        0.02999999999999997,
+        0.325,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2849142462087828,
+        -0.1778365105986725
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-28",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        365.1875,
+        251.20548502604166
+      ],
+      "table_point_m": [
+        0.18,
+        0.35,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2604750665391973,
+        -0.027744117396759305
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-29",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        384.6153157552083,
+        250.8957316080729
+      ],
+      "table_point_m": [
+        0.155,
+        0.35,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.26038162558826755,
+        -0.05274394277192321
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-30",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        403.5357259114583,
+        250.7733154296875
+      ],
+      "table_point_m": [
+        0.12999999999999998,
+        0.35,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2602881846373378,
+        -0.07774376814708714
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-31",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        421.8757731119792,
+        250.21065266927084
+      ],
+      "table_point_m": [
+        0.10499999999999998,
+        0.35,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2601947436864081,
+        -0.10274359352225104
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-32",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        440.4034830729167,
+        249.7901611328125
+      ],
+      "table_point_m": [
+        0.07999999999999999,
+        0.35,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.2601013027354784,
+        -0.12774341889741495
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-33",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        457.97265625,
+        249.19722493489584
+      ],
+      "table_point_m": [
+        0.054999999999999966,
+        0.35,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.26000786178454866,
+        -0.15274324427257888
+      ]
+    },
+    {
+      "correspondence_id": "strict-held-2-34",
+      "member_id": "strict-held-2",
+      "timestamp": "2026-08-27T07:16:36.461819Z",
+      "image_point_px": [
+        475.7340494791667,
+        248.7999471028646
+      ],
+      "table_point_m": [
+        0.02999999999999997,
+        0.35,
+        0.0
+      ],
+      "simulation_point_m": [
+        0.25991442083361893,
+        -0.17774306964774278
+      ]
+    }
+  ],
+  "checkpoint_view_members": [
+    {
+      "member_id": "strict-held-1",
+      "sha256": "01d057fff84ed29d8ef660039009874b98edd5c31fa9bbfb55209d63b181f3bc",
+      "timestamp": "2026-08-27T07:20:13.057580Z"
+    },
+    {
+      "member_id": "strict-held-2",
+      "sha256": "b3db74a9adf7971b169860000ee3b72fbe96499aff30b399a1b95a2ff90929a6",
+      "timestamp": "2026-08-27T07:16:36.461819Z"
+    }
+  ],
+  "device_hash": "d23762ac6fda05f51ce57ec5966b302defd76277f8c0c0cf2b5c21a994d652eb",
+  "resolution": [
+    640,
+    480
+  ],
+  "crop": [
+    100,
+    0,
+    400,
+    400
+  ],
+  "orientation_hash": "5e0d8f04edf779c11546d0562293e4620a27843fdd7e9cd322e18c549587d12c",
+  "config_hash": "df6ea276b4209c6a02db6c5493db23847afddbd5c3bf60e0623f6ca0de3885b3",
+  "camera_digest": "ea4f530e87a7132aa339fbd0fca18b46074f65c8c5bbb290fa9f035ba6ee0b00"
+}

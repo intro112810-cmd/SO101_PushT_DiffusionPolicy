@@ -1,0 +1,537 @@
+"""Authentic two-step history assembly and deterministic frozen-policy replay.
+
+The production load path must be attempted and fail closed when robomimic's
+``CropRandomizer`` is missing. The fixture lineage may then select a
+fixture-only deterministic adapter that consumes the same validated
+observation contract (``uint8[96,96,3]`` frames and ``float32[5]`` states)
+and emits a deterministic eight-action raw chunk from a fixed seed. No
+hardware symbol may exist in the replay surface.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import sys
+from typing import cast
+
+import numpy as np
+from numpy.random import default_rng as _real_default_rng
+from numpy.typing import NDArray
+import pytest
+
+from so101_pusht_benchmark.sim_to_real.replay_history import (
+    Float32Vector,
+    HistoryEvidence,
+    HistoryStep,
+    InferenceReceipt,
+    UInt8Image,
+    build_history,
+    fixture_policy_rng_seed,
+    parse_inference_receipt,
+    receipt_digest,
+    run_fixture_policy,
+    stabilized_receipt,
+    validate_inference_receipt,
+)
+from so101_pusht_benchmark.sim_to_real.rollout_codes import RolloutCode, RolloutViolation
+
+BENCHMARK = Path(__file__).resolve().parents[1]
+FIXTURES = BENCHMARK / "tests/fixtures/sim_to_real"
+SCRIPTS = BENCHMARK / "scripts"
+SAMPLES = FIXTURES / "synchronized_samples.json"
+DUPLICATES = FIXTURES / "duplicated_history.json"
+LINEAGE = FIXTURES / "lineage.json"
+JOINT = FIXTURES / "joint-equivalence.json"
+CAMERA = FIXTURES / "camera-registration.json"
+FRAME = FIXTURES / "physical_frame.png"
+
+FORBIDDEN_SURFACE = (
+    "send_action",
+    "sync_write",
+    "Goal_Position",
+    "enable_torque",
+    "Torque_Enable",
+    "lerobot.teleoperators",
+    "SOFollower",
+)
+
+
+def _run_cli(*arguments: str) -> subprocess.CompletedProcess[str]:
+    environment = {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PUSHT_SINGLE_CAM": "1",
+        "PUSHT_LOCAL_BUDGET": "1",
+        "PYTHONPATH": str(BENCHMARK / "src"),
+    }
+    return subprocess.run(
+        [sys.executable, str(SCRIPTS / "run_sim_to_real_replay.py"), *arguments],
+        cwd=BENCHMARK,
+        env=environment,
+        capture_output=True,
+        text=True,
+        timeout=120,
+        check=False,
+    )
+
+
+def _valid_evidence() -> HistoryEvidence:
+    raw = json.loads(SAMPLES.read_text(encoding="utf-8"))
+    samples_raw = raw["samples"]
+    if not isinstance(samples_raw, list):
+        raise TypeError("fixture samples must be a list")
+    samples = tuple(
+        cast("dict[str, object]", item)
+        for item in cast("list[object]", samples_raw)
+        if isinstance(item, dict)
+    )
+    joint = cast("dict[str, object]", json.loads(JOINT.read_text(encoding="utf-8")))
+    camera = cast("dict[str, object]", json.loads(CAMERA.read_text(encoding="utf-8")))
+    lineage = cast("dict[str, object]", json.loads(LINEAGE.read_text(encoding="utf-8")))
+    return HistoryEvidence(
+        samples=samples,
+        joint_document=joint,
+        camera_document=camera,
+        lineage_document=lineage,
+        lineage_authority_digest="192d568795b756ac1edcde78a4a24ed8d37f1fef3bde14cd32a6d441c221a5e4",
+        source_frame_path=FRAME,
+    )
+
+
+def _build() -> tuple[HistoryStep, HistoryStep]:
+    return build_history(_valid_evidence())
+
+
+def _samples_from(path: Path) -> tuple[dict[str, object], ...]:
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    samples_raw = raw["samples"]
+    if not isinstance(samples_raw, list):
+        raise TypeError("fixture samples must be a list")
+    return tuple(
+        cast("dict[str, object]", item)
+        for item in cast("list[object]", samples_raw)
+        if isinstance(item, dict)
+    )
+
+
+def test_production_history_accepts_profile_bound_nonfixture_receipts() -> None:
+    fixture = _valid_evidence()
+    authority_digest = "a" * 64
+    lineage_material = {
+        "artifact_id": "local-dp_cnn-recovered-v3-seed0",
+        "authority_digest": authority_digest,
+        "valid": True,
+    }
+    lineage = {
+        **lineage_material,
+        "lineage_digest": hashlib.sha256(
+            json.dumps(
+                lineage_material, separators=(",", ":"), sort_keys=True
+            ).encode()
+        ).hexdigest(),
+    }
+    joint = {**fixture.joint_document, "digest": "b" * 64}
+    camera = {
+        **fixture.camera_document,
+        "digest": "c" * 64,
+        "evidence_scope": "authorized_physical_diagnostic",
+    }
+    evidence = HistoryEvidence(
+        samples=fixture.samples,
+        joint_document=joint,
+        camera_document=camera,
+        lineage_document=lineage,
+        lineage_authority_digest=authority_digest,
+        source_frame_path=fixture.source_frame_path,
+    )
+
+    first, second = build_history(evidence)
+
+    assert (first.sample_id, second.sample_id) == ("sample-000", "sample-001")
+
+
+# --- RED: evidence and history assembly -------------------------------------
+
+
+def test_duplicate_history_rejects() -> None:
+    raw = _samples_from(DUPLICATES)
+    evidence = _valid_evidence()
+    evidence = HistoryEvidence(
+        samples=raw,
+        joint_document=evidence.joint_document,
+        camera_document=evidence.camera_document,
+        lineage_document=evidence.lineage_document,
+        lineage_authority_digest=evidence.lineage_authority_digest,
+        source_frame_path=evidence.source_frame_path,
+    )
+    with pytest.raises(RolloutViolation) as caught:
+        build_history(evidence)
+    assert caught.value.code in {RolloutCode.R_DUPLICATE_SAMPLE, RolloutCode.HISTORY_INCOMPLETE}
+
+
+def test_wrong_timestamp_order_rejects() -> None:
+    raw = _samples_from(SAMPLES)
+    evidence = _valid_evidence()
+    first, second = raw
+    evidence = HistoryEvidence(
+        samples=(second, first),
+        joint_document=evidence.joint_document,
+        camera_document=evidence.camera_document,
+        lineage_document=evidence.lineage_document,
+        lineage_authority_digest=evidence.lineage_authority_digest,
+        source_frame_path=evidence.source_frame_path,
+    )
+    with pytest.raises(RolloutViolation) as caught:
+        build_history(evidence)
+    assert caught.value.code is RolloutCode.HISTORY_INCOMPLETE
+
+
+def test_wrong_history_count_rejects() -> None:
+    raw = _samples_from(SAMPLES)
+    evidence = _valid_evidence()
+    evidence = HistoryEvidence(
+        samples=(raw[0],),
+        joint_document=evidence.joint_document,
+        camera_document=evidence.camera_document,
+        lineage_document=evidence.lineage_document,
+        lineage_authority_digest=evidence.lineage_authority_digest,
+        source_frame_path=evidence.source_frame_path,
+    )
+    with pytest.raises(RolloutViolation) as caught:
+        build_history(evidence)
+    assert caught.value.code is RolloutCode.HISTORY_INCOMPLETE
+
+
+def test_wrong_frame_dtype_rejects() -> None:
+    first, second = _build()
+    with pytest.raises(RolloutViolation) as caught:
+        _ = HistoryStep(
+            sample_id=first.sample_id,
+            sample_digest=first.sample_digest,
+            frame_digest=first.frame_digest,
+            camera_sha256=first.camera_sha256,
+            agent_pos_sha256=first.agent_pos_sha256,
+            checkpoint_image=cast("UInt8Image", first.checkpoint_image.astype(np.float32)),
+            agent_pos=first.agent_pos,
+        )
+    assert caught.value.code is RolloutCode.HISTORY_INCOMPLETE
+    assert isinstance(second.agent_pos, np.ndarray)
+
+
+def test_wrong_agent_pos_dtype_rejects() -> None:
+    first, second = _build()
+    with pytest.raises(RolloutViolation) as caught:
+        _ = HistoryStep(
+            sample_id=first.sample_id,
+            sample_digest=first.sample_digest,
+            frame_digest=first.frame_digest,
+            camera_sha256=first.camera_sha256,
+            agent_pos_sha256=first.agent_pos_sha256,
+            checkpoint_image=first.checkpoint_image,
+            agent_pos=cast("Float32Vector", first.agent_pos.astype(np.float64)),
+        )
+    assert caught.value.code is RolloutCode.HISTORY_INCOMPLETE
+    assert second.agent_pos.dtype == np.float32
+
+
+def test_hash_identity_drift_rejects() -> None:
+    first, second = _build()
+    with pytest.raises(RolloutViolation) as caught:
+        _ = HistoryStep(
+            sample_id=first.sample_id,
+            sample_digest=first.sample_digest,
+            frame_digest=first.frame_digest,
+            camera_sha256="0" * 64,
+            agent_pos_sha256=first.agent_pos_sha256,
+            checkpoint_image=first.checkpoint_image,
+            agent_pos=first.agent_pos,
+        )
+    assert caught.value.code is RolloutCode.R_HASH_MISMATCH
+    assert second.agent_pos.dtype == np.float32
+
+
+def _with_camera(evidence: HistoryEvidence, camera: dict[str, object]) -> HistoryEvidence:
+    return HistoryEvidence(
+        samples=evidence.samples,
+        joint_document=evidence.joint_document,
+        camera_document=camera,
+        lineage_document=evidence.lineage_document,
+        lineage_authority_digest=evidence.lineage_authority_digest,
+        source_frame_path=evidence.source_frame_path,
+    )
+
+
+def test_camera_receipt_hash_drift_rejects() -> None:
+    evidence = _valid_evidence()
+    camera = dict(evidence.camera_document)
+    camera["digest"] = "0" * 64
+    with pytest.raises(RolloutViolation) as caught:
+        build_history(_with_camera(evidence, camera))
+    assert caught.value.code is RolloutCode.R_CAMERA_EQUIVALENCE_UNPROVEN
+
+
+def test_camera_scalar_count_only_receipt_rejects() -> None:
+    evidence = _valid_evidence()
+    camera = {
+        "audited": True,
+        "digest": evidence.camera_document["digest"],
+        "held_out_reprojection_error_px": 0.0,
+        "held_out_correspondences": 999,
+        "device_hash": "a" * 64,
+        "config_hash": "b" * 64,
+        "orientation_hash": "c" * 64,
+    }
+    with pytest.raises(RolloutViolation) as caught:
+        build_history(_with_camera(evidence, camera))
+    assert caught.value.code is RolloutCode.R_CAMERA_EQUIVALENCE_UNPROVEN
+
+
+def test_joint_receipt_hash_drift_rejects() -> None:
+    evidence = _valid_evidence()
+    joint = dict(evidence.joint_document)
+    joint["digest"] = "0" * 64
+    with pytest.raises(RolloutViolation) as caught:
+        build_history(
+            HistoryEvidence(
+                samples=evidence.samples,
+                joint_document=joint,
+                camera_document=evidence.camera_document,
+                lineage_document=evidence.lineage_document,
+                lineage_authority_digest=evidence.lineage_authority_digest,
+                source_frame_path=evidence.source_frame_path,
+            )
+        )
+    assert caught.value.code is RolloutCode.R_JOINT_EQUIVALENCE_UNPROVEN
+
+
+def test_lineage_identity_drift_rejects() -> None:
+    evidence = _valid_evidence()
+    with pytest.raises(RolloutViolation) as caught:
+        build_history(
+            HistoryEvidence(
+                samples=evidence.samples,
+                joint_document=evidence.joint_document,
+                camera_document=evidence.camera_document,
+                lineage_document=evidence.lineage_document,
+                lineage_authority_digest="0" * 64,
+                source_frame_path=evidence.source_frame_path,
+            )
+        )
+    assert caught.value.code is RolloutCode.R_HASH_MISMATCH
+
+
+# --- GREEN: deterministic adapter and byte-identical receipts -----------------
+
+
+def test_two_step_history_preserves_exact_observation_contract() -> None:
+    first, second = _build()
+    assert tuple(first.checkpoint_image.shape) == (96, 96, 3)
+    assert first.checkpoint_image.dtype == np.uint8
+    assert first.agent_pos.shape == (5,)
+    assert first.agent_pos.dtype == np.float32
+    assert first.sample_id != second.sample_id
+    assert first.sample_digest != second.sample_digest
+    assert first.camera_sha256 != second.camera_sha256
+
+
+def test_fixture_adapter_emits_deterministic_eight_action_raw_chunk() -> None:
+    first, second = _build()
+    seed = fixture_policy_rng_seed("local-dp_cnn-recovered-v3-seed0", 7)
+    one = run_fixture_policy((first, second), seed=seed)
+    two = run_fixture_policy((first, second), seed=seed)
+    assert one.actions.shape == (8, 2)
+    assert one.actions.dtype == np.float32
+    assert one.actions.shape == two.actions.shape
+    assert np.array_equal(one.actions, two.actions)
+    assert one.latency_seconds == 0.0
+
+
+def test_fixture_adapter_actions_are_within_domain() -> None:
+    first, second = _build()
+    seed = fixture_policy_rng_seed("local-dp_cnn-recovered-v3-seed0", 7)
+    actions = run_fixture_policy((first, second), seed=seed).actions
+    assert actions.shape == (8, 2)
+    assert bool(np.all(actions >= -1.0))
+    assert bool(np.all(actions <= 1.0))
+
+
+class _OverflowGenerator:
+    def __init__(self, inner: np.random.Generator) -> None:
+        self._inner = inner
+        self._calls = 0
+
+    def integers(
+        self,
+        low: int,
+        high: int | None = None,
+        size: tuple[int, int] = (8, 2),
+        dtype: type[np.int64] = np.int64,
+    ) -> NDArray[np.int64]:
+        self._calls += 1
+        value = self._inner.integers(low, high, size=size, dtype=dtype)
+        if self._calls == 2:
+            return value + np.int64(1 << 62)
+        return value
+
+
+class _NegativeOverflowGenerator:
+    def __init__(self, inner: np.random.Generator) -> None:
+        self._inner = inner
+        self._calls = 0
+
+    def integers(
+        self,
+        low: int,
+        high: int | None = None,
+        size: tuple[int, int] = (8, 2),
+        dtype: type[np.int64] = np.int64,
+    ) -> NDArray[np.int64]:
+        self._calls += 1
+        value = self._inner.integers(low, high, size=size, dtype=dtype)
+        if self._calls == 2:
+            return value - np.int64(1 << 62)
+        return value
+
+
+def _overflow_default_rng(seed: int) -> _OverflowGenerator:
+    return _OverflowGenerator(_real_default_rng(seed))
+
+
+def _negative_overflow_default_rng(seed: int) -> _NegativeOverflowGenerator:
+    return _NegativeOverflowGenerator(_real_default_rng(seed))
+
+
+def test_out_of_domain_generated_action_rejects_without_clipping(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    first, second = _build()
+    seed = fixture_policy_rng_seed("local-dp_cnn-recovered-v3-seed0", 7)
+
+    monkeypatch.setattr(
+        "so101_pusht_benchmark.sim_to_real.replay_policy.np.random.default_rng",
+        _overflow_default_rng,
+    )
+    with pytest.raises(RolloutViolation) as caught:
+        run_fixture_policy((first, second), seed=seed)
+    assert caught.value.code is RolloutCode.R_CLIPPING_REQUIRED
+
+
+def test_out_of_domain_generated_action_rejects_via_boundary_validator(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    first, second = _build()
+    seed = fixture_policy_rng_seed("local-dp_cnn-recovered-v3-seed0", 7)
+
+    monkeypatch.setattr(
+        "so101_pusht_benchmark.sim_to_real.replay_policy.np.random.default_rng",
+        _negative_overflow_default_rng,
+    )
+    with pytest.raises(RolloutViolation) as caught:
+        run_fixture_policy((first, second), seed=seed)
+    assert caught.value.code is RolloutCode.R_CLIPPING_REQUIRED
+
+
+def test_replay_policy_source_has_no_clip_or_suppressions() -> None:
+    module_path = BENCHMARK / "src/so101_pusht_benchmark/sim_to_real/replay_policy.py"
+    source = module_path.read_text(encoding="utf-8")
+    assert "np.clip" not in source
+    assert ".clip(" not in source
+    assert "type: ignore" not in source
+    assert "noqa" not in source
+
+
+def test_valid_two_step_history_yields_byte_identical_receipt_across_replays(
+    tmp_path: Path,
+) -> None:
+    output_a = tmp_path / "inference-a.json"
+    output_b = tmp_path / "inference-b.json"
+    one = _run_cli(
+        "--samples",
+        str(SAMPLES),
+        "--lineage",
+        str(LINEAGE),
+        "--joint",
+        str(JOINT),
+        "--camera",
+        str(CAMERA),
+        "--output",
+        str(output_a),
+    )
+    two = _run_cli(
+        "--samples",
+        str(SAMPLES),
+        "--lineage",
+        str(LINEAGE),
+        "--joint",
+        str(JOINT),
+        "--camera",
+        str(CAMERA),
+        "--output",
+        str(output_b),
+    )
+    assert one.returncode == 0, one.stderr
+    assert two.returncode == 0, two.stderr
+    first_receipt = json.loads(output_a.read_text(encoding="utf-8"))
+    second_receipt = json.loads(output_b.read_text(encoding="utf-8"))
+    assert first_receipt["inference_digest"] == second_receipt["inference_digest"]
+    assert stabilized_receipt(first_receipt) == stabilized_receipt(second_receipt)
+    assert first_receipt["policy"] == "fixture_deterministic_adapter"
+    assert len(first_receipt["action_chunk_float32_2d"]) == 8
+    assert first_receipt["hardware_actuation"] is False
+    assert first_receipt["deployment_valid"] is False
+
+
+def test_valid_receipt_round_trips_through_validator(tmp_path: Path) -> None:
+    output = tmp_path / "inference.json"
+    result = _run_cli(
+        "--samples",
+        str(SAMPLES),
+        "--lineage",
+        str(LINEAGE),
+        "--joint",
+        str(JOINT),
+        "--camera",
+        str(CAMERA),
+        "--output",
+        str(output),
+    )
+    assert result.returncode == 0, result.stderr
+    raw = json.loads(output.read_text(encoding="utf-8"))
+    validate_inference_receipt(raw)
+    parsed = parse_inference_receipt(raw)
+    assert isinstance(parsed, InferenceReceipt)
+    assert receipt_digest(parsed) == raw["inference_digest"]
+    assert parsed.action_chunk.shape == (8, 2)
+    assert parsed.action_chunk.dtype == np.float32
+    assert parsed.policy == "fixture_deterministic_adapter"
+
+
+def test_duplicated_history_cli_fails_without_output(tmp_path: Path) -> None:
+    output = tmp_path / "invalid.json"
+    result = _run_cli(
+        "--samples",
+        str(DUPLICATES),
+        "--lineage",
+        str(LINEAGE),
+        "--joint",
+        str(JOINT),
+        "--camera",
+        str(CAMERA),
+        "--output",
+        str(output),
+    )
+    assert result.returncode != 0
+    assert not output.exists()
+    assert (
+        RolloutCode.HISTORY_INCOMPLETE.value in result.stderr
+        or RolloutCode.R_DUPLICATE_SAMPLE.value in result.stderr
+    )
+
+
+def test_replay_surface_has_no_hardware_dependency() -> None:
+    module_path = BENCHMARK / "src/so101_pusht_benchmark/sim_to_real/replay_history.py"
+    script_path = SCRIPTS / "run_sim_to_real_replay.py"
+    source = "\n".join(path.read_text(encoding="utf-8") for path in (module_path, script_path))
+    assert all(symbol not in source for symbol in FORBIDDEN_SURFACE)

@@ -1,0 +1,29 @@
+# Dedicated native pushT-so100 collection/evaluation runtime lock.
+# The upstream environment.yml is frozen evidence; this lock adds the project-owned
+# media and numerical dependencies needed to execute its native recorder/evaluator.
+schema: 2
+lock_type: native_collection_evaluation
+role: [collection, evaluation]
+platform: linux-64
+contract_schema: pusht-so100-native-v1
+fallback: forbidden
+required:
+  python: "3.10"
+  lerobot: "0.4.4"
+  feetech-servo-sdk: "1.0.0"
+  gymnasium: "1.2.2"
+  mujoco: "3.3.7"
+  pygame: "2.6.1"
+  opencv-python: "5.0.0.93"
+  opencv-python-headless: "4.12.0.88"
+  torch: "2.10.0"
+  torchvision: "0.25.0"
+  scipy: "1.15.3"
+  imageio: "2.37.4"
+  imageio-ffmpeg: "0.6.0"
+  av: "15.1.0"
+  pillow: "12.3.0"
+source_environment:
+  path: 05_references/external_repos/pushT-so100/environment.yml
+  sha256: a7aab5a14bb18b6bb94cd1ecf13616384c6af87ba131ae5dc86fec7e94920f70
+  preservation: frozen_unchanged

@@ -1,0 +1,11 @@
+{
+  "all_released": true,
+  "camera_open": false,
+  "open_device_fds": [],
+  "schema": "guarded-rollout-cleanup-v1",
+  "serial_open": false,
+  "staging_paths_remaining": [],
+  "task_owned_process_ids_remaining": [],
+  "temporary_paths_remaining": [],
+  "writer_open": false
+}

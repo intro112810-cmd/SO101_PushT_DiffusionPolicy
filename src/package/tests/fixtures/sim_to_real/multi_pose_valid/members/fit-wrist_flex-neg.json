@@ -1,0 +1,37 @@
+{
+  "schema": "so101-joint-equivalence-member-v2",
+  "sample_id": "fit-wrist_flex-neg",
+  "physical": {
+    "timestamp_s": 1007.0,
+    "raw_encoder_counts": [
+      2048,
+      2048,
+      2048,
+      1848,
+      2048
+    ],
+    "joint_degrees": [
+      0.0,
+      0.0,
+      0.0,
+      -20.0,
+      0.0
+    ],
+    "measured_tool_xyz_m": [
+      0.3844700221683852,
+      0.00013874471298839255,
+      0.2812772700024644
+    ]
+  },
+  "simulator": {
+    "timestamp_s": 1007.01,
+    "joint_radians": [
+      0.0,
+      0.0,
+      0.0,
+      -0.3488888888888888,
+      0.0
+    ]
+  },
+  "claimed_fk_residual_m": 0.0
+}

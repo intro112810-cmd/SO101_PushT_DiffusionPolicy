@@ -1,0 +1,6 @@
+{
+  "command_id": "command-1",
+  "motor_writes_performed": true,
+  "state": "COMPLETE",
+  "write_count": 1
+}

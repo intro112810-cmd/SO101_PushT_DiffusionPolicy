@@ -1,0 +1,37 @@
+{
+  "schema": "so101-joint-equivalence-member-v2",
+  "sample_id": "fit-elbow_flex-neg",
+  "physical": {
+    "timestamp_s": 1005.0,
+    "raw_encoder_counts": [
+      2048,
+      2048,
+      1848,
+      2048,
+      2048
+    ],
+    "joint_degrees": [
+      0.0,
+      0.0,
+      -20.0,
+      0.0,
+      0.0
+    ],
+    "measured_tool_xyz_m": [
+      0.3773085126511637,
+      -0.00016125528701169033,
+      0.31966177450986666
+    ]
+  },
+  "simulator": {
+    "timestamp_s": 1005.01,
+    "joint_radians": [
+      0.0,
+      0.0,
+      -0.3219047619047619,
+      0.0,
+      0.0
+    ]
+  },
+  "claimed_fk_residual_m": 0.0
+}

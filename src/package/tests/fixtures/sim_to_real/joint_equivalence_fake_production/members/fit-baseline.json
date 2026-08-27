@@ -1,0 +1,37 @@
+{
+  "schema": "so101-joint-equivalence-member-v2",
+  "sample_id": "fit-baseline",
+  "physical": {
+    "timestamp_s": 1000.0,
+    "raw_encoder_counts": [
+      2048,
+      2048,
+      2048,
+      2048,
+      2048
+    ],
+    "joint_degrees": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "measured_tool_xyz_m": [
+      0.3911619000000002,
+      -1.1255287011580572e-05,
+      0.22656874461625617
+    ]
+  },
+  "simulator": {
+    "timestamp_s": 1000.01,
+    "joint_radians": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "claimed_fk_residual_m": 0.0
+}

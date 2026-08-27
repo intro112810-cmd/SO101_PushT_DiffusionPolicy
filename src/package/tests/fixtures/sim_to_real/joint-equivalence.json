@@ -1,0 +1,15 @@
+{
+  "audited": true,
+  "digest": "f0d1841fbd1e0846685a91cdfbf2f1ac7114b678aad1e8159d37e2f3e79f0c89",
+  "joint_order": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll"
+  ],
+  "fit_count": 3,
+  "held_out_count": 2,
+  "task_plane_pose_count": 3,
+  "max_fk_residual_m": 0.0025
+}

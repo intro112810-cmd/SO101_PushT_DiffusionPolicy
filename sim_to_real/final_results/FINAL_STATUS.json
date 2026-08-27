@@ -1,0 +1,64 @@
+{
+  "as_of": "2026-08-27",
+  "blocking_evidence": {
+    "authentic_closed_loop_seeds_evaluated": 200,
+    "focused_candidate_branch_delta_degrees_range": [
+      3.26,
+      5.26
+    ],
+    "focused_candidate_swept_clearance_m": 0.0,
+    "ik_candidates_evaluated": 100000,
+    "max_branch_delta_degrees": 8.0,
+    "minimum_clearance_m": 0.001,
+    "representative_ik_residual_m": 0.19474
+  },
+  "evidence": {
+    "compact_lineage": "../evidence/lineage/compact-lineage-v4.json",
+    "ledger": "../evidence/shadow/ledger.jsonl",
+    "report": "../../docs/SIM_TO_REAL_FINAL_2026-08-27.md",
+    "terminal_receipt": "../evidence/shadow/terminal_receipt.json"
+  },
+  "physical": {
+    "actuation_performed": false,
+    "armed_terminal_opened": false,
+    "authorization_issued": false,
+    "cycles_completed": 0,
+    "policy_motor_writes": 0,
+    "production_shadow": "hold",
+    "shadow_complete": false,
+    "t_block_moved": false,
+    "torque_enable_final": {
+      "elbow_flex": 0,
+      "gripper": 0,
+      "shoulder_lift": 0,
+      "shoulder_pan": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0
+    }
+  },
+  "policy": {
+    "artifact_id": "local-dp_cnn-recovered-v4-seed0",
+    "authentic_load_inference": true,
+    "fallback_model_used": false,
+    "model": "dp_cnn",
+    "policy_class": "DiffusionUnetHybridImagePolicy"
+  },
+  "recommended_without_retraining": [
+    "allowed_collision_matrix_for_tool_contact",
+    "lift_translate_descend_waypoints",
+    "receding_horizon_micro_steps",
+    "bounded_feasible_action_projection_only_if_governed"
+  ],
+  "root_causes": [
+    "simulation_absolute_xy_to_physical_5dof_gap",
+    "virtual_pusher_collision_semantics_overlap",
+    "intentional_tool_contact_not_separated",
+    "straight_joint_interpolation_without_waypoint_search"
+  ],
+  "schema": "intro-so101-pusht-final-handoff-v1",
+  "scope": "dp_cnn_physical_shadow",
+  "simulation": {
+    "four_model_100_seed_evaluation": "completed",
+    "four_model_200ep_training": "completed"
+  }
+}

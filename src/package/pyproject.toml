@@ -1,0 +1,82 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "so101-pusht-benchmark"
+version = "0.1.0"
+description = "Isolated SO-101 Push-T four-model benchmark scaffold"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { text = "MIT" }
+authors = [{ name = "InTro Project" }]
+dependencies = [
+  "PyYAML>=6.0",
+  "numpy>=1.24",
+  "mujoco==3.3.7",
+  "lerobot==0.4.4",
+  "feetech-servo-sdk==1.0.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/so101_pusht_benchmark"]
+
+[project.scripts]
+show-provenance = "so101_pusht_benchmark.core.provenance:main"
+verify-pusht-so100 = "so101_pusht_benchmark.core.upstream_provenance:main"
+validate-contract = "so101_pusht_benchmark.native_cli:main"
+real-hardware-preflight = "so101_pusht_benchmark.hardware_profile:main"
+inspect-env = "so101_pusht_benchmark.native_cli:main"
+collect-native = "so101_pusht_benchmark.native_cli:main"
+import-native = "so101_pusht_benchmark.native_cli:main"
+export-native = "so101_pusht_benchmark.native_cli:main"
+freeze-experiment = "so101_pusht_benchmark.native_cli:main"
+train-model = "so101_pusht_benchmark.native_cli:main"
+model-smoke = "so101_pusht_benchmark.native_cli:main"
+export-inference-bundle = "so101_pusht_benchmark.native_cli:main"
+evaluate-model = "so101_pusht_benchmark.native_cli:main"
+compare-models = "so101_pusht_benchmark.native_cli:main"
+native-env-smoke = "so101_pusht_benchmark.native_cli:main"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  "CPY001", "D100", "D103", "D203", "D213", "EM101", "EM102", "INP001",
+  "C901", "COM812", "I001", "PLC0415", "S101", "BLE001", "S603", "S607", "T201", "TRY003", "TRY301",
+  "D101", "D102", "D107", "E501", "FBT001", "FBT002", "FBT003", "PLR0911", "PLR0912", "PLR0915", "PLR2004", "RUF059", "SIM105", "TC002", "TC003", "TID252", "A002", "N802", "N815", "TC001", "TC006",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# cv2's real API uses camelCase keyword args; the stub must mirror them.
+"typings/cv2/*.pyi" = ["N803", "PYI021"]
+# The input-adapter seam legitimately handles heterogeneous source samples
+# (dynamic typing) and needs its parameter sets for the mouse factory.
+"src/so101_pusht_benchmark/collection/inputs.py" = ["ANN401", "PLR0913", "PLR0917"]
+# Native collection preflight keeps boundary dependencies explicit for deterministic tests.
+"src/so101_pusht_benchmark/collection/native.py" = ["PLR0913"]
+# The recorder constructor grew one optional seam parameter.
+"src/so101_pusht_benchmark/collection/recorder.py" = ["PLR0913", "PLR0917"]
+# Pixel/task coordinate mapping needs its six geometry parameters.
+"src/so101_pusht_benchmark/control/mouse_mapping.py" = ["PLR0913", "PLR0917"]
+# The TkLike protocol declares bind/protocol Any-typed because tkinter's
+# stub overloads cannot be matched structurally otherwise.
+"src/so101_pusht_benchmark/input/mouse_keyboard.py" = ["ANN401"]
+# External stubs must preserve the libraries' public exception and function names.
+"typings/av/*.pyi" = ["A001"]
+"typings/pyarrow/*.pyi" = ["N818"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.basedpyright]
+include = ["src", "tests"]
+typeCheckingMode = "strict"
+pythonVersion = "3.10"
+stubPath = "typings"
+extraPaths = ["src"]
+venvPath = "/home/intro/miniforge3/envs"
+venv = "so100test"

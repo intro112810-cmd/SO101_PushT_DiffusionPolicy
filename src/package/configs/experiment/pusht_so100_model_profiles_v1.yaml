@@ -1,0 +1,52 @@
+schema: pusht-so100-model-profiles-v1
+upstream:
+  stanford_commit: 5ba07ac6661db573af695b419a7947ecb704690f
+  robomimic_commit: 62ed2de905caeb9133136e4d14d810a8b6baa96c
+shape_meta:
+  obs:
+    cam_top: {shape: [3, 224, 224], type: rgb}
+    cam_side: {shape: [3, 224, 224], type: rgb}
+    agent_pos: {shape: [5], type: low_dim}
+  action: {shape: [2]}
+profiles:
+  dp_cnn:
+    policy: diffusion_policy.policy.diffusion_unet_hybrid_image_policy.DiffusionUnetHybridImagePolicy
+    workspace: diffusion_policy.workspace.train_diffusion_unet_hybrid_workspace.TrainDiffusionUnetHybridWorkspace
+    horizons: {observation_steps: 2, horizon: 16, executed_actions: 8}
+  dp_transformer:
+    policy: diffusion_policy.policy.diffusion_transformer_hybrid_image_policy.DiffusionTransformerHybridImagePolicy
+    workspace: diffusion_policy.workspace.train_diffusion_transformer_hybrid_workspace.TrainDiffusionTransformerHybridWorkspace
+    horizons: {observation_steps: 2, horizon: 16, executed_actions: 8}
+  ibc:
+    policy: diffusion_policy.policy.ibc_dfo_hybrid_image_policy.IbcDfoHybridImagePolicy
+    workspace: diffusion_policy.workspace.train_ibc_dfo_hybrid_workspace.TrainIbcDfoHybridWorkspace
+    horizons: {observation_steps: 2, horizon: 2, executed_actions: 1}
+  lstm_gmm:
+    policy: diffusion_policy.policy.robomimic_image_policy.RobomimicImagePolicy
+    workspace: diffusion_policy.workspace.train_robomimic_image_workspace.TrainRobomimicImageWorkspace
+    horizons: {observation_steps: 10, horizon: 10, executed_actions: 1}
+    recurrent_identity: BC_RNN_GMM/RNNGMMActorNetwork/LSTM/GMM
+smoke_modes:
+  fixture:
+    store_eligibility: synthetic_ineligible
+    instantiate_real_upstream: true
+    optimizer_updates: 1
+    comparison_eligible: false
+  production:
+    store_eligibility: immutable_frozen_manifest_and_digest_required
+    instantiate_real_upstream: true
+    optimizer_updates: 1
+    result_status: production_smoke_complete_nonfinal
+    training_eligible: false
+    comparison_eligible: false
+training_modes:
+  full_production:
+    store_eligibility: immutable_frozen_manifest_and_digest_required
+    instantiate_real_upstream: true
+    optimizer_updates: 100000
+    explicit_max_updates_required: true
+    rollout_during_training: false
+    final_evaluation_required: true
+    result_status: full_training_complete
+    training_eligible: true
+    comparison_eligible: later_evaluation_gate_required

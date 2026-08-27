@@ -1,0 +1,167 @@
+{
+  "schema": "so101-joint-equivalence-corpus-v2",
+  "evidence_origin": "physical_read_only_capture",
+  "simulator_joint_order": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll"
+  ],
+  "encoder_calibration": {
+    "zero_counts": [
+      2048,
+      2048,
+      2048,
+      2048,
+      2048
+    ],
+    "degrees_per_count": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ]
+  },
+  "members": [
+    {
+      "id": "fit-baseline",
+      "sample_id": "fit-baseline",
+      "path": "members/fit-baseline.json",
+      "sha256": "3dbcd4e9608f5e4d0cb4eb5a9f234d5c4f533a3adcbeda5b9609aead6102b7c2",
+      "split": "fit",
+      "category": "baseline"
+    },
+    {
+      "id": "fit-shoulder_pan-neg",
+      "sample_id": "fit-shoulder_pan-neg",
+      "path": "members/fit-shoulder_pan-neg.json",
+      "sha256": "59db638b1eecfb703c45b240b19d7fd0a2808a1f06a073709addaf877b36b94b",
+      "split": "fit",
+      "category": "isolated",
+      "isolated_joint": "shoulder_pan"
+    },
+    {
+      "id": "fit-shoulder_pan-pos",
+      "sample_id": "fit-shoulder_pan-pos",
+      "path": "members/fit-shoulder_pan-pos.json",
+      "sha256": "0accde2f2ffe8a3cffd2104c4da75fb3322c09c842b688a4a09646bcc067b0c5",
+      "split": "fit",
+      "category": "isolated",
+      "isolated_joint": "shoulder_pan"
+    },
+    {
+      "id": "fit-shoulder_lift-neg",
+      "sample_id": "fit-shoulder_lift-neg",
+      "path": "members/fit-shoulder_lift-neg.json",
+      "sha256": "41e7c83559467d05d0ffdcb2bc96dc489af5bd1d65793ba38941c36e5eda8143",
+      "split": "fit",
+      "category": "isolated",
+      "isolated_joint": "shoulder_lift"
+    },
+    {
+      "id": "fit-shoulder_lift-pos",
+      "sample_id": "fit-shoulder_lift-pos",
+      "path": "members/fit-shoulder_lift-pos.json",
+      "sha256": "2fb802a50ddcea6cff50843bdf28793f2c28cac42310888f0c25ca5a89479aff",
+      "split": "fit",
+      "category": "isolated",
+      "isolated_joint": "shoulder_lift"
+    },
+    {
+      "id": "fit-elbow_flex-neg",
+      "sample_id": "fit-elbow_flex-neg",
+      "path": "members/fit-elbow_flex-neg.json",
+      "sha256": "5609e044205e1d031860a29a81b2366e20363a15e1b3cfe41b5c38d2adcae212",
+      "split": "fit",
+      "category": "isolated",
+      "isolated_joint": "elbow_flex"
+    },
+    {
+      "id": "fit-elbow_flex-pos",
+      "sample_id": "fit-elbow_flex-pos",
+      "path": "members/fit-elbow_flex-pos.json",
+      "sha256": "b01667acd9f411a3c12c9afc8101e53b7404f31ce000fb759a9edae894dc8c63",
+      "split": "fit",
+      "category": "isolated",
+      "isolated_joint": "elbow_flex"
+    },
+    {
+      "id": "fit-wrist_flex-neg",
+      "sample_id": "fit-wrist_flex-neg",
+      "path": "members/fit-wrist_flex-neg.json",
+      "sha256": "85b5d8f08408275090ca4fd48d7e9aa34b916b362b6aecd1b260af01e6120abe",
+      "split": "fit",
+      "category": "isolated",
+      "isolated_joint": "wrist_flex"
+    },
+    {
+      "id": "fit-wrist_flex-pos",
+      "sample_id": "fit-wrist_flex-pos",
+      "path": "members/fit-wrist_flex-pos.json",
+      "sha256": "8735ac15eba2afa0814d64e4a7c0391ed15bc32b256dd4acacd21bc779980715",
+      "split": "fit",
+      "category": "isolated",
+      "isolated_joint": "wrist_flex"
+    },
+    {
+      "id": "fit-wrist_roll-neg",
+      "sample_id": "fit-wrist_roll-neg",
+      "path": "members/fit-wrist_roll-neg.json",
+      "sha256": "fe71643968b755f16b82651ce40343d4197761487d137199124b0613be4c95bc",
+      "split": "fit",
+      "category": "isolated",
+      "isolated_joint": "wrist_roll"
+    },
+    {
+      "id": "fit-wrist_roll-pos",
+      "sample_id": "fit-wrist_roll-pos",
+      "path": "members/fit-wrist_roll-pos.json",
+      "sha256": "62d2ff8f971b44331aa9c5edb9d9ba05eecdbe058989a7f5ca73d756b39fba54",
+      "split": "fit",
+      "category": "isolated",
+      "isolated_joint": "wrist_roll"
+    },
+    {
+      "id": "fit-task-left",
+      "sample_id": "fit-task-left",
+      "path": "members/fit-task-left.json",
+      "sha256": "1bcc3b174c482de13e85e40ac86b029d8935684ac2dff6387413e49844f4a151",
+      "split": "fit",
+      "category": "task_plane"
+    },
+    {
+      "id": "fit-task-right",
+      "sample_id": "fit-task-right",
+      "path": "members/fit-task-right.json",
+      "sha256": "0ecb25af34835c6b48e40364c16d48a99edf1103d6feb0bec8bb91c560942edb",
+      "split": "fit",
+      "category": "task_plane"
+    },
+    {
+      "id": "held-task-a",
+      "sample_id": "held-task-a",
+      "path": "members/held-task-a.json",
+      "sha256": "a03ba655d68680c91598dc2dd02244d75146728bc9103de69dce9c2696b7345c",
+      "split": "held_out",
+      "category": "task_plane"
+    },
+    {
+      "id": "held-task-b",
+      "sample_id": "held-task-b",
+      "path": "members/held-task-b.json",
+      "sha256": "5c1105ccca59f08e92ba04324352e311520dde2509bd949940b464992e23e376",
+      "split": "held_out",
+      "category": "task_plane"
+    }
+  ],
+  "policy_digest": "2e59028e514584dfadc716ebbc639b96b224e31bf07ed088f06fb516f087e451",
+  "production_bindings": {
+    "provider_digest": "1111111111111111111111111111111111111111111111111111111111111111",
+    "device_digest": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "calibration_digest": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "capture_id": "fake-read-only-capture-001"
+  },
+  "corpus_digest": "693f17f9c954c35bafe4770bdc5e24c966ff40b94155697760454707a8f4fa4c"
+}

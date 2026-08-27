@@ -1,0 +1,39 @@
+{
+  "schema": "joint-equivalence-production-blocker-v2",
+  "status": "BLOCKED",
+  "code": "EQUIVALENCE_UNPROVEN",
+  "derived_v2_auditor_available": true,
+  "genuine_physical_corpus_count": 0,
+  "production_receipt_published": false,
+  "synthetic_fixture_is_genuine": false,
+  "fake_production_fixture_is_genuine": false,
+  "external_inputs": [
+    {
+      "kind": "historical_single_follower_state",
+      "path": "04_experiments/so101_pusht_benchmark/inference/real_shadow/follower_state_20260821.json",
+      "sha256": "862db714e6f5dcfa8747d98abb090f3b92619de2ab4302101473c9ee76e5203b",
+      "sufficient": false
+    },
+    {
+      "kind": "historical_single_pose_mapping",
+      "path": "04_experiments/so101_pusht_benchmark/inference/joint_mapping_calibration_20260823/joint_mapping_receipt.json",
+      "sha256": "001d1b480492c82dafe843df0ae1c2c4d1efa679d5087d5c2a97053913928c46",
+      "sufficient": false
+    },
+    {
+      "kind": "pending_unsigned_policy",
+      "path": "03_code/so101_pusht_benchmark/configs/hardware/sim_to_real_safety_policy_v1.pending.yaml",
+      "sha256": "c018d51bb049dd594b81618fde3aba3dbc8156198dc8445b32b3abfa19434cf7",
+      "sufficient": false
+    }
+  ],
+  "missing_external_inputs": [
+    "owner-approved production safety policy",
+    "out-of-band governed ProductionTrustStore",
+    "signed joint-equivalence corpus authority",
+    "genuine read-only physical multi-pose corpus and members"
+  ],
+  "hardware_open_count": 0,
+  "hardware_write_count": 0,
+  "actuation_performed": false
+}

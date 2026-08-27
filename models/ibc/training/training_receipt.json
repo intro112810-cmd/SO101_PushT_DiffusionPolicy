@@ -1,0 +1,28 @@
+{
+  "completed": true,
+  "configured_optimizer_updates": 100000,
+  "executed_optimizer_updates": 100000,
+  "identity": {
+    "dataset_digest": "03e2c1b5abd2d08458da192f202b09000146e71500882fc212d731a203c19506",
+    "environment_manifest_digest": "4b89a0844fb7dad512384bd3fbcba5d4f65b555d67c6d67a822140b9348f9e73",
+    "executed_actions": 1,
+    "horizon": 2,
+    "model": "ibc",
+    "observation_steps": 2,
+    "optimizer_updates": 100000,
+    "policy_class": "IbcDfoHybridImagePolicy",
+    "policy_module": "diffusion_policy.policy.ibc_dfo_hybrid_image_policy",
+    "policy_target": "diffusion_policy.policy.ibc_dfo_hybrid_image_policy.IbcDfoHybridImagePolicy",
+    "robomimic_commit": "62ed2de905caeb9133136e4d14d810a8b6baa96c",
+    "runtime_lock_digest": "10776208a02c73299caf78249cecd8d1d6870e026ab456ec1c11087adc521b9a",
+    "split_digest": "251435abffefdd3c2b6bf55202678e47f66379e5722346b13ed79381907d5b68",
+    "stanford_commit": "5ba07ac6661db573af695b419a7947ecb704690f",
+    "workspace_class": "TrainIbcDfoHybridWorkspace",
+    "workspace_module": "diffusion_policy.workspace.train_ibc_dfo_hybrid_workspace",
+    "workspace_target": "diffusion_policy.workspace.train_ibc_dfo_hybrid_workspace.TrainIbcDfoHybridWorkspace"
+  },
+  "model": "ibc",
+  "rollout_during_training": false,
+  "schema": "pusht-so100-full-training-v1",
+  "training_mode": "full_production"
+}

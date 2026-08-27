@@ -1,0 +1,33 @@
+schema: 1
+deployment_scope: real_hardware_preflight
+follower:
+  role: follower
+  port: /dev/serial/by-id/usb-1a86_USB_Single_Serial_5AE6082660-if00
+  calibration_id: intro_so101_follower_01
+  calibration_file: /home/intro/.cache/huggingface/lerobot/calibration/robots/so101_follower/intro_so101_follower_01.json
+leader:
+  role: leader
+  port: /dev/serial/by-id/usb-1a86_USB_Single_Serial_5AE6082503-if00
+  calibration_id: intro_so101_leader_01
+  calibration_file: /home/intro/.cache/huggingface/lerobot/calibration/teleoperators/so_leader/intro_so101_leader_01.json
+camera:
+  role: front
+  device: /dev/v4l/by-id/usb-Innomaker_Innomaker-U20CAM-1080p-S1_SN0001-video-index0
+  width: 640
+  height: 480
+  fps: 30
+  crop_x: 100
+  crop_y: 0
+  crop_size: 400
+  saved_width: 400
+  saved_height: 400
+  latest_frame: /home/intro/InternLab/02_InTro_Project/04_experiments/camera_test/webcam_live_latest.jpg
+safety:
+  max_relative_target_degrees: 5.0
+  require_workspace_confirmation: true
+sim_to_real:
+  physical_camera_registration_calibrated: false
+  action_bridge: absent
+  diagnostic_governance: real_diagnostic_rollout
+  control_plane: separate_control_plane
+  training_identity_authority: forbidden

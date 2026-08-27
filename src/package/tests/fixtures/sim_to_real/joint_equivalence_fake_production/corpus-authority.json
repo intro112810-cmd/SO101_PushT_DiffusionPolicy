@@ -1,0 +1,15 @@
+{
+  "schema": "joint-equivalence-corpus-authority-v1",
+  "artifact_scope": "authorized_physical_diagnostic",
+  "approved_by": "fake-joint-production-owner@example.invalid",
+  "approval_id": "fake-joint-corpus-approval-v1",
+  "scheme": "hmac-sha256-fake-production-v1",
+  "corpus_digest": "693f17f9c954c35bafe4770bdc5e24c966ff40b94155697760454707a8f4fa4c",
+  "policy_digest": "2e59028e514584dfadc716ebbc639b96b224e31bf07ed088f06fb516f087e451",
+  "provider_digest": "1111111111111111111111111111111111111111111111111111111111111111",
+  "device_digest": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "calibration_digest": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "capture_id": "fake-read-only-capture-001",
+  "identity_digest": "721c8ceecbd5b7063f20f6740f1046a06650cbdeaf7f04294bf4dc8b5fa7db83",
+  "binding_signature": "d98b79e1f86fc1c0f11b8880044fad72e98346faa7b9e76aeb83f23e3e046fd1"
+}

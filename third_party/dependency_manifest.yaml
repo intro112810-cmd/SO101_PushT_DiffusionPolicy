@@ -1,0 +1,31 @@
+schema: 1
+components:
+  diffusion_policy:
+    revision: 5ba07ac6661db573af695b419a7947ecb704690f
+    license: MIT
+    roles: [dp_cnn, dp_transformer, ibc]
+  lerobot:
+    version: "0.4.4"
+    revision: e40b58a8dfa9e7b86918c374791599d070518d11
+    license: Apache-2.0
+    roles: [dataset, so101_integration]
+  robomimic:
+    revision: 62ed2de905caeb9133136e4d14d810a8b6baa96c
+    license: MIT
+    roles: [lstm_gmm]
+  so101_reference:
+    revision: fda892cba81032c46c40976a48c9ceadbf40a9ca
+    license: bundled_notice
+    roles: [robot_model, hardware_reference]
+  mujoco:
+    version: "3.3.7"
+    license: Apache-2.0
+    roles: [simulation]
+  gymnasium:
+    version: "1.2.2"
+    license: MIT
+    roles: [environment_api]
+  feetech_servo_sdk:
+    version: "1.0.0"
+    license: package_notice
+    roles: [motor_bus]

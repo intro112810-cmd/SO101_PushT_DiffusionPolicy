@@ -1,0 +1,2301 @@
+{
+  "schema_version": 1,
+  "purpose": "Pre-edit content baseline for Todo 1 sim-to-real governance; excluded paths must remain byte-identical.",
+  "created_at": "2026-08-23T11:19:56.661028+00:00",
+  "repository_root": "/home/intro/InternLab/02_InTro_Project",
+  "head": "8f67535de59b544bb2fe5fbf3b2280127dd63585",
+  "hash_algorithm": "sha256",
+  "pre_existing_dirty_path_count": 228,
+  "task_owned_editable_paths": [
+    "03_code/so101_pusht_benchmark/AGENTS.md",
+    "03_code/so101_pusht_benchmark/configs/hardware/so101_real_v1.yaml",
+    "03_code/so101_pusht_benchmark/configs/workspace_status.yaml",
+    "03_code/so101_pusht_benchmark/docs/real_hardware_setup_ko.md",
+    "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/hardware_profile.py",
+    "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/workspace.py",
+    "03_code/so101_pusht_benchmark/tests/test_real_hardware_profile.py",
+    "03_code/so101_pusht_benchmark/tests/test_workspace_status.py"
+  ],
+  "paths": [
+    {
+      "path": ".debug-journal.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "c0764fea02d33bd2d726f862d9bc0e38091b6cad9198e87f0cc82a4d715ff908",
+      "size": 5485
+    },
+    {
+      "path": ".omo/plans/pusht-so100-four-model-clean-restart.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "3158cb9262a2d76ff74dd5b6d036a2180452cc69c9d28a6dc0ed50b6e3906d41",
+      "size": 39548
+    },
+    {
+      "path": ".omo/plans/server-three-model-parallel-training.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ba6367b67edd92e06c7bff28bea34bdcbedadf13dafc004554cd8a8dcab898e4",
+      "size": 11548
+    },
+    {
+      "path": ".omo/plans/sim-to-real-first-rollout.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "1ace816a556a1891d76f3bc92f752b810c4a98fd2893a16fbdfe692adcd0bc15",
+      "size": 56907
+    },
+    {
+      "path": ".omo/plans/so101-pusht-benchmark-on-pusht-so100.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "8e249fd4b493ae2351e61c0578998e9363c0121649b072e18e555d322b8692e4",
+      "size": 4936
+    },
+    {
+      "path": "01_research/2026-08-10_SO100_PushT_\ud559\uc2b5\ubc0f\ub0a8\uc740\uc5f0\uad6c_\uc2e4\ud589\uac00\uc774\ub4dc.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "40a6035fa8e95e76884ab7737f53ab310f4f29b8960b95da0faf522d8e6403dc",
+      "size": 15671
+    },
+    {
+      "path": "03_code/01_motor_test/calibration_backup/README.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "e9bf7ea784a8d663b5331f4c03bea69b0fad50df7ae693f10e12525029978f00",
+      "size": 927
+    },
+    {
+      "path": "03_code/01_motor_test/calibration_backup/intro_so101_follower_01.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "873a5340cfb730a4e34ba8ca1f860cfc8e43321090e5d2b92872bc2ecfb5bbc5",
+      "size": 775
+    },
+    {
+      "path": "03_code/01_motor_test/calibration_backup/intro_so101_leader_01.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "9a569e8b2d463ef40d1c08843429006f94135dcc1826627a98022c9f3cb5a0c6",
+      "size": 919
+    },
+    {
+      "path": "03_code/01_motor_test/calibration_backup/so_follower_intro_so101_follower_01.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "873a5340cfb730a4e34ba8ca1f860cfc8e43321090e5d2b92872bc2ecfb5bbc5",
+      "size": 775
+    },
+    {
+      "path": "03_code/01_motor_test/calibration_backup/so_leader_intro_so101_leader_01.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "9a569e8b2d463ef40d1c08843429006f94135dcc1826627a98022c9f3cb5a0c6",
+      "size": 919
+    },
+    {
+      "path": "03_code/01_motor_test/motor_test_log.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "7c65b2311b9642081de4cbf9bb2ca59eedd221ab5545ba60c81aa7aed9dede52",
+      "size": 13198
+    },
+    {
+      "path": "03_code/01_motor_test/real_pusht_human_env_a3_topdown_1to1.svg",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "bd2f4701246718fbc8251e5c7a878cbc5b716e198986577c4d1973340c1ec0b1",
+      "size": 7078
+    },
+    {
+      "path": "03_code/01_motor_test/real_pusht_human_env_v2_a3_1to1.svg",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "eca03c73bcff5558137c1d77ee7298037ed2020be3ff880db1b7d36ed07c64ec",
+      "size": 6990
+    },
+    {
+      "path": "03_code/01_motor_test/real_pusht_setup_plan.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "b0d4fddca8302201864199f176611298b5c3d699eb8b81bf29e0cdb524142fb0",
+      "size": 9951
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/.omo/evidence/post-review-fix-canonical-fixture-leak.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "5f734eb9495d2d8aa5d7d8df508c7b57a78e958a25f1f3ba0ce8438dacf078bd",
+      "size": 6710
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-1-green.txt",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0068611f2903c9bfbd2959134090537938c8ecfb9aa99c44835f0dabd094e96d",
+      "size": 3488
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-1-lock.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "9fb82dc43b0d9cc5882f6f3fd38e8552a75f9af82a2ee1d98614afa7312c22e2",
+      "size": 6761
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-1-red.txt",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "d694e575e2958f0de9a26974cb2949ba06afe89ad175be15b563b188d6b393c3",
+      "size": 20535
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-1-versions.txt",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "4689d7c179c8fa323f9968a420fd46cc7bab5462723215e3c7f4a73d87019f79",
+      "size": 18
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-3-green.txt",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "585b82f750b8a222dcf4af2ed72f52d2a1062430e11cebafc794d61579f9b47d",
+      "size": 98
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-3-red.txt",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "192be5214e51701f8c7b878b1a51be5fd376dde396049d9d5041627cc26cd64f",
+      "size": 12588
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-4-green.txt",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "7a143e61a365f7c24bff8f104950cbf5951414ebed28c7afac081858360a0703",
+      "size": 114
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-4-red.txt",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0a0d1e85a0d1239318f0882339f9a6700b07be90575584a02662bb9a15b23808",
+      "size": 145
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/AGENTS.md",
+      "classification": "task_owned_editable",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "c3fe44fbe5f37f3aa541e82d4915d88244e3fe587df05f8e6c301b31f322761d",
+      "size": 4453
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/CAMERA_CALIBRATION_HANDOFF.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "741e4e351e28da0f2be85339f15e8d6f85289c463e0cc66bcd51ac9d7d8770eb",
+      "size": 3908
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/POSTTRAINING_RUNBOOK.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "3f2457c3e1e9f7e5d81115fb87b39a71e6b56dab0dfb3d921dfb2a07021425ce",
+      "size": 11725
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/README.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "b128cceae390e323fc2bc5e5b9e9d09d1bbe2762d102606334951f5a946df437",
+      "size": 16246
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/SERVER_HANDOFF.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "b7e1d56316d6e2a5dbb02fd0287bcd62c2cb3b10014dbdb6e62e5aa5233b57a7",
+      "size": 31188
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/assets/mujoco/so101_pusht_overlay.xml",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "11ae111911f3691fc2646d6192460e5cd86a576c15c49b6442433252ba893305",
+      "size": 1827
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/assets/stl/T_block_overlay_110x28_28x80_h30.stl",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "fe87c8f1ba6fd4d5bb6077ddf04aac7e506ed0d08085aef8d76cacd43e2c3607",
+      "size": 1284
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/assets/stl/T_block_pushT-so100.scad",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "f16e52ca64888fa75565df71ce05efeb0c4704a276fff588f6dca37ca1a71fb8",
+      "size": 300
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/assets/stl/T_block_pushT-so100_100x30_30x70_h30.stl",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0e712834c54f48666fe67dea571849a68a6f5ca68120d51ef0596d93b189f101",
+      "size": 1284
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/assets/stl/T_target_marker_pushT-so100.stl",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "50275a2416b991c73dd3c771f4d7caba0889f8e161b75f4d12994196a1d7b98a",
+      "size": 1284
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/bridge_contract.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "ec31cf4d4f77070d41c6b3842a365e1278c068ce0d17ae5adb56586edfc7189b",
+      "size": 1998
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/benchmark/pusht_so100_native_v1.yaml",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "912e5be930f2b276c20ee5c6812aff78b832ded16b301019ed3653287ca36e45",
+      "size": 624
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/collection/pusht_so100_f710_native_v1.yaml",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "b8463c0795537cc09259c14e17a810543ddda69aa848b2892a0a6c996ca398b1",
+      "size": 614
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/experiment/pusht_so100_four_model_v1.yaml",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "fbdafa192c4009d6e05019a4ed1fac515ddbad4efcaec7e175b4b94e7ffba654",
+      "size": 123
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/experiment/pusht_so100_model_profiles_v1.yaml",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "b667f18e95e9160b421aa33d6f6cb1770258e9bd724d594f68cd2908d4e91d85",
+      "size": 2409
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/experiment/pusht_so100_paper_faithful_200ep_local_v1.yaml",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "3cf4ceaeae4efbe7f8a905ab62d4813161b9c0c00a3efdecd451067b70345139",
+      "size": 1965
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/experiment/pusht_so100_paper_faithful_200ep_v1.yaml",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "8968cd03ca1da58c64a65a4111fb20b997655876218f23a4bd326d1bbb4746d2",
+      "size": 1814
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/export/pusht_so100_native_v1.yaml",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0eef205cd91e7cbf2ea73ce0498b79386e03752fe910e0b1bc3a7ccfd1ec0db0",
+      "size": 256
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/hardware/so101_real_v1.yaml",
+      "classification": "task_owned_editable",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "2c92c3dead6a7839e00394c78473eeb551e494ccd4880bd54d31d988c7cf2d04",
+      "size": 1065
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/provenance/dirty_work_baseline.patch",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "7d699f85f44fc2ee2bd2321a2c3ad3af03c74e82c5a521cc7ceb1459bbbcf36f",
+      "size": 10421
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/provenance/dirty_work_receipt.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "d77ace00d510b4ee27dd1919771e3a3076c79260e230650e50f05b1c06efd573",
+      "size": 5372
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/provenance/external_inputs.yaml",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "d9e49fc278cc6304d7740a1ede06599d55567af15f53f22f818fe1ca065b9d1f",
+      "size": 3817
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/provenance/pusht_so100_upstream.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "4b89a0844fb7dad512384bd3fbcba5d4f65b555d67c6d67a822140b9348f9e73",
+      "size": 9098
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/provenance/todo2_cli_extension.patch",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "c7453e707e8a58b992f8d4d64f8f0ddbe7dc86b0978a2f500549098b4ca6b5f4",
+      "size": 499
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/configs/workspace_status.yaml",
+      "classification": "task_owned_editable",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "6dae5fcc9c7af4b5dce2c3972181dd134e6afcd8144d40162524ffa7b4e70370",
+      "size": 2224
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/docs/200ep_four_model_paper_faithful_protocol_ko.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "2a64536bdf596f6637008493b0f78a03c5f52de9def7f37f6d6fee8261909c5b",
+      "size": 12126
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/docs/collecting_human_pilot.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "9af66f6723dc34995d8fda7745bf72180d25043c83d46eced6657a7833e7e8e2",
+      "size": 4423
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/docs/experiment_launch_guide_ko.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0b5208b88765770b91a46a480e1a8bbf57639bca12f239e28371a7c38c8a285e",
+      "size": 4209
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/docs/real_hardware_setup_ko.md",
+      "classification": "task_owned_editable",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "52538e639e0dd74dfceb8d2dbe742fdd2f30cf2b9f33e9ef42836a3898573865",
+      "size": 4139
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/docs/running_four_model_experiment_ko.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "67c898c1dba857fd967f57f12f0eeebb35c52bb41304478c30079c1c00742aa7",
+      "size": 13305
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/docs/workspace_boundary.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "fd6de95137707deb1de247ae016c43e9b078404f7767216d70a82da88932fc93",
+      "size": 869
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/environments/sim-runtime.lock",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "10776208a02c73299caf78249cecd8d1d6870e026ab456ec1c11087adc521b9a",
+      "size": 896
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/environments/sim-runtime.lock.sha256",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "c4a08823896a156937f9c3db20743a6fc16831f50e33b0b24384d40a51c3701e",
+      "size": 96
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/pyproject.toml",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "fb12166cb64907fb14252f5646aef2650fb3fbb0084127f533606ea6a3bb6d53",
+      "size": 3278
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/analyze_demo_route_bias.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "b742a45435b21f0c4165cc12d497d24d197f2e467cf2f00147c3eefbee0e35f5",
+      "size": 4423
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/calibrate_joint_mapping_read_only.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ffbbeeb33204c7e7a2f19d3af1bef67797cdd8bf348010c4e261754dd30088c9",
+      "size": 5842
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/check_real_rollout_readiness.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "89a8b6abda471fe010a542f31b563ec458f9b2786a953965808c53a3db311653",
+      "size": 1365
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/collection_dashboard.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "e96e90f3cb6e24a855bc0e45be04b8bfb83278ea191867c63a2711a8e66ec14a",
+      "size": 4479
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/collection_web_dashboard.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "8281dd5a5cdb5aab3afbbd7a208a9b9a3a4f31b8c08a39c3240a172f9e39be28",
+      "size": 5822
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/derive_singlecam_96_freeze.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "36a550e0475ee41ccb9cf4e16ddd5ab0b6ab620745d6ad648c3e05371f9a6673",
+      "size": 7265
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/episode_editor.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "c6b68a67755b6676761444fb3ef48ca38c40804f4e2b27f8fc37fe8eb40d6bb0",
+      "size": 10017
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/experiment_dashboard.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "e1c5f2340ab0b64c981fa2f84b262390c39c261c38a48e4ef9bce787c60e4610",
+      "size": 50169
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/freeze_all_episodes.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "9ac3a78787f9012a965726cacde26347fe0e15eaaed79d5f7992edbfc93f7247",
+      "size": 2237
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/generate_benchmark_table.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "26d2bdc009688a2f1bb64a8b9679f1d52766fcb4a59941b32a40ffcb0c2f02ac",
+      "size": 3358
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/generate_case_videos.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "277a71c0250709e665d24b76b67a2098bb44735bcbe24792f1c6d4475e60d23f",
+      "size": 1645
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/generate_feedback_artifacts.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "37aecf4af91a20c7a7a3d4441be07f65aa0afaa8d26a7d8b4c350c22d340a25c",
+      "size": 12361
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/generate_layout_preview.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "7cd38f8aa03f0f90ae689ebd8ef7376eadbc88ab62a8236527860ee6c36f0021",
+      "size": 4848
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/generate_outcome_three_view_videos.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "3a8ef94a0e844702520427e6584c21decf5b4228c11abfa4e4cceb4f16098ee6",
+      "size": 2893
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/generate_paper_runs.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "5b45c068737a8048a604e77d0d4d9c2e4de6248eacc4db0506c2ed89569596bc",
+      "size": 2848
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/generate_three_view_reels.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0a39b5702b00439129b35b599e7a2705647482b5632bca61a4ed2d3b6d416e92",
+      "size": 6517
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/generate_three_view_walkthrough.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "2352c486bf2ddfb2a7f68f44d1eeb330b6cecf89cbe26aeead2bc29f03c39077",
+      "size": 1618
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/generate_trajectory_montage.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "a75ff1966542658fa73307f1b51c23dffc1b6df93b1d3289ba3aa3f4626a7813",
+      "size": 7402
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/live_rollout_viewer.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "e8f31347fdce7d9a2ca3b7af95cd42766cb31e7b5dbb79dc3e5a95342cef509f",
+      "size": 8653
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/live_rollout_viewer_hd.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ec4de23d4a35e8aa339acdd40d41031fd0acaf186c146ec9b532a38f7745e079",
+      "size": 7660
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/local_run_training.sh",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "9e4ac82db1bb847ebf417b332d3b97f71de8f82045912f28ce28a42c0f01951a",
+      "size": 6038
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/production_operator.sh",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "3272a57467d57e64b48e9b83e623ecda4532aad042b82b9ee1291329761398b2",
+      "size": 9425
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/read_so101_follower_state.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "a795d3f2f3e08c996d20a2b0e9cf7c30b276f8d2e1a6a6e8d93b633be696e308",
+      "size": 2270
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/render_checkpoint_vs_physical_camera.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "823c417ed3169b55d95236de3fe80e4ae1745f62f71b1bb7ac88c987ae4f9c76",
+      "size": 2349
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/render_figure3_state_candidates.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ccb03f5fd8cf72b9c94185b41d12c6411921a9738da7b73688002637698964d0",
+      "size": 7008
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/render_physical_camera_match.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "4eca107c74ea1049c30afa3a207c5d01b2a0206e7facc2d8d0eae54fad249dd1",
+      "size": 4314
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/render_training_frame_vs_physical.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "df32f155a09e5a24f351e0515f96b7edf1d2d453141c1c7ea4dc3323d184559c",
+      "size": 3288
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/rollout_video.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0f3804f7fcf400955375388e7c0a2fae6218751df55f7774464c6272834e05a1",
+      "size": 5022
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/run_professor_evaluation.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "c7e6dd1b845de31b4ae75ce1bed7cbe2beeb7576d81a88e68bd26d12de105df2",
+      "size": 3469
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/run_real_shadow_inference.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "2d06ffc76c90bfc055c733694913df8a92dff1a2f5fb0b2be7a0d64422dd1ca9",
+      "size": 6372
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/run_recovered_checkpoint_rollout.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0c13636a36290dd125580e1a5b38ac2bc29ea249c7b4a5a96e9ba5b2b59a2762",
+      "size": 4491
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/run_sim_to_real_dry_run.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "8a6284f4a217ff3bcf17d24b336843461e66149dfe2b534ae3294ebc8df2dd52",
+      "size": 3396
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/run_so101_teleop.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "8cd236d239a7db708319cae089281b377f80c590430bc5bd2d8f5e3d2ff4e696",
+      "size": 2677
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/screen_multimodal_state.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "a6199de880bcff58c08933baf83694c0c316c2e9dbf95dedfefac8aa985fe5d4",
+      "size": 4053
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/server_advance_run.sh",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ecb18e50b9766bdeec447e65675d06c37b00498d31a36c033a240a199d44d1da",
+      "size": 881
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/server_compare_all.sh",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "20e7cd86d0d798de2f70a19f05f927a3c382055c4ded5b609e9cc2e57ff07294",
+      "size": 1173
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/server_evaluate_all.sh",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "43fba9e381527c568fc949658c196c872a1e5db9f4dbbfbdefedc0f201c809b3",
+      "size": 1528
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/server_export_and_next.sh",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "d9e0367ca54b4068fccd1824fd66f5d4c5b08c2d133ff1f184a87b5bf3c530e4",
+      "size": 1331
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/server_resource_sampler.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "4c9fcebfbaa835884197d30e8caecd47db90db7c37742daf060f5491de5bfcc2",
+      "size": 1882
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/server_rolling_wave.sh",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "b8602ebd1e25f3cc6f164b666dbc41044e8d7292b5e645704be8e8aadde8458f",
+      "size": 1673
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/server_systemd_training.sh",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "66283ee7627598806ec8e0ac48e2e786ea2a04964b5ee49b623d464a632e3711",
+      "size": 6188
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/scripts/write_service_receipt.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "b6f7c85497e86c059b6af0d20a2080dc3139c68b56cb21d08b4b61b6c32e1908",
+      "size": 1727
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/cli.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "19b136c45a899acaf40bd8a971fbc782b0d8200b3c234681ab657b68c21c3e16",
+      "size": 22772
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/collection/native.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "1963584e88ec070701c5569a6ed2c2d8527bc1c12842ac833519c01dc2d86314",
+      "size": 16525
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/control/action_filter.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "3db08f7ebef28ed77953807791296f9b18ddaa504c6f4b1fefa76603214a49c0",
+      "size": 2171
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/core/__init__.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "a41cec0106d018008ea44d4dd1b2be070f14e230a96a2af240face5179e7c5b6",
+      "size": 158
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/core/upstream_provenance.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "56deb6b575aa4ab2c5099e6561bd07cceb8620fc952524eb07b08190affd1587",
+      "size": 15376
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/data/exporter.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "df8487f965104b711438971feb3e786c70ec348f84442e65b19e5111b68248b3",
+      "size": 3284
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/data/importer.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "9578c7b8d12670300621709b8515c7bf1b4554a3dda75a4ea3d03880f60c715b",
+      "size": 16564
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/data/merge.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "bc9b07866afb5bc832bbe2b5c5180b16e8bba62eb7ce51a217aaa841986216a1",
+      "size": 5004
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/data/paper_view.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "75ac0c0d0e3a9035bd2d97a5e4adf75fb8bec7691ce10bca8c67d0b25250e0cc",
+      "size": 14817
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/data/paper_view_reader.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "abedcc2b9275d0a519f1c02d2019f6e6ffa57743e8b0b1f1ab45786f48e96963",
+      "size": 10830
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/data/splits.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "eae50b8bb7cd79d6953f46bacd14e1dd9c484ec02b89a68746c965e36558909b",
+      "size": 24162
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/evaluation/__init__.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "5befb93958bc9a91c7ff5bc658fed7abdc9ebd5e5f8b4eb2c2db7bebaad5b0ab",
+      "size": 209
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/evaluation/comparative_report.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "13841012970f59ca40e8dfccf29785d07dba837f7d1685cb9af10738964edc02",
+      "size": 27376
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/evaluation/frozen_env.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "33ae751e81ebc04b3efe2a5d1b6e866937b57c3ec3e21de32a202b65440669d2",
+      "size": 9398
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/evaluation/paper_figure.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "d777e976633438341d02e12c6300aa1b4ff180df00948bb02de9ef404f33c92b",
+      "size": 5726
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/evaluation/professor_artifacts.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "bcaa677f07eca5cea0ff2bff43abb36c06589227a8bc9f516f5b4ce655279ae9",
+      "size": 4585
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/evaluation/reel.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "eac4df6e80ace9df799ce61a9e8edd4b40b222130a92cbca9976e7ea0afac17a",
+      "size": 2654
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/hardware_profile.py",
+      "classification": "task_owned_editable",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "a72262693a748456b332c6996f395979dd0f5bee882ad4e6d92a1c95b9890e9d",
+      "size": 8870
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/integrations/paper_baselines/configs.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "016f591a5e7005ddc693541ddf78b064be7de64ce69cf383bf34e6dc3a9d188c",
+      "size": 15345
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/integrations/paper_baselines/dataset.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "efe978b6e3cb024dbfe39c52d9c4297d5d3a0faafacc8b4cdfa687d140cc37c7",
+      "size": 16622
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/integrations/paper_baselines/runner.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "319139eb09315278d4b838945d481d96a9cbcb43f06f7f0bc78a7daa51e768fe",
+      "size": 15944
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/native_cli.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "e44d18c4b8c0e6b876beb8bd5112a7aba37f4c63d2cce5d23e028a9edfc87741",
+      "size": 36039
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/native_runtime.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "5eaefced9541e115454a62729b4ad60088d3ac17b046a55aba83b06e69f44832",
+      "size": 8847
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/real_shadow.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "45601162625446033a6211b2858caccea6a06f288650336778ac77d093d67316",
+      "size": 3216
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/sim/physical_camera.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "16c3d0dccc8ea5e4e4ed6435c3382c18c1e3d12a16fc2a9a7bd309750ead6743",
+      "size": 3472
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/sim/scene.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "ad3a8ff640dd3922723ae15c94532e427c6e2d484a1d582be2e7c84f980b5789",
+      "size": 5473
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/sim_to_real/__init__.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0cd487f6eb930878e37234038625351df7f47057133d99abb9be8c4c9a4a66e6",
+      "size": 176
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/sim_to_real/contracts.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ac1ea02976dc151e5d5192e737b10682a82ac8baa62525b5d73edff1791a50a3",
+      "size": 5180
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/sim_to_real/joint_mapping.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ee66b47ff600ea6632447dd6e7e29f2ec0dc9674f654977591dfe7baa7a6e062",
+      "size": 5665
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/sim_to_real/preview.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "dfb724792bf091b666c0d8246a2df49d1256c15370f432468a2934d7db1c0659",
+      "size": 3950
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/__init__.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "d3412fc40c829fb1a8c1ac1d6bd843e774e815b331a4dd9e6f1c21dd84f50e12",
+      "size": 1133
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/artifacts.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "79a7c9f64450d863a0cf71b76d374854658a1324907f71a3d61e34e618538c80",
+      "size": 31342
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/budgets.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "eda5ae495b94252f28c1241b8aa0845f101fdb72132efcf7e1078e70ac64cc27",
+      "size": 1155
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/bundle.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "be681ccafda961ee8fecd00a281ca59954343167760716a5306ee821d46d90bd",
+      "size": 7695
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/evaluator.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "0e3c89bbf0e8cbbf296820a0ad2a10b16121387f5d859750d6a36d76c17e6430",
+      "size": 7631
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/exporter.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "49672204a19be945267e2172ca08a2bc4096e021b0a4ec841c2217fadfc32b46",
+      "size": 5118
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/identity.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "f4823c7002d2dd8475816133d11be309cfd33751504f3aecafe26b30013460be",
+      "size": 8440
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/launcher.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "0e2537573601273acd9f4df9e777a227085c7c02413d6e1541e7f9565505514f",
+      "size": 22781
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/metadata.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "d4a70c2ad2473e18c123fb178c9d86cd0ab09bf870aeafb8eea4498d724c5982",
+      "size": 6612
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/model_smoke.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "f40f43197d54a11baea07fb0a61c6d4ab850e0accf034f6895731c24efed7d0f",
+      "size": 15631
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/observability.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "b4cb6e00e1b6b500c776a6c3c03cb419fc7fd48cece79d36b52ae0f895ceca0e",
+      "size": 1933
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/paper_profiles.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "2910eecba41c53449b6b57b6d4a2be428da06d1b537ec4d9073bec7280995eed",
+      "size": 2350
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/resume.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "6240bced6fec7b7482a0f1da759f1f345d7d0f889dbd587835f153163e87aab6",
+      "size": 8933
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/smoke_contract.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "a5c73ddefb63255b709a84626d0a20d3a663ddb58f1e4dae14a8fe45e2caba3b",
+      "size": 118
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/smoke_worker.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "67512e17dc8d1362d851a25bac31db898c23dfae75ac1ad59775f7ee8ac7ac24",
+      "size": 9624
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/vertical_smoke.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "c03e7f146f8b0c5fb2ddfd60c13030cc820c1f6b2b78142835c5604f79595e15",
+      "size": 32791
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/workspace.py",
+      "classification": "task_owned_editable",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "9536b4b37afd0f731bccac20e7e27bf1366a94f22dd731429dde3ca5169822c2",
+      "size": 11354
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/conftest.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "c972f437cab5ff49e9051cfd7ca4bbba58f289f3bbdbc0ea9c01fae7462eb58b",
+      "size": 3834
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/fixtures/four_model_results/dp_cnn.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "a1c693ce945ff561724b02f88e1b1233fa2b4f570273315660d40b2fc0dee1f8",
+      "size": 30635
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/fixtures/four_model_results/dp_transformer.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "7c4a8d9f411564a0c198f0f75b3adc2d4a83bd553c01cbd99655c1e7a8c7142a",
+      "size": 31082
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/fixtures/four_model_results/ibc.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "11c5da434ac5ac6771b3f971d6113b4bad63a33c4c7999eac34dc8b4c75c17f9",
+      "size": 30703
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/fixtures/four_model_results/lstm_gmm.json",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "75283f9259ceb35538b02a4d2ebd3a57fae5152d5c96abb6a8337d6c6eb84a2f",
+      "size": 30720
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/native_dataset_fixture.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "de2d21113156ea7d8a733467929a9cc2995415858f8e15d0fe7105f5f22592a2",
+      "size": 2262
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/pytest.pyi",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "e94ad91643eefb710697c6e43cf5888a03b302e5ae14d124f84569030c07c305",
+      "size": 944
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_action_filter.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "396cbadfd41643720694ea66ed761431f73a358f142e9a1d8f1ab42c23d84963",
+      "size": 2916
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_archive_statement.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "dbcfb924d4d8f37dc76cae27cf28f98fcdb8c973ca23138c4cab39f6c390de21",
+      "size": 1564
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_cli.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "59b48c5609a81061f7cfb799c64abe970cd2616b1df64e2812a5613cb11075fa",
+      "size": 13036
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_cli_help.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "bf0a960dc846cfa80f946b212f6ea1806e8e99752aa9951e9ac6310b322705b4",
+      "size": 10685
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_collection_viewer.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "25ebab3c59076bb8ec349a8843aa2579fce6fbd1d7dce7572986ec9ba7782523",
+      "size": 4562
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_comparative_report.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "430c44b3fd63544ee59840924b80e92a34c62088a4124dd26b7f9db4053b6ebb",
+      "size": 30783
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_dashboard_analysis.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "f94f1c0aedb8cc1c886fdfe9186023fdb6e90b5bf31ed250378d802e7f11f8ad",
+      "size": 7096
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_dashboard_episode_metrics.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "bdd4c1da627c3008bf7923d6bf6cac5db84db8d874ef05fc7c0d38b1edd2017e",
+      "size": 7410
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_dashboard_flags.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "4cd98bd53b2d32c9ff0a4e6ee6ca754f268e79a8acb14eb657e3c530e8b59f5f",
+      "size": 2418
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_dashboard_page_js.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "362d624c0ecd72ed51b4a5fa19d480a4ad165b34e172263500da73cda6b44c98",
+      "size": 2086
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_dataset_roundtrip.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "f4e251e361cf9c67c5ae2f8affc79a184c65c7330eee0603dc46bfd7e47ec676",
+      "size": 6040
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_dual_cam.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "67ff7d3393a86629035254b80dc2224412ddbbdc360581495bc50f229d1702e7",
+      "size": 1996
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_end_to_end_mouse_pipeline.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "3db68ed3cd529313adc85bbc90f3c68d7932b19d5158f0666b52c8ac1e7d84c8",
+      "size": 10054
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_evaluator.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "6203472f7a94b8031113e7fec401390af1fddcdd665aabb5360e5f4d040a88ae",
+      "size": 15016
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_f710_mapping.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "6a8438ff78a487baee4ec97f2e18cd8625089ce25ca0d28e378238aaeb864c18",
+      "size": 7847
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_frozen_env_adapter.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "1ce8b2c0a75a2fbe7f64dde64bf4a7bdec4cb210edf13af0de0d96d4dcbf4dc6",
+      "size": 2402
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_importer.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "8ab799e697c48350bbfb0f2d12a10532eee89e60ff01ba34dde88e711802e038",
+      "size": 4346
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_joint_mapping_calibration.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "d5936d56dc2b1cf64ae08da7271a815d3e5feca50722bbf91bd134fe74864bc9",
+      "size": 6051
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_live_rollout_viewer.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "31d8f974b563fa1d3730d8de1460794ab8a1b6019f9b743481a49a5298d2222b",
+      "size": 8137
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_merge_paper_views.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "3fc302b877030d1c93c458a29c229c54818bf72be7dfd64507c8e1d0f8ffee27",
+      "size": 4274
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_model_artifacts.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "5c9c1dbc198c48de0d2f00ae7a427ac08367f97a862f2340ba75e6e87576ae02",
+      "size": 31592
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_model_mappings.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "edc9916faa2f2b9e23cf4c7a109a69acdb4b43c51755ca8ec0facc00ddf6d2f5",
+      "size": 10057
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_model_smoke.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "88aec53918bb75ba4998f179a828f9619171eb443ec7b25613a2afef3d5dddae",
+      "size": 7601
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_model_vertical_smoke.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "199b98d06e779175e2cf68a112b7bad00aec88e0e76b2d97267407255129f7fb",
+      "size": 20682
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_native_collection_launcher.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "3e4a87124a0b3c5b901e4c1beed8122410a0110c6d3fab9cd7ac83155c49f66a",
+      "size": 22374
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_native_env_cli.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ef150bf50b8052589d3af02d88d4d8941f643654e7a643827bf24f22656476a8",
+      "size": 5789
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_native_recorder_safety.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "f096552567d326abcef456716e089ada5cdc2d7dbbce705cc4a5389cf2d1a1f9",
+      "size": 17150
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_paper_baseline_adapters.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "3308785939a40ab42ae0ba38b0e5e95f5b4d4c7fd2bccf7cd782f38cefec14a0",
+      "size": 12112
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_paper_baseline_dataset.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "941171e6b1b5822a80f0732cfcfac972dd5cfd68a312942dac1ebe4ba261d1ed",
+      "size": 14045
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_paper_baseline_runner.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "573dfd4d26a73f9334ab96ba4eebebb155f1223393d523ac61519d0eba00986e",
+      "size": 9457
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_paper_faithful_profiles.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ba2920ceedbedc2c7ae2063f7e53f7db536073c89d5b49a8576c2689d6fcacc0",
+      "size": 1735
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_paper_multimodal_figure.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "cabd9564308428841959a5e535fe7393591b5a017d91f0c85828c366a6598e93",
+      "size": 2825
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_paper_view.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "daffbd6c38055238ca9e98664a88adb59ec9d8be121dd19d9ef8bf5026920cd2",
+      "size": 16649
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_paper_view_exporter.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "3953d6f8fb876efd5abe2016cafd255dee6ddb4a0aa325e957af1705f82192f6",
+      "size": 8432
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_paper_view_schema3_roundtrip.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "3242ef28de29b738693423b1e454b074d21059c797e2a243d99c805bd839c5dc",
+      "size": 2366
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_production_gate.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "20c441f8fc75fb29e8a921b119e98698eed9b57c17b1dc44c03f515d40704e19",
+      "size": 6143
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_professor_artifacts.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "4fb517952a83d6c073f970ca311e62aae6bb9b0f863da842744ab94d2cf2b3ea",
+      "size": 2003
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_professor_reels.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "1912bd4c2f7eae5245e3c7614d699b742480871b28fa4a374b3b553a3e5be507",
+      "size": 1748
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_provenance.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "990e6003130c4dd3e53c1d32d6c074d78460c643432c43d1a8dc7f065f6bfc48",
+      "size": 13761
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_real_hardware_profile.py",
+      "classification": "task_owned_editable",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "e424db034680bbdb61b255b41a84130bb0ae584b19f64b07921ff84c902733e7",
+      "size": 2159
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_real_shadow.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "cda316b8a2b1dbc974ca3a31e198fa751296d5112ddb27aac0e6ac3ab75e28ee",
+      "size": 2298
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_repo_store_importer.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "d31e735fc2217e9bc5367216dad3f18f5ba31d03e0cd5f75f8c547a90e21649f",
+      "size": 7852
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_runtime_partition.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0fb86ac2ebe0b62b3d4516aa8e69f46ca56c9325d94b2159c466ff63fe706107",
+      "size": 5151
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_scene_cameras.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "df2adc696f6e539ab5fa48b60c275926286846becf0ea8384aecf1b761d65bfb",
+      "size": 4304
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_sim_to_real_dry_run.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "a191b82949e5947c235e017e4cce9207c68941011d2ee2ff1b51ad4f13b6e2f7",
+      "size": 2297
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_sim_to_real_no_actuation.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "4a612befa70ef73ea722a1a60e2f1268e4009403c6c25ddbcaa1b0b1e9c16fa9",
+      "size": 933
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_sim_to_real_preview.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "c92f220e7db33b0cc318d2904b072663e00a77697ec9636cdfe219a17df9a27f",
+      "size": 799
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_split.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "acb38488cad7b2d490eb426624ba11563803a11c771ea015cdc507b447a6b2bc",
+      "size": 5830
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_training_launcher_smoke.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "cc97e40fa36fbaf94b26b8a329a907343620a86f1f00c23386654d81a956274c",
+      "size": 23216
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_training_observability.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "108da9fb7331bad568484bbffee77302973b347a2ea52ff598437c29cf36cea4",
+      "size": 1684
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_training_pipeline.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "08a01374e43168b2046862f9d51463ea13f96e05d2225af9f219e80ea0691c0d",
+      "size": 11108
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_workspace_camera_crop.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "53278ed0c626d12df24e55c85e71cdf7e31966e23ee86c4b4b5e15006211ea5c",
+      "size": 750
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/tests/test_workspace_status.py",
+      "classification": "task_owned_editable",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ab38855409bffb668c180dbddc3bb3f3573b798299a2bd94e4628565b8bc5d3a",
+      "size": 5659
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/typings/av/__init__.pyi",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "97ec9be0b77e2aeec1da158c18cba714bf76e9840e9850535a0d143ffe0e1b62",
+      "size": 566
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/typings/lerobot/datasets/lerobot_dataset.pyi",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "e0df56a1336b7dfd479d36a97c8e037e33e0ba1dba4a77c73b96dc634c52466e",
+      "size": 1131
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/typings/pyarrow/__init__.pyi",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "0c208fcca3fefb860e20e58c1a69758bbabdf2e0dfc7f1c7ce1b7a266da2d04c",
+      "size": 1459
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/typings/pyarrow/parquet.pyi",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "56db40bc43018838ca73e33152b9235c1e0e6a80e787587b40406586424e06ca",
+      "size": 142
+    },
+    {
+      "path": "03_code/so101_pusht_benchmark/uv.lock",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "9e9a02a848986ca43d0f5dd32778f1b124c215e6be89945eee89a8f7b35c901b",
+      "size": 390155
+    },
+    {
+      "path": "04_experiments",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "symlink",
+      "sha256": "926e0ade81ca6a02778513e29f99525f58a3e5b83bade08f6311c382e35970cb",
+      "size": 40
+    },
+    {
+      "path": "04_experiments/README.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "16d55af6e2d1e878c529d0ce993f9ed5762b9b02b51f804deda346c5718940c8",
+      "size": 307
+    },
+    {
+      "path": "04_experiments/so101/README.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "3eed08b7582b107a9828a3866d726b5382e26025e7dc1e86c79a2f988d68ef9b",
+      "size": 3801
+    },
+    {
+      "path": "06_tools_scripts/analyze_webcam_geometry.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "fc466381e9d4fed719a2ccd4b6e14f8f71ff223d84c1123cd62eb3fce1a8ff49",
+      "size": 4771
+    },
+    {
+      "path": "06_tools_scripts/camera_target_overlay.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "8ff40e241aba6916267b60afea8557182ab472f3af68ed773411b717ce99d84b",
+      "size": 3531
+    },
+    {
+      "path": "06_tools_scripts/capture_webcam_frame.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "2f8bff8706545db05b5e307d818cc04503d6970173739f152b9b32bf77b624cb",
+      "size": 1525
+    },
+    {
+      "path": "06_tools_scripts/render_human_env_floor_reference.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "6f583e403d5e0cc67cc34dda42ea99cb813d073ae22c7bb55e1ecc8cbf29b39e",
+      "size": 5500
+    },
+    {
+      "path": "06_tools_scripts/render_human_env_floor_slice.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "68dd3e5a2b58a09bf7a65401e203c2c3bf1c4f84fbc9b92cf05593b78bb63d4a",
+      "size": 27875
+    },
+    {
+      "path": "06_tools_scripts/render_human_env_top_view.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "68ea6bc67da0e52f3249ed7ce7d90e808223ee4f4086f4edda9df301f181dd67",
+      "size": 1912
+    },
+    {
+      "path": "06_tools_scripts/webcam_live_preview.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "ca79c59bfd24300d368759b88ea002c6912b0304dadd3fde9e67dc251ae60855",
+      "size": 2590
+    },
+    {
+      "path": "06_tools_scripts/webcam_rear_live_preview.py",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "4c6c72b27ee41b6566308bb36d333dc495231c2a2464d8546021f61e2faa4c77",
+      "size": 2132
+    },
+    {
+      "path": "90_archive/stray_media/opencv__dev_video0.png",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "4c118d4af8051234e7cac1813df9289942f97968fcfc865da61ad71ae1cb0bf5",
+      "size": 493639
+    },
+    {
+      "path": "AGENTS.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "26fbc768bc5aaadc27d58d2bac31d58724cf26645bf28c541db10c7154b39ae6",
+      "size": 7905
+    },
+    {
+      "path": "README.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "unstaged"
+      ],
+      "type": "file",
+      "sha256": "ccbe169214e2382a95cd372fcfacbb7a4e0d5ca5ffb386433b25ff5cd686cf23",
+      "size": 2825
+    },
+    {
+      "path": "diffusion_policy_storyboard.md",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "128c4f556715a498df02b86942c613185dc796af308a69bd6021dc7226a661b0",
+      "size": 4600
+    },
+    {
+      "path": "generated-images/call_01a0187f517f74d1bfb86efaec1c9592.png",
+      "classification": "excluded_preserve_exact",
+      "git_sources": [
+        "untracked"
+      ],
+      "type": "file",
+      "sha256": "3115aa65693985287700ea20e96ac5590d0c80be5053a0e8cc6f1c78db57027a",
+      "size": 2165897
+    }
+  ]
+}

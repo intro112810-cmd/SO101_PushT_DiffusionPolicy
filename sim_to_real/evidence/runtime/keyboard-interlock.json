@@ -1,0 +1,40 @@
+{
+  "schema": "so101-physical-keyboard-interlock-evidence-v1",
+  "captured_at": "2026-08-27T05:55:06.910431+00:00",
+  "device": {
+    "name": "HS ZUOYA GMK70 Keyboard",
+    "xinput_id": 11,
+    "device_node": "/dev/input/event8",
+    "product_id": [
+      13357,
+      58513
+    ]
+  },
+  "reader": {
+    "path": "/usr/bin/xinput",
+    "sha256": "073538b9c5285cd5be8bcb97186d4314112087c01bbc42efba1438e79ee65bc0",
+    "command": [
+      "xinput",
+      "test",
+      "11"
+    ]
+  },
+  "observed": {
+    "deadman_key": "Space",
+    "deadman_keycode": 65,
+    "deadman_press": true,
+    "deadman_release": true,
+    "stop_key": "Escape",
+    "stop_keycode": 9,
+    "stop_press": true,
+    "stop_release": true
+  },
+  "semantics": {
+    "space_held": "DEADMAN_ACTIVE",
+    "space_released": "HOLD",
+    "escape_pressed": "STOP"
+  },
+  "hardware_actuation": false,
+  "motor_writes": 0,
+  "verdict": "PASS"
+}

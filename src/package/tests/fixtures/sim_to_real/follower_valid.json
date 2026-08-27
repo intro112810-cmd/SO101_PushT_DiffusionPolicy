@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "mode": "read_only_follower_state",
+  "positions_degrees": {
+    "shoulder_pan": -1.89010989010989,
+    "shoulder_lift": -89.71428571428571,
+    "elbow_flex": 20.0,
+    "wrist_flex": 31.604395604395606,
+    "wrist_roll": -9.714285714285714,
+    "gripper": 1.196013289036545
+  },
+  "motor_writes_performed": false,
+  "actuation_performed": false
+}

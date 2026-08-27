@@ -1,0 +1,21 @@
+schema: 1
+status: active
+contract_schema: pusht-so100-native-v1
+source: frozen_pusht_so100_f710
+runtime_lock: environments/sim-runtime.lock
+fps: 10
+controller:
+  axes: {x: 0, y: 1, rotation: 3}
+  buttons: {z_up: 4, z_down: 0, reset: 3, record_toggle: 1, exit: 7}
+  deadzone: 0.1
+  move_speed: 0.05
+  rotation_speed: 1.0
+  button_debounce_seconds: 0.3
+dataset:
+  format: lerobot
+  version: "0.4.4"
+  images:
+    cam_top: {dtype: uint8, shape: [224, 224, 3]}
+    cam_side: {dtype: uint8, shape: [224, 224, 3]}
+  state: {key: agent_pos, dtype: float32, shape: [5]}
+  action: {key: action, dtype: float32, shape: [2]}

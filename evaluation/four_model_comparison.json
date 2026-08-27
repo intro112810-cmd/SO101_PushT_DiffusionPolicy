@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "evaluation_seeds": {
+    "start": 100000,
+    "stop": 100099,
+    "count": 100
+  },
+  "step_cap": 300,
+  "fps": 10,
+  "deployment_scope": "simulation_only",
+  "models": [
+    {
+      "model": "dp_cnn",
+      "optimizer_updates": 400000,
+      "success_rate": 0.92,
+      "mean_dxy_m": 0.01895285003909186,
+      "mean_dyaw_deg": 4.3734924529096535,
+      "mean_duration_s": 11.957999999999997
+    },
+    {
+      "model": "dp_transformer",
+      "optimizer_updates": 400000,
+      "success_rate": 0.82,
+      "mean_dxy_m": 0.019495510885272033,
+      "mean_dyaw_deg": 6.648182579631282,
+      "mean_duration_s": 14.648
+    },
+    {
+      "model": "ibc",
+      "optimizer_updates": 100000,
+      "success_rate": 0.06,
+      "mean_dxy_m": 0.0387991415015215,
+      "mean_dyaw_deg": 26.583676020659926,
+      "mean_duration_s": 28.680999999999997
+    },
+    {
+      "model": "lstm_gmm",
+      "optimizer_updates": 300000,
+      "success_rate": 0.04,
+      "mean_dxy_m": 0.04355428962827404,
+      "mean_dyaw_deg": 25.725509635139016,
+      "mean_duration_s": 28.804000000000002
+    }
+  ]
+}

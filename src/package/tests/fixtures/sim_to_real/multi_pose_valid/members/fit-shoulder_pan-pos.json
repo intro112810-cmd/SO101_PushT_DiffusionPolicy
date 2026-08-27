@@ -1,0 +1,37 @@
+{
+  "schema": "so101-joint-equivalence-member-v2",
+  "sample_id": "fit-shoulder_pan-pos",
+  "physical": {
+    "timestamp_s": 1002.0,
+    "raw_encoder_counts": [
+      2248,
+      2048,
+      2048,
+      2048,
+      2048
+    ],
+    "joint_degrees": [
+      20.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "measured_tool_xyz_m": [
+      0.3703194313305618,
+      -0.12067315265692186,
+      0.2264687446162562
+    ]
+  },
+  "simulator": {
+    "timestamp_s": 1002.01,
+    "joint_radians": [
+      0.348888888888889,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "claimed_fk_residual_m": 0.0
+}

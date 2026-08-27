@@ -1,0 +1,30 @@
+{
+  "audited": true,
+  "code": null,
+  "digest": "ea4f530e87a7132aa339fbd0fca18b46074f65c8c5bbb290fa9f035ba6ee0b00",
+  "source_evidence_scope": "production",
+  "metrics_source": "recomputed_from_raw_points_and_matrices",
+  "fit_correspondences": 105,
+  "held_out_correspondences": 70,
+  "fit_reprojection_error_px": 0.3280420442306237,
+  "held_out_reprojection_error_px": 1.183719225872452,
+  "max_correspondence_error_px": 1.8678507842308705,
+  "fit_physical_to_sim_residual_m": 2.708666826802079e-18,
+  "held_out_physical_to_sim_residual_m": 6.839048498416283e-18,
+  "max_physical_to_sim_residual_m": 2.7755575615628914e-17,
+  "physical_to_sim_policy_limit_m": 0.0027176804365518434,
+  "member_digests": {
+    "strict-fit-1": "941c22420c67366be6274c571fe728e96f8b4673e4da6c73c82ca22d8d545ffe",
+    "strict-fit-2": "0ed983c435f675f3421119181fb0ca6020ba0f8e5d6910bc83624dbe87270450",
+    "strict-fit-3": "47ac866c6dd6ee6b73b608e21ceb4accfa1321eb335cc9de171efbf92ffc0eda",
+    "strict-held-1": "01d057fff84ed29d8ef660039009874b98edd5c31fa9bbfb55209d63b181f3bc",
+    "strict-held-2": "b3db74a9adf7971b169860000ee3b72fbe96499aff30b399a1b95a2ff90929a6"
+  },
+  "checkpoint_view_members": [
+    "strict-held-1",
+    "strict-held-2"
+  ],
+  "device_hash": "d23762ac6fda05f51ce57ec5966b302defd76277f8c0c0cf2b5c21a994d652eb",
+  "config_hash": "df6ea276b4209c6a02db6c5493db23847afddbd5c3bf60e0623f6ca0de3885b3",
+  "orientation_hash": "5e0d8f04edf779c11546d0562293e4620a27843fdd7e9cd322e18c549587d12c"
+}

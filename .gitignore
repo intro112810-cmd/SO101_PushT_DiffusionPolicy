@@ -1,0 +1,24 @@
+# NAS-managed datasets
+/data/datasets/native_store_200ep/
+
+# NAS-managed model binaries
+/models/**/training/*.ckpt
+/models/**/bundle/*.safetensors
+
+# Small final sim-to-real evidence and FINAL_STATUS are Git-tracked.
+
+# NAS-managed upstream working tree and Git identity
+/05_references/external_repos/pushT-so100/
+
+# Integrity manifests and checksums are Git-tracked.
+
+# Local runtime artifacts
+**/.venv/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+**/.ruff_cache/
+**/cache/
+**/staging/
+**/*.tmp
+**/.DS_Store

@@ -1,0 +1,75 @@
+{
+  "actuation_performed": false,
+  "count": 2,
+  "mode": "sim_to_real_physical_sample_capture",
+  "motor_writes_performed": false,
+  "policy_digest": "f3d19716d616b3f587c04dc9896bbd68b4f4b162059938068278c68c49d2c5a7",
+  "samples": [
+    {
+      "body_degrees": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "camera_timestamp": 1000000.0,
+      "created_at": 1000000.0,
+      "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "digest": "da0467fa2904bec4181e5668917893da0d90187e7574d5c6bf75926705f97282",
+      "frame_digest": "fd3673d2c532bc798ba8ee7b6b5055de4150154845f691fa7c10ca5dd33fb87a",
+      "joint_timestamp": 1000000.0,
+      "kind": "physical_sample",
+      "record_id": "sample-000"
+    },
+    {
+      "body_degrees": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "camera_timestamp": 1000000.01,
+      "created_at": 1000000.01,
+      "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "digest": "6eae402b7fc923cef2e2069dd0fd85703298e3bef14c2a97470aa92c9620386f",
+      "frame_digest": "9809771c9d0ac60fef1b8627a93b7a257e2616c770822d0c26c3e01add71d36c",
+      "joint_timestamp": 1000000.01,
+      "kind": "physical_sample",
+      "record_id": "sample-001"
+    }
+  ],
+  "scene_pose": {
+    "camera_registration_digest": "f6453dcc3a48b66d7f7c0f01ea106934eddd196a312e045f93d0fcb0a500fdc3",
+    "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "digest": "ad01f307d5d1d779b9843cbee042ea600928d96d225c1be7eb637db450c9d256",
+    "model_digest": "e36672bc67dba28691b3dc2bc3852f9016de914b63369970ba76d801dacb8986",
+    "policy_digest": "f3d19716d616b3f587c04dc9896bbd68b4f4b162059938068278c68c49d2c5a7",
+    "push_t_transform": [
+      0.38,
+      0.16,
+      0.031,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pusher_transform": [
+      -0.25,
+      -0.15,
+      0.025,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sample_digest": "6eae402b7fc923cef2e2069dd0fd85703298e3bef14c2a97470aa92c9620386f",
+    "sample_id": "sample-001",
+    "sample_timestamp": 1000000.01,
+    "schema": "so101-scene-object-pose-v1"
+  },
+  "schema": 1
+}

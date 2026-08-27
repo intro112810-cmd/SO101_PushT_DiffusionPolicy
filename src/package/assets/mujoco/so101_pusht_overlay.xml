@@ -1,0 +1,26 @@
+<mujoco model="so101_pusht_v1">
+  <!-- The include is resolved by SceneLoader to the pinned, read-only SO-101 source. -->
+  <include file="so101_new_calib.xml"/>
+  <option timestep="0.002" gravity="0 0 -9.81" integrator="implicitfast"/>
+  <worldbody>
+    <light name="key" pos="0 0 1.5" dir="0 0 -1" directional="true"/>
+    <geom name="table" contype="4" conaffinity="4" type="box" pos="0.28 0 0" size="0.36 0.28 0.015" rgba=".12 .16 .20 1"/>
+    <body name="target_t" pos="0.34 0 0.017">
+      <geom name="target_bar" type="box" size=".055 .014 .001" rgba=".1 .9 .2 .35" contype="0" conaffinity="0"/>
+      <geom name="target_stem" type="box" pos="0 -.032 0" size=".014 .040 .001" rgba=".1 .9 .2 .35" contype="0" conaffinity="0"/>
+    </body>
+    <body name="pusher" mocap="true" pos=".28 0 .045">
+      <geom name="pusher" contype="4" conaffinity="4" type="sphere" size=".012" mass=".001" rgba=".2 .4 1 1"/>
+    </body>
+    <body name="push_t" pos="0 0 .031">
+      <joint name="push_t_x" type="slide" axis="1 0 0" range=".18 .38" damping=".4"/>
+      <joint name="push_t_y" type="slide" axis="0 1 0" range="-.16 .16" damping=".4"/>
+      <joint name="push_t_yaw" type="hinge" axis="0 0 1" range="-3.14159265 3.14159265" damping=".02"/>
+      <geom name="push_t_bar" contype="4" conaffinity="4" type="box" size=".055 .014 .015" mass=".05" friction=".8 .01 .001" rgba=".95 .3 .08 1"/>
+      <geom name="push_t_stem" contype="4" conaffinity="4" type="box" pos="0 -.032 0" size=".014 .040 .015" mass=".03" friction=".8 .01 .001" rgba=".95 .3 .08 1"/>
+    </body>
+    <camera name="front" pos=".55 -.55 .35" xyaxes=".707 .707 0 -.331 .331 .884"/>
+    <camera name="physical_front" pos=".55 0 .55" xyaxes="0 1 0 -.88 0 .48" fovy="58"/>
+    <camera name="topdown" pos="0.28 0 0.5" xyaxes="0 -1 0 1 0 0"/>
+  </worldbody>
+</mujoco>

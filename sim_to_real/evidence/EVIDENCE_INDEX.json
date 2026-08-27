@@ -1,0 +1,166 @@
+{
+  "as_of": "2026-08-27",
+  "copied_files": [
+    {
+      "description": "valid recovered-v4 compact lineage",
+      "path": "sim_to_real/evidence/lineage/compact-lineage-v4.json",
+      "sha256": "66a77d02a02693fd9b1aa9f141298b0b6d57028c67f6029b6bb41727bcfa28a7",
+      "size_bytes": 232,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/derived-evidence/compact-lineage-v4.json"
+    },
+    {
+      "description": "authentic recovered bundle identity",
+      "path": "sim_to_real/evidence/recovered_dp_cnn/bundle_manifest.json",
+      "sha256": "e8ff966bc7c119a868bc986468ca2012d41f3600794a6e418bc6442e72bc7ecb",
+      "size_bytes": 1402,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/dp_cnn_recovered_v4/bundle_manifest.json"
+    },
+    {
+      "description": "recovered policy normalizer",
+      "path": "sim_to_real/evidence/recovered_dp_cnn/normalizer.json",
+      "sha256": "a16ec04c67f583e0ccfd79aadf07751c1a9cc416bc1a719208c6f5e11675f41a",
+      "size_bytes": 3781,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/dp_cnn_recovered_v4/normalizer.json"
+    },
+    {
+      "description": "recovered 96px single-camera config",
+      "path": "sim_to_real/evidence/recovered_dp_cnn/resolved_config.json",
+      "sha256": "ccbc127d9eedeb25b2441fefa04dee0faf35f76ce5c79b78ce71b0784d976f1c",
+      "size_bytes": 3677,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/dp_cnn_recovered_v4/resolved_config.json"
+    },
+    {
+      "description": "fail-closed terminal receipt",
+      "path": "sim_to_real/evidence/shadow/terminal_receipt.json",
+      "sha256": "5f166e0a31190d6c2ad3e6813eb3a20eddf2ff995d05641b47caeb681b5dce86",
+      "size_bytes": 448,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/production-shadow-v4-ready-20260827/terminal_receipt.json"
+    },
+    {
+      "description": "six-record production shadow ledger",
+      "path": "sim_to_real/evidence/shadow/ledger.jsonl",
+      "sha256": "6c6112d8c91ee4d5eba6edf13fb5bd84d434d1b69321d6efedd24ca9dd96f7f3",
+      "size_bytes": 5799,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/production-shadow-v4-ready-20260827/ledger.jsonl"
+    },
+    {
+      "description": "15-pose joint/FK equivalence",
+      "path": "sim_to_real/evidence/runtime/joint-equivalence.json",
+      "sha256": "9ca9cbd1966c5e58a55adb3a8b793df82d2d2b961d2093f171e3a8468dcfb142",
+      "size_bytes": 2526,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/joint/raw/joint-fk-corpus-lab-20260827/joint-equivalence.json"
+    },
+    {
+      "description": "strict physical camera corpus",
+      "path": "sim_to_real/evidence/runtime/camera-corpus.json",
+      "sha256": "f7dcfe69a9fc5f3e9e2f94953da1da1e6fc4ab21074bd4c5a014ca1dd4291893",
+      "size_bytes": 77424,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/camera/production-camera-strict-20260827/camera-corpus.json"
+    },
+    {
+      "description": "camera registration receipt",
+      "path": "sim_to_real/evidence/runtime/camera-registration.json",
+      "sha256": "e2f533170e926925182221e53fc3acc1ffb4ee28b92fc2b86f1cf328169d3176",
+      "size_bytes": 1492,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/camera/production-camera-strict-20260827/camera-registration.json"
+    },
+    {
+      "description": "Space/Esc interlock QA",
+      "path": "sim_to_real/evidence/runtime/keyboard-interlock.json",
+      "sha256": "499ab369435908958b58043d70244d36751e2a8011113972e01e6b7e7d0cb24c",
+      "size_bytes": 903,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/interlock/keyboard-interlock-20260827.json"
+    },
+    {
+      "description": "fresh pusher/T pose",
+      "path": "sim_to_real/evidence/runtime/scene-object-pose.json",
+      "sha256": "d96bdcaa314dc6bcf504513b1e5bbb83df5e2a4cb0cb23f6e5184184b8698dcf",
+      "size_bytes": 923,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/scene/fresh-scene-object-pose-20260827.json"
+    },
+    {
+      "description": "fresh physical paired samples",
+      "path": "sim_to_real/evidence/runtime/fresh-shadow-samples.json",
+      "sha256": "0e71c7017b01082d5aafc076a980fc4799c55fce0d9bfa8ea5afaafd57acc315",
+      "size_bytes": 6911,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/samples/fresh-shadow-final-20260827.json"
+    },
+    {
+      "description": "owner-signed v6 policy metadata",
+      "path": "sim_to_real/evidence/policy/dp-cnn-v6-production-policy.yaml",
+      "sha256": "ce5ca3748105c3f8f23117a042006c2fbfbe013ce1c1cb1114d12322e589f8ef",
+      "size_bytes": 3638,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/authority/inputs/dp-cnn-v6-workspace-policy-20260827/dp-cnn-v6-production-policy.yaml"
+    },
+    {
+      "description": "public verification trust anchor",
+      "path": "sim_to_real/evidence/policy/owner-trust-anchor.pem",
+      "sha256": "463a87cb9a2f5817c79d224570520c5b6bf8df13168a8bce5ebcb0b177be2827",
+      "size_bytes": 625,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/authority/inputs/owner-trust-anchor.pem"
+    },
+    {
+      "description": "v6 hardware/profile binding",
+      "path": "sim_to_real/evidence/policy/so101-real-v6-hardware-profile.yaml",
+      "sha256": "09f5ae2ac3edc6dbcf1f8ffe89246b6c8e30830f24c6ecf70bfe12f09d24bbf1",
+      "size_bytes": 1548,
+      "source_path": "/home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/inference/sim_to_real_rollout/authority/so101_real_dp_cnn_v6_workspace_20260827.yaml"
+    }
+  ],
+  "excluded_patterns": [
+    "**/owner-signing-private-key.pem"
+  ],
+  "physical_motor_writes": 0,
+  "reference_only_artifacts": [
+    {
+      "description": "DP-CNN 200ep source checkpoint",
+      "nas_path": "models/dp_cnn/training/final_checkpoint.ckpt",
+      "sha256": "a7224ec4c8cd7172185f0160ede1944895eb9c5e6417cddc3d53ab40c3af84a8",
+      "size_bytes": 4206535941
+    },
+    {
+      "description": "DP-Transformer 200ep checkpoint",
+      "nas_path": "models/dp_transformer/training/final_checkpoint.ckpt",
+      "sha256": "d40c4319acfc2da4ca429eed775267a1a6259f59a516525aa9dcf65e3dfef8d5",
+      "size_bytes": 323237453
+    },
+    {
+      "description": "IBC 200ep checkpoint",
+      "nas_path": "models/ibc/training/final_checkpoint.ckpt",
+      "sha256": "b36a2a12e1bcdb5f4e0a7bb57996ef053d5fe01c25f86aa2687defe6d614e9e0",
+      "size_bytes": 174030403
+    },
+    {
+      "description": "LSTM-GMM 200ep checkpoint",
+      "nas_path": "models/lstm_gmm/training/final_checkpoint.ckpt",
+      "sha256": "0c0b67d9c023dc57cd0f5d67ca4157419fd9a05135426092ab5b086bb776aa6f",
+      "size_bytes": 94205695
+    },
+    {
+      "description": "Recovered DP-CNN policy tensor",
+      "nas_path": "models/dp_cnn/bundle/policy.safetensors",
+      "sha256": "1ed6749af998290b46393a15dae12d4a9e7a2153c6a26c5f8140b0f5b4a82823",
+      "size_bytes": 1096332480
+    },
+    {
+      "description": "DP-Transformer policy tensor",
+      "nas_path": "models/dp_transformer/bundle/policy.safetensors",
+      "sha256": "53f76a850a3fc10f65dcd14dc91869787734c4fb7352627da56ce8000ee99246",
+      "size_bytes": 125508432
+    },
+    {
+      "description": "IBC policy tensor",
+      "nas_path": "models/ibc/bundle/policy.safetensors",
+      "sha256": "45baf2d09cb78a25c470b83db54da38369eddda51c7eeee78490a2e818f971b6",
+      "size_bytes": 102756788
+    },
+    {
+      "description": "LSTM-GMM policy tensor",
+      "nas_path": "models/lstm_gmm/bundle/policy.safetensors",
+      "sha256": "e6b0127888dc8ca80351de25cf19122eab5a28cb7610556300967fdbef78910b",
+      "size_bytes": 139047808
+    }
+  ],
+  "schema": "intro-so101-pusht-evidence-index-v1",
+  "terminal_state": "HOLD"
+}

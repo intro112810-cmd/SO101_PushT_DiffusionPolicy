@@ -1,0 +1,29 @@
+{
+  "camera_registration_digest": "f6453dcc3a48b66d7f7c0f01ea106934eddd196a312e045f93d0fcb0a500fdc3",
+  "device_digest": "4444444444444444444444444444444444444444444444444444444444444444",
+  "digest": "17dadb8e2ca6b7217edd641a3115d7872c67f9bcc4045872d72ca1156ea0e020",
+  "model_digest": "e36672bc67dba28691b3dc2bc3852f9016de914b63369970ba76d801dacb8986",
+  "policy_digest": "f3d19716d616b3f587c04dc9896bbd68b4f4b162059938068278c68c49d2c5a7",
+  "push_t_transform": [
+    0.38,
+    0.16,
+    0.031,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "pusher_transform": [
+    -0.25,
+    -0.15,
+    0.025,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "sample_digest": "6666666666666666666666666666666666666666666666666666666666666666",
+  "sample_id": "sample-2",
+  "sample_timestamp": 999.97,
+  "schema": "so101-scene-object-pose-v1"
+}

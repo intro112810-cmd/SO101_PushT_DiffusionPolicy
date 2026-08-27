@@ -1,0 +1,9 @@
+{
+  "joint_order": ["shoulder_pan", "shoulder_lift", "elbow_flex", "wrist_flex", "wrist_roll"],
+  "isolated_variations": ["shoulder_pan"],
+  "task_plane_poses": [],
+  "fit_inventory": [
+    {"id": "only", "physical_in_range": true, "mujoco_in_range": true, "fk_residual_m": 0.001}
+  ],
+  "held_out_inventory": []
+}

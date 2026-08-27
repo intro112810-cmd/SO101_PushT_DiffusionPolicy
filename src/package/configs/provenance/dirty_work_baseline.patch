@@ -1,0 +1,227 @@
+diff --git a/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/cli.py b/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/cli.py
+index e883c96..3a31a52 100644
+--- a/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/cli.py
++++ b/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/cli.py
+@@ -115,13 +115,18 @@ def command_parser() -> argparse.ArgumentParser:
+     export.add_argument("--output", type=Path, default=_ARTIFACT)
+     export.add_argument("--config", type=Path, default=_EXPORT_CONFIG)
+     train = sub.add_parser("train-model")
+-    train.add_argument("--model", choices=("dp_cnn",), default="dp_cnn")
++    train.add_argument(
++        "--model",
++        choices=("dp_cnn", "dp_transformer", "ibc", "lstm_gmm"),
++        default="dp_cnn",
++    )
+     train.add_argument("--paper-view", type=Path, required=True)
+     train.add_argument("--output", type=Path, required=True)
+     train.add_argument("--seed", type=int, choices=(0, 1, 2), default=0)
+     train.add_argument("--artifact-id", required=True)
+     train.add_argument("--artifact-index", type=Path, default=_ARTIFACT_INDEX)
+     train.add_argument("--synthetic-pipeline-probe", action="store_true")
++    train.add_argument("--smoke", action="store_true", help="200-step bounded smoke run")
+     bundle = sub.add_parser("export-inference-bundle")
+     bundle.add_argument("--checkpoint", type=Path, required=True)
+     bundle.add_argument("--config", type=Path, required=True)
+@@ -443,7 +448,13 @@ def _model_pipeline(args: argparse.Namespace) -> int:
+                 args.paper_view,
+                 args.output,
+                 index,
+-                TrainingLaunch(args.seed, args.artifact_id, args.synthetic_pipeline_probe),
++                TrainingLaunch(
++                    args.seed,
++                    args.artifact_id,
++                    args.synthetic_pipeline_probe,
++                    model=args.model,
++                    smoke=args.smoke,
++                ),
+             )
+         elif args.command == "export-inference-bundle":
+             from .training.exporter import export_inference_bundle
+diff --git a/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/integrations/paper_baselines/dataset.py b/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/integrations/paper_baselines/dataset.py
+index 5d8c6aa..fc4bc11 100644
+--- a/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/integrations/paper_baselines/dataset.py
++++ b/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/integrations/paper_baselines/dataset.py
+@@ -119,7 +119,7 @@ class PaperBaselineDataset(BaseImageDataset):
+             if not isinstance(members, list):
+                 raise PaperViewError(f"{name} split size is invalid")
+             typed_members = cast("list[object]", members)
+-            if len(typed_members) != size:
++            if not allow_ineligible_probe and len(typed_members) != size:
+                 raise PaperViewError(f"{name} split size is invalid")
+             if not all(isinstance(item, str) for item in typed_members):
+                 raise PaperViewError(f"{name} split IDs are invalid")
+@@ -137,7 +137,9 @@ class PaperBaselineDataset(BaseImageDataset):
+             ):
+                 raise PaperViewError("episode ordinal or frame index mismatch")
+         actions = cast("NDArray[np.float32]", view.arrays["action"])
+-        if not bool(np.isfinite(actions).all()) or not bool(
++        if not bool(np.isfinite(actions).all()):
++            raise PaperViewError("action contains non-finite values")
++        in_bounds = bool(
+             (
+                 (actions[:, 0] >= 0.18)
+                 & (actions[:, 0] <= 0.38)
+@@ -146,7 +148,8 @@ class PaperBaselineDataset(BaseImageDataset):
+                 & (actions[:, 2] >= 0.045)
+                 & (actions[:, 2] <= 0.050)
+             ).all()
+-        ):
++        )
++        if not in_bounds and not allow_ineligible_probe:
+             raise PaperViewError("action values violate the meter-space contract")
+ 
+     @staticmethod
+diff --git a/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/launcher.py b/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/launcher.py
+index 26c6c59..0e8a12a 100644
+--- a/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/launcher.py
++++ b/03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/training/launcher.py
+@@ -1,4 +1,4 @@
+-"""DP-CNN launcher for the unchanged Stanford training workspace."""
++"""Model-agnostic launcher for the unchanged upstream training workspaces."""
+ 
+ from __future__ import annotations
+ 
+@@ -12,10 +12,6 @@ from typing import cast
+ 
+ from omegaconf import OmegaConf
+ 
+-from diffusion_policy.workspace.train_diffusion_unet_hybrid_workspace import (
+-    TrainDiffusionUnetHybridWorkspace,
+-)
+-
+ from ..integrations.paper_baselines.configs import workspace_config
+ from .artifacts import ArtifactError, ArtifactIndex
+ from .runtime import assert_paper_runtime
+@@ -26,11 +22,21 @@ class TrainingLaunch:
+     seed: int
+     artifact_id: str
+     simulation_probe: bool = False
++    model: str = "dp_cnn"
++    smoke: bool = False
++
++
++MODEL_NAMES = ("dp_cnn", "dp_transformer", "ibc", "lstm_gmm")
++
++
++def resolved_config(model: str, paper_view: Path, seed: int) -> dict[str, object]:
++    """Resolve the approved profile for a model without changing upstream targets."""
++    return workspace_config(model, paper_view, seed)
+ 
+ 
+ def resolved_dp_cnn_config(paper_view: Path, seed: int) -> dict[str, object]:
+-    """Resolve the one approved DP-CNN profile without changing upstream targets."""
+-    return workspace_config("dp_cnn", paper_view, seed)
++    """Resolve the one approved DP-CNN profile (backward-compatible alias)."""
++    return resolved_config("dp_cnn", paper_view, seed)
+ 
+ 
+ def update_budget(config: dict[str, object]) -> int:
+@@ -76,25 +82,58 @@ def synthetic_probe_config(config: dict[str, object]) -> dict[str, object]:
+     return probe
+ 
+ 
++def smoke_probe_config(config: dict[str, object]) -> dict[str, object]:
++    """Return a bounded 200-step smoke profile using the original classes."""
++    probe = deepcopy(config)
++    training = cast("dict[str, object]", probe["training"])
++    training.update(
++        {
++            "debug": False,
++            "resume": False,
++            "num_epochs": 1,
++            "max_train_steps": 200,
++            "max_val_steps": 2,
++            "lr_warmup_steps": 0,
++            "rollout_every": 200,
++            "checkpoint_every": 200,
++            "val_every": 200,
++            "sample_every": 200,
++        }
++    )
++    dataloader = cast("dict[str, object]", probe["dataloader"])
++    validation = cast("dict[str, object]", probe["val_dataloader"])
++    dataloader.update({"batch_size": 8, "num_workers": 0})
++    validation.update({"batch_size": 8, "num_workers": 0})
++    task = cast("dict[str, object]", probe["task"])
++    dataset = cast("dict[str, object]", task["dataset"])
++    dataset["split"] = "synthetic_probe"
++    return probe
++
++
+ def launch_training(
+     paper_view: Path,
+     output_dir: Path,
+     index: ArtifactIndex,
+     request: TrainingLaunch,
+ ) -> Path:
+-    """Run Stanford's workspace lifecycle and anchor its native checkpoint."""
++    """Run the profile's workspace lifecycle and anchor its native checkpoint."""
+     assert_paper_runtime()
+-    config = resolved_dp_cnn_config(paper_view, request.seed)
++    if request.model not in MODEL_NAMES:
++        raise ArtifactError(f"unknown model: {request.model}")
++    config = resolved_config(request.model, paper_view, request.seed)
+     if update_budget(config) != 100_000:
+-        raise ArtifactError("DP-CNN update budget drifted from 100000")
++        raise ArtifactError("update budget drifted from 100000")
+     if request.simulation_probe:
+         config = synthetic_probe_config(config)
++    if request.smoke:
++        config = smoke_probe_config(config)
+     output_dir = index.create_output_directory(output_dir)
+     config_path = output_dir / "resolved_config.json"
+     config_path.write_text(json.dumps(config, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+-    workspace = TrainDiffusionUnetHybridWorkspace(
+-        OmegaConf.create(config), output_dir=str(output_dir)
+-    )
++    target = str(config["_target_"])
++    module_name, class_name = target.rsplit(".", 1)
++    workspace_cls = getattr(__import__(module_name, fromlist=[class_name]), class_name)
++    workspace = workspace_cls(OmegaConf.create(config), output_dir=str(output_dir))
+     try:
+         workspace.run()
+     finally:
+diff --git a/03_code/so101_pusht_benchmark/tests/test_model_smoke.py b/03_code/so101_pusht_benchmark/tests/test_model_smoke.py
+new file mode 100644
+index 0000000..00d36f8
+--- /dev/null
++++ b/03_code/so101_pusht_benchmark/tests/test_model_smoke.py
+@@ -0,0 +1,38 @@
++from pathlib import Path
++from typing import cast
++
++from so101_pusht_benchmark.training.launcher import (
++    MODEL_NAMES,
++    resolved_config,
++    smoke_probe_config,
++    update_budget,
++)
++
++
++def test_smoke_probe_bounds_all_four_models() -> None:
++    for model in MODEL_NAMES:
++        config = resolved_config(model, Path("/tmp/paper-view"), seed=0)
++        probe = smoke_probe_config(config)
++        training = cast("dict[str, object]", probe["training"])
++        assert training["max_train_steps"] == 200
++        assert training["num_epochs"] == 1
++        assert update_budget(probe) == 200
++        assert probe["_target_"] == config["_target_"]
++
++
++def test_smoke_probe_keeps_original_classes_and_data() -> None:
++    for model in MODEL_NAMES:
++        config = resolved_config(model, Path("/tmp/paper-view"), seed=1)
++        probe = smoke_probe_config(config)
++        task = cast("dict[str, object]", probe["task"])
++        dataset = cast("dict[str, object]", task["dataset"])
++        assert dataset["_target_"] == (
++            "so101_pusht_benchmark.integrations.paper_baselines.dataset."
++            "PaperBaselineDataset"
++        )
++        # The smoke probe uses the adapter's ineligible-probe split so a
++        # 1-episode store can be trained; the real policy/data classes stay.
++        assert dataset["split"] == "synthetic_probe"
++        policy = cast("dict[str, object]", probe["policy"])
++        original_policy = cast("dict[str, object]", config["policy"])
++        assert policy["_target_"] == original_policy["_target_"]

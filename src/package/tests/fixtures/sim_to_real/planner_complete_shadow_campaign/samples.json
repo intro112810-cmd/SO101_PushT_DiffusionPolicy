@@ -1,0 +1,75 @@
+{
+  "actuation_performed": false,
+  "count": 2,
+  "mode": "sim_to_real_physical_sample_capture",
+  "motor_writes_performed": false,
+  "policy_digest": "f3d19716d616b3f587c04dc9896bbd68b4f4b162059938068278c68c49d2c5a7",
+  "samples": [
+    {
+      "body_degrees": [
+        70.61354057664087,
+        10.607078753611091,
+        13.94693899606429,
+        88.83220056263872,
+        -124.87490961944883
+      ],
+      "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "camera_timestamp": 1000000.0,
+      "created_at": 1000000.0,
+      "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "digest": "eb619453cd9fa20f7e2a823a484df0756d3afeb992c33a4ae398eb3b01aa28e6",
+      "frame_digest": "fd3673d2c532bc798ba8ee7b6b5055de4150154845f691fa7c10ca5dd33fb87a",
+      "joint_timestamp": 1000000.0,
+      "kind": "physical_sample",
+      "record_id": "bounded-1a"
+    },
+    {
+      "body_degrees": [
+        70.61354057664087,
+        10.607078753611091,
+        13.94693899606429,
+        88.83220056263872,
+        -124.97490961944882
+      ],
+      "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "camera_timestamp": 1000000.01,
+      "created_at": 1000000.01,
+      "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "digest": "403a2f42b8801964f40d3672047a7118d5485685683055eead88e1365f5722c5",
+      "frame_digest": "9809771c9d0ac60fef1b8627a93b7a257e2616c770822d0c26c3e01add71d36c",
+      "joint_timestamp": 1000000.01,
+      "kind": "physical_sample",
+      "record_id": "bounded-1b"
+    }
+  ],
+  "scene_pose": {
+    "camera_registration_digest": "f6453dcc3a48b66d7f7c0f01ea106934eddd196a312e045f93d0fcb0a500fdc3",
+    "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "digest": "7c1fe89810c868e3bfa57f2027e4624f66b6b0a74a058293bbda11d193e055f0",
+    "model_digest": "e36672bc67dba28691b3dc2bc3852f9016de914b63369970ba76d801dacb8986",
+    "policy_digest": "f3d19716d616b3f587c04dc9896bbd68b4f4b162059938068278c68c49d2c5a7",
+    "push_t_transform": [
+      0.38,
+      0.16,
+      0.031,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pusher_transform": [
+      -0.25,
+      -0.15,
+      0.025,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sample_digest": "403a2f42b8801964f40d3672047a7118d5485685683055eead88e1365f5722c5",
+    "sample_id": "bounded-1b",
+    "sample_timestamp": 1000000.01,
+    "schema": "so101-scene-object-pose-v1"
+  },
+  "schema": 1
+}

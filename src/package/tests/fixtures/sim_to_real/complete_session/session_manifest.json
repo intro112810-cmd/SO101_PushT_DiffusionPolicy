@@ -1,0 +1,17 @@
+{
+  "evidence_scope": "fixture_non_actuating_qa",
+  "files": {
+    "bounded_receipt.json": "530ebc701f05f1f710ec4b25a22a85593fe400db0ff72ab73e403f9b156f959d",
+    "camera-registration.json": "2f7146b8a24cc5f0c963decaae1d9836512fbe723e6e60df87f5d4a780459653",
+    "cleanup.json": "dd8270c93e48e1698947975e6cf117142b4d38ebf48f4ecc0049318d33380792",
+    "joint-equivalence.json": "7e21fdbaaafb094517703cbb1e69ea4a783ec308ebc394c9a88e1a6d46acfaaf",
+    "lineage.json": "c49787ddee4c6ea0c6a9d95400ff807189df2b6da131c25b6626ec064f39f411",
+    "physical_ledger.jsonl": "e169bce3104b069d8d852aaa082c9e5ee307e0af0c60098dae4eed561949a065",
+    "shadow_ledger.jsonl": "46b745c232816e29572d7fb578c89ede85df5d12174bf5ec442539b994cc0215",
+    "shadow_receipt.json": "584b964f86e532c3fbaf0748d6ba8f3df9f061376262af281401c4d52d8c4a88",
+    "single_step_receipt.json": "43462fc248cdfc4d112a46a5ddb6720c3d413525f4b3ec97da84e02ddde9345e"
+  },
+  "lineage_authority_digest": "192d568795b756ac1edcde78a4a24ed8d37f1fef3bde14cd32a6d441c221a5e4",
+  "schema": "guarded-rollout-session-v1",
+  "session_id": "fixture-complete-session"
+}

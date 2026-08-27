@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "mode": "read_only_joint_mapping_calibration",
+  "joint_order": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll"
+  ],
+  "mapping_formula": "q_sim = q_min + (degree - degree_min) / (degree_max - degree_min) * (q_max - q_min)",
+  "joints": {
+    "shoulder_pan": {
+      "physical_degree": -1.89010989010989,
+      "physical_degree_range": [
+        -90.94505494505495,
+        90.94505494505495
+      ],
+      "mujoco_range_radians": [
+        -1.9198621771937616,
+        1.9198621771937634
+      ],
+      "mapped_q_radians": -0.03990047057483315,
+      "physical_in_range": true,
+      "mujoco_in_range": true,
+      "valid": true,
+      "blockers": []
+    },
+    "shoulder_lift": {
+      "physical_degree": -89.71428571428571,
+      "physical_degree_range": [
+        -103.07692307692308,
+        103.07692307692308
+      ],
+      "mujoco_range_radians": [
+        -1.7453292519943224,
+        1.7453292519943366
+      ],
+      "mapped_q_radians": -1.5190690845716033,
+      "physical_in_range": true,
+      "mujoco_in_range": true,
+      "valid": true,
+      "blockers": []
+    },
+    "elbow_flex": {
+      "physical_degree": 20.0,
+      "physical_degree_range": [
+        -105.27472527472527,
+        105.27472527472527
+      ],
+      "mujoco_range_radians": [
+        -1.69,
+        1.69
+      ],
+      "mapped_q_radians": 0.3210647181628392,
+      "physical_in_range": true,
+      "mujoco_in_range": true,
+      "valid": true,
+      "blockers": []
+    },
+    "wrist_flex": {
+      "physical_degree": 31.604395604395606,
+      "physical_degree_range": [
+        -99.56043956043956,
+        99.56043956043956
+      ],
+      "mujoco_range_radians": [
+        -1.6580628494556928,
+        1.6580627293335335
+      ],
+      "mapped_q_radians": 0.5263342205458634,
+      "physical_in_range": true,
+      "mujoco_in_range": true,
+      "valid": true,
+      "blockers": []
+    },
+    "wrist_roll": {
+      "physical_degree": -9.714285714285714,
+      "physical_degree_range": [
+        -166.8131868131868,
+        166.8131868131868
+      ],
+      "mujoco_range_radians": [
+        -2.7438472969992493,
+        2.841206309382605
+      ],
+      "mapped_q_radians": -0.11394194927741186,
+      "physical_in_range": true,
+      "mujoco_in_range": true,
+      "valid": true,
+      "blockers": []
+    }
+  },
+  "excluded_physical_motors": {
+    "gripper": "percentage space; excluded from the five-joint degree mapping"
+  },
+  "mapping_status": "provisional_static_pose_only",
+  "joint_frame_equivalence": "not_audited_single_static_pose",
+  "blockers": [],
+  "deployment_valid": false,
+  "clipping_performed": false,
+  "motor_writes_performed": false,
+  "actuation_performed": false,
+  "stop_boundary": "diagnostic only; no physical command path exists"
+}

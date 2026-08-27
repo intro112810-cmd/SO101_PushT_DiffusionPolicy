@@ -1,0 +1,6 @@
+schema: pusht-so100-experiment-v1
+target_episode_count: 200
+split_ratios:
+  train: "0.8"
+  validation: "0.1"
+  test: "0.1"

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "task_id": "st_019fe0f8",
+  "captured_on": "2026-08-08",
+  "policy": "Preserve byte-for-byte; never revert, stash, overwrite, move, delete, or silently absorb into Todo 1.",
+  "provenance_note": "The four protected entries and their hashes/diffs were captured by the prior Todo 1 worker before this continuation. Todo 1-owned files were already partial when this worker began and are not represented as pre-existing protected work.",
+  "todo2_intentional_cli_extension": {
+    "task_id": "st_019fe121",
+    "reason": "Route python -m so101_pusht_benchmark.cli to the dedicated native CLI while retaining the historical implementation and every Todo 1 dirty hunk.",
+    "todo1_baseline_sha256": "7e57bdbe687f530d693dab47632d29c7a2971e0821bdcd752fe814e063fc995d",
+    "todo1_baseline_byte_count": 22341,
+    "todo1_baseline_binary_diff_sha256": "cfbf16a8b73cda40c09a9915ca4d1e0d9fe563a2cba1f72872596e0b4b47e000",
+    "current_sha256": "04b2055db8e6a283ac88a33a274171cde98ff5ed8fa795be039f4dfecd9132f4",
+    "current_byte_count": 22398,
+    "current_binary_diff_sha256": "03a053639cd1d30f026917787f0ccc0cd21bfbe6e027426696e5b19de177e8da",
+    "extension_artifact": "03_code/so101_pusht_benchmark/configs/provenance/todo2_cli_extension.patch",
+    "extension_sha256": "c7453e707e8a58b992f8d4d64f8f0ddbe7dc86b0978a2f500549098b4ca6b5f4",
+    "original_dirty_hunks_preserved": [
+      "four-model --model choices",
+      "--smoke bounded-run flag",
+      "TrainingLaunch model=args.model",
+      "TrainingLaunch smoke=args.smoke"
+    ]
+  },
+  "full_diff_artifact": "03_code/so101_pusht_benchmark/configs/provenance/dirty_work_baseline.patch",
+  "full_diff_sha256": "7d699f85f44fc2ee2bd2321a2c3ad3af03c74e82c5a521cc7ceb1459bbbcf36f",
+  "repository_snapshot": {
+    "status_command": "git status --short",
+    "diff_command": "git diff -- <four protected paths>",
+    "untracked_command": "git ls-files --others --exclude-standard",
+    "untracked_paths_at_continuation_start": [
+      ".omo/plans/pusht-so100-four-model-clean-restart.md",
+      ".omo/plans/so101-pusht-benchmark-on-pusht-so100.md",
+      "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-1-green.txt",
+      "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-1-lock.json",
+      "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-1-red.txt",
+      "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-1-versions.txt",
+      "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-3-green.txt",
+      "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-3-red.txt",
+      "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-4-green.txt",
+      "03_code/so101_pusht_benchmark/.omo/start-work/evidence/task-4-red.txt",
+      "03_code/so101_pusht_benchmark/configs/provenance/dirty_work_receipt.json",
+      "03_code/so101_pusht_benchmark/configs/provenance/pusht_so100_upstream.json",
+      "03_code/so101_pusht_benchmark/src/so101_pusht_benchmark/core/upstream_provenance.py",
+      "03_code/so101_pusht_benchmark/tests/test_model_smoke.py",
+      "90_archive/stray_media/opencv__dev_video0.png"
+    ]
+  },
+  "upstream_snapshot": {
+    "head": "f4d6d1311bc0b43ce65458a9edd856f3c7e0a520",
+    "remote": "https://github.com/boaoqian/pushT-so100.git",
+    "status_short": [" M src/env_human_ee.py", "?? MUJOCO_LOG.TXT"],
+    "salvage_intent": "Preserve the approved F710 patch exactly and exclude MUJOCO_LOG.TXT without moving, deleting, or modifying it."
+  },
+  "protected": [
+    {
+      "path": "src/so101_pusht_benchmark/cli.py",
+      "git_state": "modified",
+      "byte_count": 22341,
+      "sha256": "7e57bdbe687f530d693dab47632d29c7a2971e0821bdcd752fe814e063fc995d",
+      "binary_diff_sha256": "cfbf16a8b73cda40c09a9915ca4d1e0d9fe563a2cba1f72872596e0b4b47e000",
+      "salvage_intent": "Keep the existing four-model CLI choices and smoke launch plumbing for the later model-profile todo; Todo 1 does not consume or alter it."
+    },
+    {
+      "path": "src/so101_pusht_benchmark/integrations/paper_baselines/dataset.py",
+      "git_state": "modified",
+      "byte_count": 11010,
+      "sha256": "6d1a6b059f7222d4b739e10d23512edce98b7901adcfc86981888ee59cc09f21",
+      "binary_diff_sha256": "6849621ba727ab6f3e3d2c03732c88190f497a31dfafded0eb100c875162003d",
+      "salvage_intent": "Keep the ineligible synthetic-probe allowances for the later shared-dataset/model-smoke todos; Todo 1 does not consume or alter it."
+    },
+    {
+      "path": "src/so101_pusht_benchmark/training/launcher.py",
+      "git_state": "modified",
+      "byte_count": 6005,
+      "sha256": "7e6c9a31238e3221daa142a12752e74b8b787ab8b4d790cf06b5b3ee0c363c66",
+      "binary_diff_sha256": "59e7fdc4f9d421513dffecf55ff2933c4e6f5a361e3188d85687e001ebff3cf7",
+      "salvage_intent": "Keep the model-agnostic launcher and bounded smoke profile for the later training todo; Todo 1 does not consume or alter it."
+    },
+    {
+      "path": "tests/test_model_smoke.py",
+      "git_state": "untracked",
+      "byte_count": 1531,
+      "sha256": "659aa47e9a52c2e4cab162795eedd870a77b0b699a007024cbeecbb55f35b743",
+      "binary_diff_sha256": "8c7abe4f7a2dc89fdad51f1cfca83fc4a2074ebae6746e4b0380d9e635012b98",
+      "salvage_intent": "Keep the four-model bounded-smoke characterization for the later model todo; Todo 1 does not edit or collect it."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "live-read-identity-v1",
+  "artifact_scope": "production",
+  "provider_digest": "1111111111111111111111111111111111111111111111111111111111111111",
+  "profile_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "camera_device_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "follower_device_digest": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "calibration_digest": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "camera_width": 400,
+  "camera_height": 400,
+  "camera_fps": 30.0,
+  "approved_by": "camera-fixture-owner@example.invalid",
+  "approval_id": "fake-camera-live-identity-v1",
+  "scheme": "fake-production-sha256-v1",
+  "identity_digest": "cd645b972dbaa899ba519ed6fc4181b935cb7864373fbd8b80bd3b2ad9ecbff8",
+  "binding_signature": "c6f4319abe896adb6420fdad4b9bc6874b17068e6270cee73cdbcbbb35687478"
+}

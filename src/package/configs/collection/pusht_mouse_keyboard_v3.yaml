@@ -1,0 +1,17 @@
+schema: 3
+source: human_mouse_keyboard
+physical_device: false
+policy_fps: 10
+z_levels:
+  contact_z_m: 0.045
+  clearance_z_m: 0.065
+task_bounds:
+  x: [0.18, 0.38]
+  y: [-0.16, 0.16]
+acquisition_radius: 0.03
+deadman: left_button
+episode_keys:
+  # Using keys that don't collide with Q (quit), R (reset), Space (pause/etc)
+  success: "enter"
+  stop: "escape"
+  rerecord: "backspace"

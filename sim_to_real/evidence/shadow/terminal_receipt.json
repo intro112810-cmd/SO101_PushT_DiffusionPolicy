@@ -1,0 +1,14 @@
+{
+  "actuation_performed": false,
+  "cycle_limit": 1,
+  "cycles_completed": 0,
+  "evidence_scope": "production",
+  "ledger_digest": "f756a23581896dcf6ef33d21d5a4d929dd66f5347cd3fd03a3c6dbb88da9d0e0",
+  "mode": "sim_to_real_continuous_shadow_campaign",
+  "motor_writes_performed": false,
+  "policy_evidence": "authentic_frozen_production",
+  "schema": 1,
+  "terminal_code": "R_CLIPPING_REQUIRED",
+  "terminal_state": "HOLD",
+  "writer_symbols": 0
+}

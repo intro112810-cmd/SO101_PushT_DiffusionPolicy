@@ -1,0 +1,200 @@
+[
+  {
+    "duration_s": 30.0,
+    "dxy": 0.027404142918033038,
+    "dyaw": 23.846844038932517,
+    "policy_seed": 3542775848755331808,
+    "seed": 100002,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.009096463049057722,
+    "dyaw": 7.2560442816600625,
+    "policy_seed": 4805116497494247271,
+    "seed": 100007,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.028874063178858135,
+    "dyaw": 81.39228101295565,
+    "policy_seed": 5352566405354429363,
+    "seed": 100008,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.05019269300839578,
+    "dyaw": 22.296346226471055,
+    "policy_seed": 8475457879538306897,
+    "seed": 100010,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.03811369556423026,
+    "dyaw": 0.07977876839072218,
+    "policy_seed": 9169486575325887484,
+    "seed": 100019,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.15997103102424148,
+    "dyaw": 66.14565561028537,
+    "policy_seed": 4061516398382594118,
+    "seed": 100034,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.03623069228625754,
+    "dyaw": 37.3252304423885,
+    "policy_seed": 7175265076920411753,
+    "seed": 100035,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.005032740151568319,
+    "dyaw": 6.195791313317886,
+    "policy_seed": 2003420889028300493,
+    "seed": 100045,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.013672070657658322,
+    "dyaw": 12.165634211472886,
+    "policy_seed": 3438273377527711846,
+    "seed": 100052,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.027489460948395907,
+    "dyaw": 30.05125634789466,
+    "policy_seed": 2315179124091017916,
+    "seed": 100055,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.010519950654923737,
+    "dyaw": 6.123438632756451,
+    "policy_seed": 5476909123608817504,
+    "seed": 100056,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.21496020213646694,
+    "dyaw": 49.55117544923763,
+    "policy_seed": 5724159401715323722,
+    "seed": 100060,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.07526306991102723,
+    "dyaw": 8.469172088937205,
+    "policy_seed": 2688271666990248757,
+    "seed": 100070,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.025971802151702014,
+    "dyaw": 2.57582234869819,
+    "policy_seed": 2414325763949288141,
+    "seed": 100073,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.02640439092649913,
+    "dyaw": 18.586934477869082,
+    "policy_seed": 4158568294212655788,
+    "seed": 100078,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.019152544953394728,
+    "dyaw": 17.172813476121636,
+    "policy_seed": 771957642751122368,
+    "seed": 100086,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.21623667319642062,
+    "dyaw": 38.50909803381347,
+    "policy_seed": 7879316195314771193,
+    "seed": 100089,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  },
+  {
+    "duration_s": 30.0,
+    "dxy": 0.03904992354340683,
+    "dyaw": 5.958688719078315,
+    "policy_seed": 856921185972278687,
+    "seed": 100093,
+    "steps": 300,
+    "success": false,
+    "terminated": false,
+    "truncated": true
+  }
+]

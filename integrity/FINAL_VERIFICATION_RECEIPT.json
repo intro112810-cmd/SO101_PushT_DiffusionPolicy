@@ -1,0 +1,95 @@
+{
+  "as_of": "2026-08-27",
+  "git": {
+    "commit": "authoritative value is Git HEAD; omitted here to avoid self-reference",
+    "history_policy": "single root commit",
+    "remote": "https://github.com/intro112810-cmd/SO101_PushT_DiffusionPolicy.git",
+    "repository": true
+  },
+  "media": {
+    "dimensions": [
+      800,
+      450
+    ],
+    "models": [
+      "dp_cnn",
+      "dp_transformer",
+      "ibc",
+      "lstm_gmm"
+    ],
+    "preview_layout": "synchronized three-view",
+    "preview_outcomes": {
+      "dp_cnn": "success",
+      "dp_transformer": "success",
+      "ibc": "failure",
+      "lstm_gmm": "failure"
+    },
+    "receipt": "results/videos/previews/three_view_preview_receipt.json",
+    "title_cards_removed": true
+  },
+  "safety": {
+    "actuation_performed": false,
+    "final_torque_enable_all_zero": true,
+    "hardware_commands_invoked": false,
+    "policy_motor_writes": 0,
+    "private_signing_keys_packaged": false
+  },
+  "scenarios": {
+    "entry_walkthrough": {
+      "all_torque_zero": true,
+      "cycles_completed": 0,
+      "missing_links": 0,
+      "policy_motor_writes": 0,
+      "resolved_local_links": 30,
+      "status": "PASS",
+      "terminal_state": "hold"
+    },
+    "malformed_manifest": {
+      "observable": "exit 1: missing file: missing/final-artifact.json",
+      "status": "PASS"
+    },
+    "non_hardware_cli": {
+      "command": "bash docs/run_non_hardware_checks.sh",
+      "observable": "NON_HARDWARE_CHECKS_OK",
+      "status": "PASS"
+    },
+    "package_integrity_green": {
+      "command": "bash docs/verify_package.sh",
+      "observable": [
+        "FINAL_HANDOFF_OK",
+        "PACKAGE_OK"
+      ],
+      "status": "PASS"
+    },
+    "red_finality": {
+      "observable": "legacy verifier passed while final report/status/manifest/checklist were missing; targeted audit exited 1",
+      "status": "PASS"
+    },
+    "targeted_tests": {
+      "command": "pytest -q tests/test_replay_policy_loader.py tests/test_sim_to_real_no_actuation.py",
+      "observable": "2 passed in 3.87s",
+      "status": "PASS"
+    }
+  },
+  "schema": "intro-final-verification-receipt-v1",
+  "tier": "HEAVY",
+  "validation_limits": [
+    {
+      "cross_check": "same representative test passes in canonical project",
+      "reason": "reference-only upstream SO-101 XML is stored in NAS runtime and is not materialized inside src/package",
+      "scope": "package physical-IK tests",
+      "status": "NOT_RUNNABLE_WITHOUT_RESTORE"
+    },
+    {
+      "cross_check": "same representative test fails identically in canonical project and package",
+      "reason": "source checkpoint training identity mismatch",
+      "scope": "sim-to-real lineage fixture test",
+      "status": "PRE_EXISTING_FAILURE"
+    },
+    {
+      "reason": "OMO LSP daemon socket did not become reachable after two attempts",
+      "scope": "LSP diagnostics",
+      "status": "UNAVAILABLE"
+    }
+  ]
+}

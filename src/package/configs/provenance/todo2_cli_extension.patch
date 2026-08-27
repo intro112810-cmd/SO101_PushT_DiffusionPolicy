@@ -1,0 +1,17 @@
+--- todo1-protected/cli.py
++++ todo2-extended/cli.py
+@@ -551,5 +551,6 @@
+     if args.command == "import-repo-store":
+         from .data.importer import import_repo_store
++
+         return import_repo_store(args.repo, args.output)
+     print(json.dumps(replay_attempt(args.root, args.attempt_id), sort_keys=True))
+     return 0
+@@ -558,4 +559,6 @@
+ 
+ 
+ if __name__ == "__main__":
+-    raise SystemExit(main())
++    from .native_cli import main as native_main
++
++    raise SystemExit(native_main())

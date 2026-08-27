@@ -1,0 +1,37 @@
+{
+  "schema": "so101-joint-equivalence-member-v2",
+  "sample_id": "fit-wrist_roll-pos",
+  "physical": {
+    "timestamp_s": 1010.0,
+    "raw_encoder_counts": [
+      2048,
+      2048,
+      2048,
+      2048,
+      2248
+    ],
+    "joint_degrees": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      20.0
+    ],
+    "measured_tool_xyz_m": [
+      0.3913619000000002,
+      -0.0025723641866947124,
+      0.22678783349869372
+    ]
+  },
+  "simulator": {
+    "timestamp_s": 1010.01,
+    "joint_radians": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.34888888888888925
+    ]
+  },
+  "claimed_fk_residual_m": 0.0
+}

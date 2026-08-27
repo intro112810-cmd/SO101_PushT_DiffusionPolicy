@@ -1,0 +1,117 @@
+schema: so101-sim-to-real-safety-policy-v1
+policy_version: 1
+policy_id: TEST-FIXTURE-ONLY-sim-to-real-safety-v1
+artifact_scope: test_fixture_only
+approval_status: approved
+approved_by: fixture-owner@example.invalid
+approved_at: '2026-08-23T00:00:00Z'
+valid_from: '2026-08-23T00:00:00Z'
+expires_at: '2027-08-23T00:00:00Z'
+canonical_digest: 54f41dcc964169459dc4d77f64bfa4f53bcc21e2d405931cd0eb51f41af11a6a
+thresholds:
+  workspace:
+    polygon_xy_m:
+    - - -0.3
+      - -0.2
+    - - 0.3
+      - -0.2
+    - - 0.3
+      - 0.2
+    - - -0.3
+      - 0.2
+    contact_z_m: 0.025
+    tool_orientation_rpy_rad:
+    - 0.0
+    - 1.5707963267948966
+    - 0.0
+  joint_domains:
+    joint_order:
+    - shoulder_pan
+    - shoulder_lift
+    - elbow_flex
+    - wrist_flex
+    - wrist_roll
+    physical_degrees:
+      shoulder_pan:
+      - -90.0
+      - 90.0
+      shoulder_lift:
+      - -100.0
+      - 100.0
+      elbow_flex:
+      - -105.0
+      - 105.0
+      wrist_flex:
+      - -90.0
+      - 90.0
+      wrist_roll:
+      - -180.0
+      - 180.0
+    mapped_radians:
+      shoulder_pan:
+      - -1.57
+      - 1.57
+      shoulder_lift:
+      - -1.7
+      - 1.7
+      elbow_flex:
+      - -1.69
+      - 1.69
+      wrist_flex:
+      - -1.57
+      - 1.57
+      wrist_roll:
+      - -3.14
+      - 3.14
+  timing:
+    sample_max_age_seconds: 0.2
+    sample_max_skew_seconds: 0.03
+    max_policy_age_seconds: 31536000.0
+    authorization_max_age_seconds: 10.0
+    authorization_ttl_seconds: 5.0
+  camera:
+    max_reprojection_error_px: 1.5
+    min_correspondences: 12
+    max_correspondence_error_px: 2.0
+  kinematics:
+    max_fk_residual_m: 0.003
+    max_ik_residual_m: 0.002
+    min_singularity_metric: 0.01
+    max_branch_delta_degrees: 8.0
+  slew:
+    max_cartesian_delta_m: 0.01
+    max_joint_delta_degrees: 3.0
+  provider:
+    exact_goal_required: true
+    max_abs_error_degrees: 0.05
+  watchdog:
+    timeout_seconds: 0.25
+  acknowledgement:
+    required: true
+    timeout_seconds: 0.2
+    max_position_error_degrees: 0.1
+  post_state:
+    max_age_seconds: 0.2
+    max_tracking_error_degrees: 1.0
+  shadow:
+    min_cycles: 100
+    max_cycle_latency_seconds: 0.1
+    max_error_count: 1
+  single_step:
+    max_commands: 1
+  bounded_rollout:
+    max_commands: 10
+    max_duration_seconds: 30.0
+    max_path_length_m: 0.2
+    max_error_count: 1
+  operator:
+    deadman_required: true
+    stop_required: true
+    stop_behavior: latch_hold
+    acknowledgement_required: true
+owner_approval:
+  scheme: rsa-pkcs1v15-sha256-test-fixture-v1
+  approval_id: TEST-FIXTURE-ONLY-approval-v1
+  signer_id: fixture-owner@example.invalid
+  policy_digest: 54f41dcc964169459dc4d77f64bfa4f53bcc21e2d405931cd0eb51f41af11a6a
+  binding_signature: 1a22a262f665fe5c544844033baad4bb2f8347e1e64170f6d9ef6ffa5ecf5c72686c1cc2dab68aaac5adcf8ddaf3ef8273996dba91978500dc13f98b53a7f8c4826780c7ff06624188ec730ff6cfd555c0f3236e49630aecb14e3f4d467e56ce1c180ab1d548937735a370820b108daeadd639bfcba5a9cae09321d226fcc838d7be7e0d11fa2bdb7ab9a92fdd9dd91362fcc7b757c85d545e56fdb5c23b946ac5ffc6b9cd0863b543539d40e23ea8a14fbf35cb01b0e0a968a9b475a648caf5307a45350b3c40dbc5bb39322e920ca0d17f9e8f519aa84a5b5cb5b7e318845d8850058c9f527e25f69e475abef15936a8727227025098e9849d98d59da926b8

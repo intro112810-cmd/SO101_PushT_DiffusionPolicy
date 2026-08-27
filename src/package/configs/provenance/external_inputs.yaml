@@ -1,0 +1,63 @@
+schema: 1
+project_root: "."
+trusted_path_aliases:
+  04_experiments: /data/df/02_InTro_Project/04_experiments
+cache_root: "04_experiments/so101_pusht_benchmark/cache"
+upstream_root: "04_experiments/so101_pusht_benchmark/cache/upstream"
+evidence_root: "04_experiments/so101_pusht_benchmark/cache/upstream-evidence"
+revisions:
+  stanford: 5ba07ac6661db573af695b419a7947ecb704690f
+  lerobot: e40b58a8dfa9e7b86918c374791599d070518d11
+  so101: fda892cba81032c46c40976a48c9ceadbf40a9ca
+trees:
+  stanford: 5a8bd7058d1dce44312e2e1a78949237884dab32
+  lerobot: 2fcde03d7b9920a4db01d12e0fe20704698ba5cf
+  so101: 3694b619d148dfeec39b4ee239a176db864ce424
+sources:
+  stanford:
+    mode: detached_git
+    path: 04_experiments/so101_pusht_benchmark/cache/upstream/stanford
+    manifest: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/stanford.files.sha256
+    tree_evidence: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/stanford.tree
+    commit_evidence: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/stanford.commit
+    allowed_origin: file:///home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/cache/upstream/stanford
+  lerobot:
+    mode: detached_git
+    path: 04_experiments/so101_pusht_benchmark/cache/upstream/lerobot
+    manifest: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/lerobot.files.sha256
+    tree_evidence: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/lerobot.tree
+    commit_evidence: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/lerobot.commit
+    allowed_origin: file:///home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/cache/upstream/lerobot
+  so101:
+    mode: detached_git
+    path: 04_experiments/so101_pusht_benchmark/cache/upstream/so101
+    manifest: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/so101.files.sha256
+    tree_evidence: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/so101.tree
+    commit_evidence: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/so101.commit
+    allowed_origin: file:///home/intro/InternLab/02_InTro_Project/04_experiments/so101_pusht_benchmark/cache/upstream/so101
+robomimic:
+  mode: archive_and_materialized_manifest
+  path: 04_experiments/so101_pusht_benchmark/cache/upstream/robomimic
+  manifest: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/robomimic.files.sha256
+  archive: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/robomimic.tar.gz
+  archive_manifest: 04_experiments/so101_pusht_benchmark/cache/upstream-evidence/robomimic.files.sha256
+  archive_url: https://codeload.github.com/ARISE-Initiative/robomimic/tar.gz/62ed2de905caeb9133136e4d14d810a8b6baa96c
+  commit: 62ed2de905caeb9133136e4d14d810a8b6baa96c
+  archive_sha256: e8d0c9e9edfa9564e6313898508c7aef878f98aeb909529b49e13639adaa8ee3
+native_collection_evaluation:
+  status: active
+  contract_schema: pusht-so100-native-v1
+  lerobot_release: "0.4.4"
+  upstream_environment: 05_references/external_repos/pushT-so100/environment.yml
+  upstream_environment_sha256: a7aab5a14bb18b6bb94cd1ecf13616384c6af87ba131ae5dc86fec7e94920f70
+  fallback: forbidden
+locks:
+  collection: {path: 03_code/so101_pusht_benchmark/environments/sim-runtime.lock, sha256: 10776208a02c73299caf78249cecd8d1d6870e026ab456ec1c11087adc521b9a}
+  evaluation: {path: 03_code/so101_pusht_benchmark/environments/sim-runtime.lock, sha256: 10776208a02c73299caf78249cecd8d1d6870e026ab456ec1c11087adc521b9a}
+  paper: {path: 03_code/so101_pusht_benchmark/environments/paper-baselines.conda-lock.yml, sha256: bd079f4fc30f4de58004ef11bd43c86f334fbaeee6871ed02dcf62c9082201bb}
+imports:
+  collection_forbidden: [diffusion_policy, robomimic]
+  paper_forbidden: [lerobot, lerobot.common]
+  allowed_origins:
+    project: [03_code/so101_pusht_benchmark/src]
+    upstream: [04_experiments/so101_pusht_benchmark/cache/upstream]

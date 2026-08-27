@@ -1,0 +1,212 @@
+{
+  "cycles": [
+    {
+      "samples": [
+        {
+          "body_degrees": [
+            70.61354057664087,
+            10.607078753611091,
+            13.94693899606429,
+            88.83220056263872,
+            -124.87490961944883
+          ],
+          "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "camera_timestamp": 999.95,
+          "created_at": 999.95,
+          "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "digest": "2bc9d44ec14f8b3ab2e4fb1f1400d40408c8c013ee536899b6c567ecef611276",
+          "frame_digest": "fd3673d2c532bc798ba8ee7b6b5055de4150154845f691fa7c10ca5dd33fb87a",
+          "joint_timestamp": 999.95,
+          "kind": "physical_sample",
+          "record_id": "bounded-1a"
+        },
+        {
+          "body_degrees": [
+            70.61354057664087,
+            10.607078753611091,
+            13.94693899606429,
+            88.83220056263872,
+            -124.97490961944882
+          ],
+          "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "camera_timestamp": 999.97,
+          "created_at": 999.97,
+          "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "digest": "e6c5e430eca1eda810348fe158174811ec8a0546f247f5e51109000e747474fb",
+          "frame_digest": "9809771c9d0ac60fef1b8627a93b7a257e2616c770822d0c26c3e01add71d36c",
+          "joint_timestamp": 999.97,
+          "kind": "physical_sample",
+          "record_id": "bounded-1b"
+        }
+      ],
+      "scene_pose": {
+        "camera_registration_digest": "f6453dcc3a48b66d7f7c0f01ea106934eddd196a312e045f93d0fcb0a500fdc3",
+        "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "digest": "0468042e5242b9915a0650e1b2fd987019f6f05ea7d848b5b332fd3302c7bcd9",
+        "model_digest": "e36672bc67dba28691b3dc2bc3852f9016de914b63369970ba76d801dacb8986",
+        "policy_digest": "f3d19716d616b3f587c04dc9896bbd68b4f4b162059938068278c68c49d2c5a7",
+        "push_t_transform": [
+          0.38,
+          0.16,
+          0.031,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pusher_transform": [
+          -0.25,
+          -0.15,
+          0.025,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sample_digest": "e6c5e430eca1eda810348fe158174811ec8a0546f247f5e51109000e747474fb",
+        "sample_id": "bounded-1b",
+        "sample_timestamp": 999.97,
+        "schema": "so101-scene-object-pose-v1"
+      }
+    },
+    {
+      "samples": [
+        {
+          "body_degrees": [
+            70.61354057664087,
+            10.607078753611091,
+            13.94693899606429,
+            88.83220056263872,
+            -124.86990961944883
+          ],
+          "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "camera_timestamp": 1000.0,
+          "created_at": 1000.0,
+          "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "digest": "1a7fa640eebf58ab336d6ff24d9e72ec094d86c2542162821fdc8766e55a5857",
+          "frame_digest": "fd3673d2c532bc798ba8ee7b6b5055de4150154845f691fa7c10ca5dd33fb87a",
+          "joint_timestamp": 1000.0,
+          "kind": "physical_sample",
+          "record_id": "bounded-2a"
+        },
+        {
+          "body_degrees": [
+            70.61354057664087,
+            10.607078753611091,
+            13.94693899606429,
+            88.83220056263872,
+            -124.96990961944883
+          ],
+          "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "camera_timestamp": 1000.02,
+          "created_at": 1000.02,
+          "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "digest": "71d64bafae38d8f3988f576ea95ab791875d69b6c8dcfbbbcd38419dc9fdbd99",
+          "frame_digest": "9809771c9d0ac60fef1b8627a93b7a257e2616c770822d0c26c3e01add71d36c",
+          "joint_timestamp": 1000.02,
+          "kind": "physical_sample",
+          "record_id": "bounded-2b"
+        }
+      ],
+      "scene_pose": {
+        "camera_registration_digest": "f6453dcc3a48b66d7f7c0f01ea106934eddd196a312e045f93d0fcb0a500fdc3",
+        "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "digest": "004089b9857ef5387b93be6bd979252cabbcfe0bcca48973b04cc9889cddd4f9",
+        "model_digest": "e36672bc67dba28691b3dc2bc3852f9016de914b63369970ba76d801dacb8986",
+        "policy_digest": "f3d19716d616b3f587c04dc9896bbd68b4f4b162059938068278c68c49d2c5a7",
+        "push_t_transform": [
+          0.38,
+          0.16,
+          0.031,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pusher_transform": [
+          -0.25,
+          -0.15,
+          0.025,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sample_digest": "71d64bafae38d8f3988f576ea95ab791875d69b6c8dcfbbbcd38419dc9fdbd99",
+        "sample_id": "bounded-2b",
+        "sample_timestamp": 1000.02,
+        "schema": "so101-scene-object-pose-v1"
+      }
+    },
+    {
+      "samples": [
+        {
+          "body_degrees": [
+            70.61354057664087,
+            10.607078753611091,
+            13.94693899606429,
+            88.83220056263872,
+            -124.82490961944883
+          ],
+          "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "camera_timestamp": 1000.03,
+          "created_at": 1000.03,
+          "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "digest": "c1b5e14afb59be9b4e65654b83bba49a0d0dea513700ba76f56cacc34686c8d2",
+          "frame_digest": "fd3673d2c532bc798ba8ee7b6b5055de4150154845f691fa7c10ca5dd33fb87a",
+          "joint_timestamp": 1000.03,
+          "kind": "physical_sample",
+          "record_id": "bounded-3a"
+        },
+        {
+          "body_degrees": [
+            70.61354057664087,
+            10.607078753611091,
+            13.94693899606429,
+            88.83220056263872,
+            -124.92490961944883
+          ],
+          "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "camera_timestamp": 1000.04,
+          "created_at": 1000.04,
+          "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+          "digest": "6f878061b1b973e86c26c84529a3132c1183009deccdf8f14fa1bcdeea8b254f",
+          "frame_digest": "9809771c9d0ac60fef1b8627a93b7a257e2616c770822d0c26c3e01add71d36c",
+          "joint_timestamp": 1000.04,
+          "kind": "physical_sample",
+          "record_id": "bounded-3b"
+        }
+      ],
+      "scene_pose": {
+        "camera_registration_digest": "f6453dcc3a48b66d7f7c0f01ea106934eddd196a312e045f93d0fcb0a500fdc3",
+        "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "digest": "a66de965d74c886d5e27ba6a3c8f2967e43c1a4be30acb1abd0fed11bbeb0f62",
+        "model_digest": "e36672bc67dba28691b3dc2bc3852f9016de914b63369970ba76d801dacb8986",
+        "policy_digest": "f3d19716d616b3f587c04dc9896bbd68b4f4b162059938068278c68c49d2c5a7",
+        "push_t_transform": [
+          0.38,
+          0.16,
+          0.031,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "pusher_transform": [
+          -0.25,
+          -0.15,
+          0.025,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sample_digest": "6f878061b1b973e86c26c84529a3132c1183009deccdf8f14fa1bcdeea8b254f",
+        "sample_id": "bounded-3b",
+        "sample_timestamp": 1000.04,
+        "schema": "so101-scene-object-pose-v1"
+      }
+    }
+  ],
+  "mode": "bounded_fault_after_two"
+}

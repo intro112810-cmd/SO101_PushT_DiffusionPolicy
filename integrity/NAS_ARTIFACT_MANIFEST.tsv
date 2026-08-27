@@ -1,0 +1,14 @@
+package_relative_path	nas_relative_path	description
+data/datasets/native_store_200ep	datasets/native_store_200ep	200 episode canonical dataset
+models/dp_cnn/training/final_checkpoint.ckpt	models/dp_cnn/training/final_checkpoint.ckpt	DP-CNN final training checkpoint
+models/dp_cnn/bundle/policy.safetensors	models/dp_cnn/bundle/policy.safetensors	DP-CNN inference tensor
+models/dp_transformer/training/final_checkpoint.ckpt	models/dp_transformer/training/final_checkpoint.ckpt	DP-Transformer final training checkpoint
+models/dp_transformer/bundle/policy.safetensors	models/dp_transformer/bundle/policy.safetensors	DP-Transformer inference tensor
+models/ibc/training/final_checkpoint.ckpt	models/ibc/training/final_checkpoint.ckpt	IBC final training checkpoint
+models/ibc/bundle/policy.safetensors	models/ibc/bundle/policy.safetensors	IBC inference tensor
+models/lstm_gmm/training/final_checkpoint.ckpt	models/lstm_gmm/training/final_checkpoint.ckpt	LSTM-GMM final training checkpoint
+models/lstm_gmm/bundle/policy.safetensors	models/lstm_gmm/bundle/policy.safetensors	LSTM-GMM inference tensor
+sim_to_real/evidence	sim_to_real/evidence	Physical calibration and shadow evidence
+05_references/external_repos/pushT-so100/.git	runtime/pushT-so100.git	Pinned upstream Git identity
+sim_to_real/reference_only/dp_cnn_source_latest.ckpt	models/dp_cnn/training/final_checkpoint.ckpt	Recovered v4 source latest.ckpt content alias; reconstruct layout by digest
+sim_to_real/reference_only/dp_cnn_recovered_v4_policy.safetensors	models/dp_cnn/bundle/policy.safetensors	Recovered v4 authentic policy tensor; reference only

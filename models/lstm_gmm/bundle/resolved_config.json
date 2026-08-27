@@ -1,0 +1,127 @@
+{
+  "_recursive_": false,
+  "_target_": "diffusion_policy.workspace.train_robomimic_image_workspace.TrainRobomimicImageWorkspace",
+  "checkpoint": {
+    "save_last_ckpt": true,
+    "save_last_snapshot": false,
+    "topk": {
+      "format_str": "epoch={epoch:04d}-val_loss={val_loss:.6f}.ckpt",
+      "k": 1,
+      "mode": "min",
+      "monitor_key": "val_loss"
+    }
+  },
+  "dataloader": {
+    "batch_size": 8,
+    "num_workers": 0,
+    "shuffle": true
+  },
+  "horizon": 10,
+  "logging": {
+    "mode": "offline",
+    "name": "lstm_gmm",
+    "project": "so101_pusht"
+  },
+  "n_action_steps": 1,
+  "n_obs_steps": 10,
+  "name": "lstm_gmm",
+  "policy": {
+    "_target_": "diffusion_policy.policy.robomimic_image_policy.RobomimicImagePolicy",
+    "algo_name": "bc_rnn",
+    "crop_shape": [
+      76,
+      76
+    ],
+    "dataset_type": "ph",
+    "obs_type": "image",
+    "shape_meta": {
+      "action": {
+        "shape": [
+          2
+        ]
+      },
+      "obs": {
+        "agent_pos": {
+          "shape": [
+            5
+          ],
+          "type": "low_dim"
+        },
+        "cam_top": {
+          "shape": [
+            3,
+            96,
+            96
+          ],
+          "type": "rgb"
+        }
+      }
+    },
+    "task_name": "square"
+  },
+  "shape_meta": {
+    "action": {
+      "shape": [
+        2
+      ]
+    },
+    "obs": {
+      "agent_pos": {
+        "shape": [
+          5
+        ],
+        "type": "low_dim"
+      },
+      "cam_top": {
+        "shape": [
+          3,
+          96,
+          96
+        ],
+        "type": "rgb"
+      }
+    }
+  },
+  "task": {
+    "dataset": {
+      "_target_": "so101_pusht_benchmark.integrations.paper_baselines.dataset.PaperBaselineDataset",
+      "horizon": 10,
+      "pad_after": 0,
+      "pad_before": 0,
+      "zarr_path": "/data/df/02_InTro_Project/04_experiments/so101_pusht_benchmark/datasets/frozen_four_model_200ep_s96"
+    },
+    "env_runner": {
+      "_target_": "so101_pusht_benchmark.integrations.paper_baselines.runner.PaperBaselineRunner",
+      "evaluation_seeds": [],
+      "n_action_steps": 1,
+      "n_obs_steps": 10,
+      "options": {
+        "native_env_factory": "frozen"
+      }
+    }
+  },
+  "training": {
+    "checkpoint_every": 19,
+    "debug": false,
+    "device": "cuda:0",
+    "gradient_accumulate_every": 1,
+    "lr_scheduler": "cosine",
+    "lr_warmup_steps": 500,
+    "max_train_steps": 300000,
+    "max_val_steps": null,
+    "num_epochs": 1,
+    "resume": false,
+    "rollout_every": 2,
+    "sample_every": 1,
+    "sample_max_batch": 64,
+    "seed": 0,
+    "tqdm_interval_sec": 1.0,
+    "use_ema": false,
+    "val_every": 1
+  },
+  "val_dataloader": {
+    "batch_size": 8,
+    "num_workers": 0,
+    "shuffle": false
+  }
+}

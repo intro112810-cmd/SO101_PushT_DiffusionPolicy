@@ -1,0 +1,37 @@
+{
+  "schema": "so101-joint-equivalence-member-v2",
+  "sample_id": "fit-task-left",
+  "physical": {
+    "timestamp_s": 1011.0,
+    "raw_encoder_counts": [
+      1798,
+      2198,
+      1748,
+      2148,
+      2248
+    ],
+    "joint_degrees": [
+      -25.0,
+      15.0,
+      -30.0,
+      10.0,
+      20.0
+    ],
+    "measured_tool_xyz_m": [
+      0.3805637567740054,
+      0.15601188464638766,
+      0.2550344438319843
+    ]
+  },
+  "simulator": {
+    "timestamp_s": 1011.01,
+    "joint_radians": [
+      -0.4361111111111111,
+      0.2549999999999999,
+      -0.4828571428571429,
+      0.17444444444444462,
+      0.34888888888888925
+    ]
+  },
+  "claimed_fk_residual_m": 0.0
+}

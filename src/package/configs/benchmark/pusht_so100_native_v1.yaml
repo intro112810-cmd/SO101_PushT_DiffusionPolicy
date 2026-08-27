@@ -1,0 +1,22 @@
+schema: 1
+status: active
+contract_schema: pusht-so100-native-v1
+identifier: pusht_so100_native_v1
+deployment_scope: simulation_only
+upstream_environment: 05_references/external_repos/pushT-so100
+runtime_lock: environments/sim-runtime.lock
+fps: 10
+horizon: 300
+observation:
+  cam_top: {dtype: uint8, shape: [3, 224, 224]}
+  cam_side: {dtype: uint8, shape: [3, 224, 224]}
+  agent_pos:
+    dtype: float32
+    shape: [5]
+    order: [Rotation, Pitch, Elbow, Wrist_Pitch, Wrist_Roll]
+action:
+  dtype: float32
+  shape: [2]
+  meaning: absolute_mocap_xy
+  bounds: [-1.0, 1.0]
+policy_allowlist: [cam_top, cam_side, agent_pos, action]

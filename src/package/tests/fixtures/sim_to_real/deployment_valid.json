@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "mode": "sim_to_real_deployment_ready",
+  "deployment_valid": true,
+  "actuation_performed": false,
+  "lineage_digest": "192d568795b756ac1edcde78a4a24ed8d37f1fef3bde14cd32a6d441c221a5e4",
+  "policy_digest": "54f41dcc964169459dc4d77f64bfa4f53bcc21e2d405931cd0eb51f41af11a6a",
+  "camera_registration_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "joint_equivalence_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "joint_mapping_receipt_status": "valid",
+  "joint_mapping_valid": true
+}

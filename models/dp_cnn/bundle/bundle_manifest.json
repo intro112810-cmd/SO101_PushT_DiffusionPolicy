@@ -1,0 +1,24 @@
+{
+  "identity": {
+    "dataset_digest": "03e2c1b5abd2d08458da192f202b09000146e71500882fc212d731a203c19506",
+    "environment_manifest_digest": "4b89a0844fb7dad512384bd3fbcba5d4f65b555d67c6d67a822140b9348f9e73",
+    "executed_actions": 8,
+    "horizon": 16,
+    "model": "dp_cnn",
+    "observation_steps": 2,
+    "optimizer_updates": 400000,
+    "policy_class": "DiffusionUnetHybridImagePolicy",
+    "policy_module": "diffusion_policy.policy.diffusion_unet_hybrid_image_policy",
+    "policy_target": "diffusion_policy.policy.diffusion_unet_hybrid_image_policy.DiffusionUnetHybridImagePolicy",
+    "robomimic_commit": "62ed2de905caeb9133136e4d14d810a8b6baa96c",
+    "runtime_lock_digest": "10776208a02c73299caf78249cecd8d1d6870e026ab456ec1c11087adc521b9a",
+    "split_digest": "251435abffefdd3c2b6bf55202678e47f66379e5722346b13ed79381907d5b68",
+    "stanford_commit": "5ba07ac6661db573af695b419a7947ecb704690f",
+    "workspace_class": "TrainDiffusionUnetHybridWorkspace",
+    "workspace_module": "diffusion_policy.workspace.train_diffusion_unet_hybrid_workspace",
+    "workspace_target": "diffusion_policy.workspace.train_diffusion_unet_hybrid_workspace.TrainDiffusionUnetHybridWorkspace"
+  },
+  "resolved_config_sha256": "ccbc127d9eedeb25b2441fefa04dee0faf35f76ce5c79b78ce71b0784d976f1c",
+  "schema": 1,
+  "source_checkpoint_sha256": "a7224ec4c8cd7172185f0160ede1944895eb9c5e6417cddc3d53ab40c3af84a8"
+}

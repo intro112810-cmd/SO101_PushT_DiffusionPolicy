@@ -1,0 +1,32 @@
+{
+  "snapshots": [
+    {
+      "frame": "ff00a1",
+      "camera_timestamp": 1000000.0,
+      "joint_timestamp": 1000000.0,
+      "body_degrees": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "frame": "00ffa2",
+      "camera_timestamp": 1000000.01,
+      "joint_timestamp": 1000000.01,
+      "body_degrees": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ],
+      "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+  ]
+}

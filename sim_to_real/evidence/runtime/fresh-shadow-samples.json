@@ -1,0 +1,198 @@
+{
+  "actuation_performed": false,
+  "authority_scope": "read_only_evidence_acquisition",
+  "calibration_digest": "873a5340cfb730a4e34ba8ca1f860cfc8e43321090e5d2b92872bc2ecfb5bbc5",
+  "camera_device_digest": "d23762ac6fda05f51ce57ec5966b302defd76277f8c0c0cf2b5c21a994d652eb",
+  "camera_permissions": [
+    "open_existing_capture",
+    "observe_properties",
+    "read_frames",
+    "release_capture"
+  ],
+  "camera_readiness": {
+    "deadline": 1211234.199644113,
+    "discarded_priming_frame_count": 1,
+    "phase_started_at": 1211229.199644113,
+    "priming_read_id": "camera-000",
+    "read_completed_at": 1211230.104113559,
+    "read_started_at": 1211229.555393306,
+    "readiness_completed_at": 1211230.10415162,
+    "worker_started_at": 1211229.18054536
+  },
+  "capture_windows": [
+    {
+      "camera_completed_at": 1211230.915542453,
+      "camera_duration_seconds": 0.0004948109854012728,
+      "camera_read_id": "camera-001",
+      "camera_started_at": 1211230.915047642,
+      "joint_completed_at": 1211230.91626122,
+      "joint_duration_seconds": 0.001194541808217764,
+      "joint_read_id": "joint-000",
+      "joint_started_at": 1211230.915066678,
+      "midpoint_skew_seconds": 0.00036890129558742046,
+      "sample_id": "sample-000"
+    },
+    {
+      "camera_completed_at": 1211230.917641698,
+      "camera_duration_seconds": 0.00010923296213150024,
+      "camera_read_id": "camera-002",
+      "camera_started_at": 1211230.917532465,
+      "joint_completed_at": 1211230.918446736,
+      "joint_duration_seconds": 0.0009081799071282148,
+      "joint_read_id": "joint-001",
+      "joint_started_at": 1211230.917538556,
+      "midpoint_skew_seconds": 0.00040556443855166435,
+      "sample_id": "sample-001"
+    }
+  ],
+  "cleanup": [
+    {
+      "adapter_closed": true,
+      "cleanup_errors": [],
+      "kill_sent": false,
+      "process_reaped": true,
+      "role": "camera",
+      "terminate_sent": true
+    },
+    {
+      "adapter_closed": true,
+      "cleanup_errors": [],
+      "kill_sent": false,
+      "process_reaped": true,
+      "role": "joint",
+      "terminate_sent": false
+    }
+  ],
+  "count": 2,
+  "evidence_scope": "authorized_physical_diagnostic",
+  "follower_device_digest": "49a31cad557117eda9583670441e35bc787688526d1f09da99b52c9b61783c28",
+  "follower_permissions": [
+    "direct_bus_connect",
+    "sync_read:Torque_Enable",
+    "sync_read:Present_Position",
+    "disconnect:disable_torque=false"
+  ],
+  "forbidden_capabilities": [
+    "Goal_Position",
+    "sync_write",
+    "torque_write",
+    "configuration_write",
+    "calibration_write",
+    "SOFollower.connect",
+    "SOFollower.configure",
+    "SOFollower.calibrate",
+    "SOFollower.send_action",
+    "single_step",
+    "bounded_rollout",
+    "arming"
+  ],
+  "genuine_physical_samples": true,
+  "identity_evidence_digest": "8fefc9ea1c3d2c54bd34a29d93f3068ca93d0eb4d9d486fb30bafa9159c45a35",
+  "mode": "sim_to_real_physical_sample_capture",
+  "motor_writes_performed": false,
+  "phase_timing": [
+    {
+      "camera_completed_at": 1211229.199455973,
+      "camera_worker_started_at": 1211229.18054536,
+      "deadline": 1211234.175961472,
+      "joint_completed_at": 1211229.198897865,
+      "joint_worker_started_at": 1211229.181084624,
+      "phase": "runtime_preflight",
+      "phase_started_at": 1211229.175961472,
+      "sample_index": null,
+      "timeout_observed_at": null
+    },
+    {
+      "camera_completed_at": null,
+      "camera_worker_started_at": null,
+      "deadline": 1211234.199644113,
+      "joint_completed_at": 1211230.91457364,
+      "joint_worker_started_at": 1211229.181084624,
+      "phase": "joint_connect",
+      "phase_started_at": 1211229.199644113,
+      "sample_index": null,
+      "timeout_observed_at": null
+    },
+    {
+      "camera_completed_at": 1211230.10415162,
+      "camera_worker_started_at": 1211229.18054536,
+      "deadline": 1211234.199644113,
+      "joint_completed_at": null,
+      "joint_worker_started_at": null,
+      "phase": "camera_readiness",
+      "phase_started_at": 1211229.199644113,
+      "sample_index": null,
+      "timeout_observed_at": null
+    },
+    {
+      "camera_completed_at": 1211230.915552762,
+      "camera_worker_started_at": 1211230.915035179,
+      "deadline": 1211231.114861967,
+      "joint_completed_at": 1211230.916280997,
+      "joint_worker_started_at": 1211230.915048233,
+      "phase": "sample_pair",
+      "phase_started_at": 1211230.914861967,
+      "sample_index": 0,
+      "timeout_observed_at": null
+    },
+    {
+      "camera_completed_at": 1211230.917646287,
+      "camera_worker_started_at": 1211230.917525272,
+      "deadline": 1211231.117284514,
+      "joint_completed_at": 1211230.91844901,
+      "joint_worker_started_at": 1211230.917531213,
+      "phase": "sample_pair",
+      "phase_started_at": 1211230.917284514,
+      "sample_index": 1,
+      "timeout_observed_at": null
+    }
+  ],
+  "policy_digest": "8fefc9ea1c3d2c54bd34a29d93f3068ca93d0eb4d9d486fb30bafa9159c45a35",
+  "provider_digest": "b1eccc5cbf2c6fd2bb497a40a7070e9ae14ffad2ab7267c1077e804d33629f0a",
+  "runtime_dependency": {
+    "distribution": "feetech-servo-sdk",
+    "module": "scservo_sdk",
+    "module_origin": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/scservo_sdk/__init__.py",
+    "version": "1.0.0"
+  },
+  "samples": [
+    {
+      "body_degrees": [
+        -97.53846153846153,
+        -28.175824175824175,
+        79.42857142857143,
+        62.285714285714285,
+        -22.63736263736264
+      ],
+      "calibration_digest": "873a5340cfb730a4e34ba8ca1f860cfc8e43321090e5d2b92872bc2ecfb5bbc5",
+      "camera_timestamp": 1211230.9152950477,
+      "created_at": 1211230.916754437,
+      "device_digest": "49a31cad557117eda9583670441e35bc787688526d1f09da99b52c9b61783c28",
+      "digest": "c8c488c6842c003dbabf25989434e3028365f83dac8f40a79760576f1d7885ac",
+      "frame_digest": "15f4ad8e84a31fd1fdc1e4eb6bf16d62b823426322a27acf9be4e3b77d044853",
+      "joint_timestamp": 1211230.915663949,
+      "kind": "physical_sample",
+      "record_id": "sample-000"
+    },
+    {
+      "body_degrees": [
+        -97.53846153846153,
+        -28.175824175824175,
+        79.42857142857143,
+        62.285714285714285,
+        -22.63736263736264
+      ],
+      "calibration_digest": "873a5340cfb730a4e34ba8ca1f860cfc8e43321090e5d2b92872bc2ecfb5bbc5",
+      "camera_timestamp": 1211230.9175870814,
+      "created_at": 1211230.918496499,
+      "device_digest": "49a31cad557117eda9583670441e35bc787688526d1f09da99b52c9b61783c28",
+      "digest": "f0e2b2a3c5803f399225a2f680ee1897347b4f6302a73aabf272e328bc40bef8",
+      "frame_digest": "63eb7fc3d6a00e2287813c828a46090d86e095f93418947f39bbf75a48f2a7ec",
+      "joint_timestamp": 1211230.9179926459,
+      "kind": "physical_sample",
+      "record_id": "sample-001"
+    }
+  ],
+  "schema": 3,
+  "source_lineage_authority_digest": "a4bdf02bf40c80ababc93eb2bcffc02cfa6878aa0cfe470aba7332bf71f6b658"
+}

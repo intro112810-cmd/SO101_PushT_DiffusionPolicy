@@ -1,0 +1,12 @@
+{
+  "actuation_performed": false,
+  "cycle_limit": 1,
+  "cycles_completed": 1,
+  "ledger_digest": "1cefe9ba61e2931afb0792c2d3003ba85d5252e25e446008684adaf9b585a152",
+  "mode": "sim_to_real_continuous_shadow_campaign",
+  "motor_writes_performed": false,
+  "schema": 1,
+  "terminal_code": "SHADOW_COMPLETE",
+  "terminal_state": "SHADOW_COMPLETE",
+  "writer_symbols": 0
+}

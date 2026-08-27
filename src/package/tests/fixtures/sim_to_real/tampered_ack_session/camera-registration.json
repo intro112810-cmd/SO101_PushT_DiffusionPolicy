@@ -1,0 +1,33 @@
+{
+  "audited": true,
+  "checkpoint_view_members": [
+    "held-a",
+    "held-b"
+  ],
+  "code": null,
+  "config_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "device_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "digest": "f6453dcc3a48b66d7f7c0f01ea106934eddd196a312e045f93d0fcb0a500fdc3",
+  "evidence_scope": "synthetic_test_fixture",
+  "fit_correspondences": 12,
+  "fit_physical_to_sim_residual_m": 0.0,
+  "fit_reprojection_error_px": 0.0,
+  "genuine_physical_corpus": false,
+  "held_out_correspondences": 12,
+  "held_out_physical_to_sim_residual_m": 0.0,
+  "held_out_reprojection_error_px": 0.0,
+  "max_correspondence_error_px": 0.0,
+  "max_physical_to_sim_residual_m": 0.0,
+  "member_digests": {
+    "fit-a": "2f005ff0bccfb7c9e4b2d0010bc8335a3dba86f02bbd122018b4bca2d1e99d69",
+    "fit-b": "9c5a99753a46ab72600ddb054b879eb2ba4ce7f34867550c00b9e1ada848543a",
+    "held-a": "8c321912ad38c62c8c361920af6fcf97aa0074384232df17c9927a0aaff42c07",
+    "held-b": "3e0479a1d623ab677509b97393b8f9871ed4f9e86f43943c2af9ff4b2b850b5b"
+  },
+  "metrics_source": "recomputed_from_raw_points_and_matrices",
+  "orientation_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "physical_to_sim_policy_limit_m": 0.0018333333333333335,
+  "policy_authority": "FixtureApprovedSafetyPolicy",
+  "policy_evidence": "fixture_policy_not_production_authority",
+  "source_evidence_scope": "synthetic_test_fixture"
+}

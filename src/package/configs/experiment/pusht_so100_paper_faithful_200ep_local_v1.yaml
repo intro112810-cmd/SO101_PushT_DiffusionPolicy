@@ -1,0 +1,100 @@
+schema: pusht-so100-paper-faithful-profiles-v1
+dataset:
+  episodes: 200
+  train: 180
+  validation: 20
+  test: 0
+training_seeds:
+- 0
+- 1
+- 2
+models:
+  dp_cnn:
+    budget:
+      unit: epochs
+      value: 667
+    resolved_optimizer_updates: 400000
+    parameters:
+      horizons:
+      - 2
+      - 8
+      - 16
+      batch_size: 64
+      optimizer: adamw
+      learning_rate: 0.0001
+      weight_decay: 1.0e-06
+      betas:
+      - 0.95
+      - 0.999
+      warmup_updates: 500
+      diffusion_train_steps: 100
+      diffusion_inference_steps: 100
+      ema: true
+  dp_transformer:
+    budget:
+      unit: epochs
+      value: 667
+    resolved_optimizer_updates: 400000
+    parameters:
+      horizons:
+      - 2
+      - 8
+      - 16
+      batch_size: 64
+      layers: 8
+      heads: 4
+      embedding_dim: 256
+      attention_dropout: 0.01
+      learning_rate: 0.0001
+      weight_decay: 0.1
+      encoder_weight_decay: 1.0e-06
+      betas:
+      - 0.9
+      - 0.95
+      warmup_updates: 1000
+      diffusion_train_steps: 100
+      diffusion_inference_steps: 100
+      ema: true
+  ibc:
+    budget:
+      unit: updates
+      value: 100000
+    resolved_optimizer_updates: 100000
+    parameters:
+      horizons:
+      - 2
+      - 1
+      - 2
+      batch_size: 128
+      optimizer: adam
+      learning_rate: 0.001
+      betas:
+      - 0.9
+      - 0.999
+      lr_decay: 0.99
+      lr_decay_updates: 100
+      training_negatives: 256
+      inference_samples: 4096
+      dfo_iterations: 3
+      action_bound_buffer: 0.05
+  lstm_gmm:
+    budget:
+      unit: updates
+      value: 300000
+    resolved_optimizer_updates: 300000
+    parameters:
+      horizons:
+      - 10
+      - 1
+      - 10
+      batch_size: 16
+      optimizer: adam
+      learning_rate: 0.0001
+      lstm_layers: 2
+      hidden_dim: 1000
+      post_rnn_mlp: false
+      gmm_modes: 5
+      minimum_std: 0.0001
+      rollout_std: 0.0001
+      image_encoder: resnet18
+      spatial_softmax_keypoints_per_camera: 64

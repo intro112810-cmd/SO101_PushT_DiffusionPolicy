@@ -1,0 +1,29 @@
+{
+  "schema": "so101-guided-joint-corpus-fixture-v1",
+  "torque_enabled": [0, 0, 0, 0, 0, 0],
+  "calibration": {
+    "shoulder_pan": {"id": 1, "drive_mode": 0, "homing_offset": 1943, "range_min": 1022, "range_max": 3091},
+    "shoulder_lift": {"id": 2, "drive_mode": 0, "homing_offset": -1291, "range_min": 849, "range_max": 3194},
+    "elbow_flex": {"id": 3, "drive_mode": 0, "homing_offset": 1614, "range_min": 700, "range_max": 3095},
+    "wrist_flex": {"id": 4, "drive_mode": 0, "homing_offset": 2000, "range_min": 999, "range_max": 3264},
+    "wrist_roll": {"id": 5, "drive_mode": 0, "homing_offset": 1430, "range_min": 300, "range_max": 4095},
+    "gripper": {"id": 6, "drive_mode": 0, "homing_offset": 970, "range_min": 1458, "range_max": 2963}
+  },
+  "raw_encoder_samples": [
+    [2056, 2022, 1898, 2132, 2198, 2000],
+    [1956, 2022, 1898, 2132, 2198, 2000],
+    [2056, 1922, 1898, 2132, 2198, 2000],
+    [2056, 2022, 1798, 2132, 2198, 2000],
+    [2056, 2022, 1898, 2032, 2198, 2000],
+    [2056, 2022, 1898, 2132, 2098, 2000],
+    [2156, 2022, 1898, 2132, 2198, 2000],
+    [2056, 2122, 1898, 2132, 2198, 2000],
+    [2056, 2022, 1998, 2132, 2198, 2000],
+    [2056, 2022, 1898, 2232, 2198, 2000],
+    [2056, 2022, 1898, 2132, 2298, 2000],
+    [1856, 2172, 1698, 2232, 2348, 2000],
+    [2256, 1872, 2048, 2032, 2048, 2000],
+    [1956, 1822, 1998, 2282, 1998, 2000],
+    [2206, 2222, 1748, 1982, 2398, 2000]
+  ]
+}

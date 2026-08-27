@@ -1,0 +1,15 @@
+{
+  "schema": "camera-corpus-authority-v1",
+  "artifact_scope": "production",
+  "approved_by": "camera-fixture-owner@example.invalid",
+  "approval_id": "fake-camera-corpus-approval-v1",
+  "scheme": "fake-production-sha256-v1",
+  "corpus_digest": "d59e7124ff8dd9e4a18feb096a9562a2eb22dc07c385e6b96331a4d526cc2cd5",
+  "live_identity_digest": "cd645b972dbaa899ba519ed6fc4181b935cb7864373fbd8b80bd3b2ad9ecbff8",
+  "provider_digest": "1111111111111111111111111111111111111111111111111111111111111111",
+  "profile_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "camera_device_digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "calibration_digest": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "orientation_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "binding_signature": "1f64a1d5855162d6816d590d995a8c98f1af7c2933f7c6de842c5547274e15dc"
+}

@@ -1,0 +1,90 @@
+schema: 2
+workspace:
+  status: active
+  mode: native_pusht_so100_four_model_benchmark
+  path: 03_code/so101_pusht_benchmark
+  plan: .omo/plans/pusht-so100-four-model-clean-restart.md
+  artifact_root: 04_experiments/so101_pusht_benchmark
+  legacy_modes_superseded:
+    - multi_task
+    - scripted_expert
+    - custom_sim
+    - mouse_keyboard
+    - selected_view
+    - schema_3
+native_contract:
+  schema: pusht-so100-native-v1
+  images:
+    cam_top: {dtype: uint8, shape: [224, 224, 3]}
+    cam_side: {dtype: uint8, shape: [224, 224, 3]}
+  state:
+    key: agent_pos
+    dtype: float32
+    shape: [5]
+    order: [Rotation, Pitch, Elbow, Wrist_Pitch, Wrist_Roll]
+  action:
+    dtype: float32
+    shape: [2]
+    meaning: absolute_mocap_xy
+    bounds: [-1.0, 1.0]
+  fps: 10
+active_configs:
+  benchmark: configs/benchmark/pusht_so100_native_v1.yaml
+  collection: configs/collection/pusht_so100_f710_native_v1.yaml
+  export: configs/export/pusht_so100_native_v1.yaml
+model_authority:
+  identities:
+    dp_cnn: {training: simulation_only, evaluation: simulation_only, bundle: simulation_only}
+    dp_transformer: {training: simulation_only, evaluation: simulation_only, bundle: simulation_only}
+    ibc: {training: simulation_only, evaluation: simulation_only, bundle: simulation_only}
+    lstm_gmm: {training: simulation_only, evaluation: simulation_only, bundle: simulation_only}
+  hardware_control: forbidden
+real_diagnostic_rollout:
+  status: governed
+  authority: separate_control_plane
+  deployment_scope: physical_diagnostic_only
+  plan: .omo/plans/sim-to-real-first-rollout.md
+  hardware_profile: configs/hardware/so101_real_v1.yaml
+  module_root: so101_pusht_benchmark.sim_to_real
+  allowed_scripts:
+    - scripts/check_guarded_single_step.py
+    - scripts/run_guarded_single_step.py
+    - scripts/run_guarded_bounded_rollout.py
+    - scripts/verify_guarded_rollout.py
+  require_owner_approved_policy: true
+  require_single_owner_writer: true
+historical:
+  plans:
+    - .omo/plans/so101-pusht-z-state-realignment.md
+    - .omo/plans/so101-pusht-four-model-benchmark.md
+    - .omo/plans/original-diffusion-policy-pusht-reproduction.md
+  configs:
+    - configs/benchmark/pusht_v1.yaml
+    - configs/benchmark/pusht_mouse_topdown_v3.yaml
+    - configs/collection/pusht_gamepad_v1.yaml
+    - configs/collection/pusht_mouse_keyboard_v3.yaml
+    - configs/export/paper_view_v1.yaml
+prototypes:
+  - path: 03_code/so101_diffusion_policy
+    status: frozen
+    runtime_import: forbidden
+  - path: 03_code/so101
+    status: frozen
+    runtime_import: forbidden
+archive:
+  physical_archive: after_replacement_vertical_slice
+runtime:
+  native_lock: environments/sim-runtime.lock
+  native_lock_sha256: ec33c6e8a4d10e82d637bca557e829786ce2e860c713195791e3534159108f30
+  fallback: forbidden
+  forbidden_import_roots:
+    - so101_dp
+    - so101
+    - 03_code/so101_diffusion_policy
+    - 03_code/so101
+  generated_artifacts_root: 04_experiments/so101_pusht_benchmark
+report_routing:
+  runtime_artifacts_root: 04_experiments/so101_pusht_benchmark
+  obsidian_markdown_exception: /home/intro/InternLab/Obsidian/350_인턴플젝@/AI_보고서
+  obsidian_exception_requires_user_request: true
+  no_automatic_obsidian_write: true

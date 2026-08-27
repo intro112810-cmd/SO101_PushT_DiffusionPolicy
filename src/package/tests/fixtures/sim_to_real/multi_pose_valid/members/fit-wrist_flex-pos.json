@@ -1,0 +1,37 @@
+{
+  "schema": "so101-joint-equivalence-member-v2",
+  "sample_id": "fit-wrist_flex-pos",
+  "physical": {
+    "timestamp_s": 1008.0,
+    "raw_encoder_counts": [
+      2048,
+      2048,
+      2048,
+      2248,
+      2048
+    ],
+    "joint_degrees": [
+      0.0,
+      0.0,
+      0.0,
+      20.0,
+      0.0
+    ],
+    "measured_tool_xyz_m": [
+      0.3792678730458269,
+      -0.00016125528701152266,
+      0.17251227103445285
+    ]
+  },
+  "simulator": {
+    "timestamp_s": 1008.01,
+    "joint_radians": [
+      0.0,
+      0.0,
+      0.0,
+      0.348888888888889,
+      0.0
+    ]
+  },
+  "claimed_fk_residual_m": 0.0
+}

@@ -1,0 +1,24 @@
+{
+  "identity": {
+    "dataset_digest": "03e2c1b5abd2d08458da192f202b09000146e71500882fc212d731a203c19506",
+    "environment_manifest_digest": "4b89a0844fb7dad512384bd3fbcba5d4f65b555d67c6d67a822140b9348f9e73",
+    "executed_actions": 1,
+    "horizon": 10,
+    "model": "lstm_gmm",
+    "observation_steps": 10,
+    "optimizer_updates": 300000,
+    "policy_class": "RobomimicImagePolicy",
+    "policy_module": "diffusion_policy.policy.robomimic_image_policy",
+    "policy_target": "diffusion_policy.policy.robomimic_image_policy.RobomimicImagePolicy",
+    "robomimic_commit": "62ed2de905caeb9133136e4d14d810a8b6baa96c",
+    "runtime_lock_digest": "10776208a02c73299caf78249cecd8d1d6870e026ab456ec1c11087adc521b9a",
+    "split_digest": "251435abffefdd3c2b6bf55202678e47f66379e5722346b13ed79381907d5b68",
+    "stanford_commit": "5ba07ac6661db573af695b419a7947ecb704690f",
+    "workspace_class": "TrainRobomimicImageWorkspace",
+    "workspace_module": "diffusion_policy.workspace.train_robomimic_image_workspace",
+    "workspace_target": "diffusion_policy.workspace.train_robomimic_image_workspace.TrainRobomimicImageWorkspace"
+  },
+  "resolved_config_sha256": "f19afb77b8b8fd10f8d163b6565b23ad3deffcdd0becab6e290e918c4c180641",
+  "schema": 1,
+  "source_checkpoint_sha256": "0c0b67d9c023dc57cd0f5d67ca4157419fd9a05135426092ab5b086bb776aa6f"
+}

@@ -1,0 +1,165 @@
+{
+  "_recursive_": false,
+  "_target_": "diffusion_policy.workspace.train_diffusion_unet_hybrid_workspace.TrainDiffusionUnetHybridWorkspace",
+  "checkpoint": {
+    "save_last_ckpt": true,
+    "save_last_snapshot": false,
+    "topk": {
+      "format_str": "epoch={epoch:04d}-val_loss={val_loss:.6f}.ckpt",
+      "k": 1,
+      "mode": "min",
+      "monitor_key": "val_loss"
+    }
+  },
+  "dataloader": {
+    "batch_size": 32,
+    "num_workers": 0,
+    "shuffle": true
+  },
+  "ema": {
+    "_target_": "diffusion_policy.model.diffusion.ema_model.EMAModel",
+    "inv_gamma": 1.0,
+    "max_value": 0.9999,
+    "min_value": 0.0,
+    "power": 0.75,
+    "update_after_step": 0
+  },
+  "horizon": 16,
+  "logging": {
+    "mode": "offline",
+    "name": "dp_cnn",
+    "project": "so101_pusht"
+  },
+  "n_action_steps": 8,
+  "n_obs_steps": 2,
+  "name": "dp_cnn",
+  "optimizer": {
+    "_target_": "torch.optim.AdamW",
+    "betas": [
+      0.95,
+      0.999
+    ],
+    "eps": 1e-08,
+    "lr": 0.0001,
+    "weight_decay": 1e-06
+  },
+  "policy": {
+    "_target_": "diffusion_policy.policy.diffusion_unet_hybrid_image_policy.DiffusionUnetHybridImagePolicy",
+    "cond_predict_scale": true,
+    "crop_shape": [
+      76,
+      76
+    ],
+    "diffusion_step_embed_dim": 128,
+    "down_dims": [
+      512,
+      1024,
+      2048
+    ],
+    "eval_fixed_crop": true,
+    "horizon": 16,
+    "n_action_steps": 8,
+    "n_obs_steps": 2,
+    "noise_scheduler": {
+      "_target_": "diffusers.schedulers.scheduling_ddpm.DDPMScheduler",
+      "beta_end": 0.02,
+      "beta_schedule": "squaredcos_cap_v2",
+      "beta_start": 0.0001,
+      "clip_sample": true,
+      "num_train_timesteps": 100,
+      "prediction_type": "epsilon",
+      "variance_type": "fixed_small"
+    },
+    "num_inference_steps": 100,
+    "obs_as_global_cond": true,
+    "obs_encoder_group_norm": true,
+    "shape_meta": {
+      "action": {
+        "shape": [
+          2
+        ]
+      },
+      "obs": {
+        "agent_pos": {
+          "shape": [
+            5
+          ],
+          "type": "low_dim"
+        },
+        "cam_top": {
+          "shape": [
+            3,
+            96,
+            96
+          ],
+          "type": "rgb"
+        }
+      }
+    }
+  },
+  "shape_meta": {
+    "action": {
+      "shape": [
+        2
+      ]
+    },
+    "obs": {
+      "agent_pos": {
+        "shape": [
+          5
+        ],
+        "type": "low_dim"
+      },
+      "cam_top": {
+        "shape": [
+          3,
+          96,
+          96
+        ],
+        "type": "rgb"
+      }
+    }
+  },
+  "task": {
+    "dataset": {
+      "_target_": "so101_pusht_benchmark.integrations.paper_baselines.dataset.PaperBaselineDataset",
+      "horizon": 16,
+      "pad_after": 7,
+      "pad_before": 1,
+      "zarr_path": "/home/user/kihyun/df/02_InTro_Project/04_experiments/so101_pusht_benchmark/datasets/frozen_four_model_200ep_s96"
+    },
+    "env_runner": {
+      "_target_": "so101_pusht_benchmark.integrations.paper_baselines.runner.PaperBaselineRunner",
+      "evaluation_seeds": [],
+      "n_action_steps": 8,
+      "n_obs_steps": 2,
+      "options": {
+        "native_env_factory": "frozen"
+      }
+    }
+  },
+  "training": {
+    "checkpoint_every": 19,
+    "debug": false,
+    "device": "cuda:0",
+    "gradient_accumulate_every": 1,
+    "lr_scheduler": "cosine",
+    "lr_warmup_steps": 500,
+    "max_train_steps": 400000,
+    "max_val_steps": null,
+    "num_epochs": 1,
+    "resume": false,
+    "rollout_every": 2,
+    "sample_every": 1,
+    "sample_max_batch": 64,
+    "seed": 0,
+    "tqdm_interval_sec": 1.0,
+    "use_ema": true,
+    "val_every": 1
+  },
+  "val_dataloader": {
+    "batch_size": 32,
+    "num_workers": 0,
+    "shuffle": false
+  }
+}

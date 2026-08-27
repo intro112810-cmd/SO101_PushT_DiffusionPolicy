@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "mode": "sim_to_real_physical_sample_capture",
+  "count": 2,
+  "policy_digest": "54f41dcc964169459dc4d77f64bfa4f53bcc21e2d405931cd0eb51f41af11a6a",
+  "samples": [
+    {
+      "kind": "physical_sample",
+      "record_id": "sample-000",
+      "created_at": 896483.956448398,
+      "camera_timestamp": 1000000.0,
+      "joint_timestamp": 1000000.0,
+      "frame_digest": "fd3673d2c532bc798ba8ee7b6b5055de4150154845f691fa7c10ca5dd33fb87a",
+      "body_degrees": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "digest": "8bf0bfe2005ea2b52691f7bf555d592e8ad735052887d3064d0a6519dfcb4f88"
+    },
+    {
+      "kind": "physical_sample",
+      "record_id": "sample-001",
+      "created_at": 896483.956468306,
+      "camera_timestamp": 1000000.01,
+      "joint_timestamp": 1000000.01,
+      "frame_digest": "fd3673d2c532bc798ba8ee7b6b5055de4150154845f691fa7c10ca5dd33fb87a",
+      "body_degrees": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "device_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "calibration_digest": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "digest": "8babb19da26730a56850bea07e56a86ed6ab577f710d9f74442a274ca0230df4"
+    }
+  ],
+  "motor_writes_performed": false,
+  "actuation_performed": false
+}

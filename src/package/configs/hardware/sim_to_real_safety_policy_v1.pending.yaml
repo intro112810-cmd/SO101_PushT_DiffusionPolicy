@@ -1,0 +1,81 @@
+schema: so101-sim-to-real-safety-policy-v1
+policy_version: null
+policy_id: null
+artifact_scope: production_pending
+approval_status: pending
+approved_by: null
+approved_at: null
+valid_from: null
+expires_at: null
+canonical_digest: null
+thresholds:
+  workspace:
+    polygon_xy_m: null
+    contact_z_m: null
+    tool_orientation_rpy_rad: null
+  joint_domains:
+    joint_order: null
+    physical_degrees:
+      shoulder_pan: null
+      shoulder_lift: null
+      elbow_flex: null
+      wrist_flex: null
+      wrist_roll: null
+    mapped_radians:
+      shoulder_pan: null
+      shoulder_lift: null
+      elbow_flex: null
+      wrist_flex: null
+      wrist_roll: null
+  timing:
+    sample_max_age_seconds: null
+    sample_max_skew_seconds: null
+    max_policy_age_seconds: null
+    authorization_max_age_seconds: null
+    authorization_ttl_seconds: null
+  camera:
+    max_reprojection_error_px: null
+    min_correspondences: null
+    max_correspondence_error_px: null
+  kinematics:
+    max_fk_residual_m: null
+    max_ik_residual_m: null
+    min_singularity_metric: null
+    max_branch_delta_degrees: null
+  slew:
+    max_cartesian_delta_m: null
+    max_joint_delta_degrees: null
+  provider:
+    exact_goal_required: null
+    max_abs_error_degrees: null
+  watchdog:
+    timeout_seconds: null
+  acknowledgement:
+    required: null
+    timeout_seconds: null
+    max_position_error_degrees: null
+  post_state:
+    max_age_seconds: null
+    max_tracking_error_degrees: null
+  shadow:
+    min_cycles: null
+    max_cycle_latency_seconds: null
+    max_error_count: null
+  single_step:
+    max_commands: 1
+  bounded_rollout:
+    max_commands: null
+    max_duration_seconds: null
+    max_path_length_m: null
+    max_error_count: null
+  operator:
+    deadman_required: null
+    stop_required: null
+    stop_behavior: pending
+    acknowledgement_required: null
+owner_approval:
+  scheme: rsa-pkcs1v15-sha256-v1
+  approval_id: null
+  signer_id: null
+  policy_digest: null
+  binding_signature: null

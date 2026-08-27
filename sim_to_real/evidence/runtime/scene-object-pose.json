@@ -1,0 +1,29 @@
+{
+  "schema": "so101-scene-object-pose-v1",
+  "sample_id": "sample-001",
+  "sample_timestamp": 1211017.710942109,
+  "sample_digest": "aad4ded251b2cf5542f904babc0b4421da491fd951b9d9da7f96823e3aba4744",
+  "device_digest": "d23762ac6fda05f51ce57ec5966b302defd76277f8c0c0cf2b5c21a994d652eb",
+  "camera_registration_digest": "ea4f530e87a7132aa339fbd0fca18b46074f65c8c5bbb290fa9f035ba6ee0b00",
+  "policy_digest": "8e9d43189df535d51825886a6ff4367f71feaadca416f190b9edd698eae5e3d5",
+  "model_digest": "e36672bc67dba28691b3dc2bc3852f9016de914b63369970ba76d801dacb8986",
+  "pusher_transform": [
+    0.15320735188240198,
+    0.05629815428976862,
+    0.025,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "push_t_transform": [
+    0.2638615931413532,
+    -0.09924395326224246,
+    0.031,
+    0.8948860678405883,
+    0.0,
+    0.0,
+    -0.4462946622858152
+  ],
+  "digest": "abdc41b1105cbedcbfae7f2b7034c94810e2e1fa9c217b322b65bc9d8c7afa11"
+}

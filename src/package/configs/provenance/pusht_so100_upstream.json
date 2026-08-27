@@ -1,0 +1,167 @@
+{
+ "schema": 1,
+ "source": {
+  "name": "pushT-so100",
+  "head": "f4d6d1311bc0b43ce65458a9edd856f3c7e0a520",
+  "remote": "https://github.com/boaoqian/pushT-so100.git"
+ },
+ "environment": {
+  "path": "environment.yml",
+  "sha256": "a7aab5a14bb18b6bb94cd1ecf13616384c6af87ba131ae5dc86fec7e94920f70"
+ },
+ "runtime_members": [
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Base.stl",
+   "kind": "asset",
+   "sha256": "bb8afb0303c0125f265a797625cfaf646ac214d5d2dc9c986348c415755e2a74"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Base_Motor.stl",
+   "kind": "asset",
+   "sha256": "aac4485d448eca418d2a93df3f78f449bd59b21ec1af2a579171819fd44ea576"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Fixed_Jaw.stl",
+   "kind": "asset",
+   "sha256": "5528867073033eaa4c27a8087180954f3f0635bd69d517d5cace92f01dd266b2"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Fixed_Jaw_Collision_1.stl",
+   "kind": "asset",
+   "sha256": "c6f83e6b45d9bd3e3af5f624bd514604230609ff9a941702ab890cf366c684dd"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Fixed_Jaw_Collision_2.stl",
+   "kind": "asset",
+   "sha256": "4b142e4390f13b15982612e705fa8e593a84c735ed4744aa72e555c06144a740"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Fixed_Jaw_Motor.stl",
+   "kind": "asset",
+   "sha256": "0321bfb902d5a119c4f2a934ab4be7e9ea8c93a02e1685f066f99c24a5ca3ecf"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Lower_Arm.stl",
+   "kind": "asset",
+   "sha256": "a04511bc65cbb702b2d6023764de947888b06a09fbf272803f39c22724329a3e"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Lower_Arm_Motor.stl",
+   "kind": "asset",
+   "sha256": "07368fa4c50dea70e8157accee71072120c0cb374f672c85aba1d081702bc476"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Moving_Jaw.stl",
+   "kind": "asset",
+   "sha256": "6d9c923024c75e6f0a8d8300317c4d8a17dd49880260cbc60b7fe5e0c6dadfa8"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Moving_Jaw_Collision_1.stl",
+   "kind": "asset",
+   "sha256": "2221d6aab391dda19dd6a65e20d6a6fab3614e375e4b663ec48bc6e71f5bd258"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Moving_Jaw_Collision_2.stl",
+   "kind": "asset",
+   "sha256": "090684040392589bdb07436debf17da0af8998c7b954c252fecf7a59515da020"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Moving_Jaw_Collision_3.stl",
+   "kind": "asset",
+   "sha256": "f7fd477de449365ba659425a01ac8c3c0f299b8609a6b832968b7fdb616d3746"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Rotation_Pitch.stl",
+   "kind": "asset",
+   "sha256": "4a1476f57d28d2c065bc0ede6a674cb3ebacf1193372916ef1e0ff32eeb92cf0"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Rotation_Pitch_Motor.stl",
+   "kind": "asset",
+   "sha256": "f4fbcf18d8f2e91d12a767c1679430140dce0c81ea1478cc153bfce3a162db61"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Upper_Arm.stl",
+   "kind": "asset",
+   "sha256": "d97ad37c90400fe39bb2d5ace8b4290f3d1262e13f1d4f166494421752d5f3b7"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Upper_Arm_Motor.stl",
+   "kind": "asset",
+   "sha256": "bafdb2cb9e9a884e62b5fbf15b1f706a65771da82764dbe703df128d9f34d723"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Wrist_Pitch_Roll.stl",
+   "kind": "asset",
+   "sha256": "58e83ce1c8b24e1fa3a79672ea965ea4143986c81a21386dcd6da1cbcfdc94bb"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Wrist_Pitch_Roll_Motor.stl",
+   "kind": "asset",
+   "sha256": "89ac3fb1d2536fa4f7c40e7449be4b934d7d776f9cd0453c842767f980ff6c18"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/human_env.xml",
+   "kind": "xml",
+   "sha256": "6c041a2e0eaa8c07410257bf870ae9966e9d9d95839bb97a3fc7fdea8e2cb5f1"
+  },
+  {
+   "path": "chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/so_arm100_leader.xml",
+   "kind": "xml",
+   "sha256": "05ec82924d43b66ed300ed1f51da8c3ec8f9b3fc7974b79b5f7f1dd5f2910ce7"
+  },
+  {
+   "path": "src/env_gym_ee.py",
+   "kind": "python",
+   "sha256": "4b3dc360edfa1bfdc69eb25bb859541ce3f95638d316eb4792ef78a90c267cb3"
+  },
+  {
+   "path": "src/env_human_ee.py",
+   "kind": "python",
+   "sha256": "d363ee5c63c3645a32beaa802df70f1afaf12d9eef1029132435116c4392501f"
+  },
+  {
+   "path": "src/helper.py",
+   "kind": "python",
+   "sha256": "dc9c4d091c6ef783f1ee11c25b52351561f86fae42b646caf05ad7e0ccc28a41"
+  }
+ ],
+ "approved_patches": [
+  {
+   "path": "src/env_human_ee.py",
+   "base_sha256": "e8d864b5a2969138ac1cdc75cb2910c364b2287e4b5e38c9a4e6499ac8894946",
+   "sha256": "d363ee5c63c3645a32beaa802df70f1afaf12d9eef1029132435116c4392501f",
+   "rationale": "Preserve the approved F710 mapping while enforcing an episode-local unsolved-to-solved transition, rejecting failed demonstrations, rejecting child-side dataset root and descendant symlinks, serializing the complete persistence transaction including operator interruption, explicitly finalizing writers, guaranteeing unique quarantine despite cleanup errors, preserving the original persistence cause, flushing active recording on every exit, validating index zero, retaining changed actions, and bounding persisted XY.",
+   "receipt": {
+    "pre-patch RED": "Focused tests proved failed episodes were accepted, success leaked or relatched from an inherited solved scene, viewer close could drop an active buffer, child-side root and descendant symlinks redirected writes, init/add-frame failures and KeyboardInterrupt escaped quarantine, clear/finalize errors skipped quarantine and replaced the original cause, quarantine names collided, finalization errors were hidden, partial save output remained canonical, save failures were hidden, the last frame was dropped, changing actions were discarded, index zero was unchecked, and XY could exceed the persisted contract.",
+    "wrapper cannot faithfully solve": "env_human_ee.py owns joystick initialization, recording lifecycle, action mutation, and LeRobot save calls; a wrapper cannot repair those semantics without duplicating the collector.",
+    "smallest runtime-consumed source surface": "Only the existing recorder lifecycle, joystick-open guard, action update, transition latch, child-side root/tree guard, BaseException save-transaction cleanup/quarantine, and finally-exit finalization change; no XML, schema, evaluator, or physical-robot route changes.",
+    "native schema/F710 unchanged": "The two 224x224 cameras, five-joint state, two-value action, 10 FPS, approved axes/buttons, and simulation-only contract remain unchanged.",
+    "updated manifest": "configs/provenance/pusht_so100_upstream.json records both HEAD and patched SHA-256 digests.",
+    "focused regression GREEN": "The focused transition, child/cache symlink, init/add/save/cleanup interruption, unique quarantine, finalization, F710, and lifecycle regressions pass; provenance and full-suite gates are rerun before collection is allowed.",
+    "no unrelated upstream diff": "The verifier requires tracked drift to equal exactly src/env_human_ee.py plus src/helper.py and permits only excluded untracked MUJOCO_LOG.TXT."
+   }
+  },
+  {
+   "path": "src/helper.py",
+   "base_sha256": "ad592674f5f3eb3d3b97d094bdf2f931e9e20daa4878e570ceb400764a01eb3a",
+   "sha256": "dc9c4d091c6ef783f1ee11c25b52351561f86fae42b646caf05ad7e0ccc28a41",
+   "rationale": "Remove an unused direct torchvision import from the active pose helper so collection does not depend on that import side effect.",
+   "receipt": {
+    "pre-patch RED": "The active helper source imported torchvision.transforms even though no symbol from it was used.",
+    "wrapper cannot faithfully solve": "The recorder imports helper.py directly before entering its loop, so an outer launcher cannot prevent this import-time dependency.",
+    "smallest runtime-consumed source surface": "One unused import line is removed; pose math and every callable remain byte-for-byte otherwise unchanged.",
+    "native schema/F710 unchanged": "No camera, state, action, timing, joystick mapping, or simulation behavior changes.",
+    "updated manifest": "configs/provenance/pusht_so100_upstream.json records the base and patched helper SHA-256 digests.",
+    "focused regression GREEN": "The helper dependency assertion and provenance suite pass with the exact patched bytes.",
+    "no unrelated upstream diff": "The verifier rejects every tracked path except the two declared runtime patches and excluded MUJOCO_LOG.TXT."
+   }
+  }
+ ],
+ "excluded_untracked": [
+  {
+   "path": "MUJOCO_LOG.TXT",
+   "reason": "Pre-existing generated MuJoCo runtime log; excluded from provenance without reading, deleting, or modifying it."
+  }
+ ]
+}

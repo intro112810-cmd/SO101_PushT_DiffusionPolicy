@@ -1,0 +1,117 @@
+schema: so101-sim-to-real-safety-policy-v1
+policy_version: 1
+policy_id: FAKE-camera-production-policy-v1
+artifact_scope: production
+approval_status: approved
+approved_by: camera-fixture-owner@example.invalid
+approved_at: '2026-08-23T00:00:00Z'
+valid_from: '2026-08-23T00:00:00Z'
+expires_at: '2027-08-23T00:00:00Z'
+canonical_digest: ff40197a85358684f39c41ccaa359d940efbd655ad88c8a758fa7e364d0a6387
+thresholds:
+  workspace:
+    polygon_xy_m:
+    - - -0.3
+      - -0.2
+    - - 0.3
+      - -0.2
+    - - 0.3
+      - 0.2
+    - - -0.3
+      - 0.2
+    contact_z_m: 0.025
+    tool_orientation_rpy_rad:
+    - 0.0
+    - 1.5707963267948966
+    - 0.0
+  joint_domains:
+    joint_order:
+    - shoulder_pan
+    - shoulder_lift
+    - elbow_flex
+    - wrist_flex
+    - wrist_roll
+    physical_degrees:
+      shoulder_pan:
+      - -90.0
+      - 90.0
+      shoulder_lift:
+      - -100.0
+      - 100.0
+      elbow_flex:
+      - -105.0
+      - 105.0
+      wrist_flex:
+      - -90.0
+      - 90.0
+      wrist_roll:
+      - -180.0
+      - 180.0
+    mapped_radians:
+      shoulder_pan:
+      - -1.57
+      - 1.57
+      shoulder_lift:
+      - -1.7
+      - 1.7
+      elbow_flex:
+      - -1.69
+      - 1.69
+      wrist_flex:
+      - -1.57
+      - 1.57
+      wrist_roll:
+      - -3.14
+      - 3.14
+  timing:
+    sample_max_age_seconds: 0.2
+    sample_max_skew_seconds: 0.03
+    max_policy_age_seconds: 31536000.0
+    authorization_max_age_seconds: 10.0
+    authorization_ttl_seconds: 5.0
+  camera:
+    max_reprojection_error_px: 1.5
+    min_correspondences: 12
+    max_correspondence_error_px: 2.0
+  kinematics:
+    max_fk_residual_m: 0.003
+    max_ik_residual_m: 0.002
+    min_singularity_metric: 0.01
+    max_branch_delta_degrees: 8.0
+  slew:
+    max_cartesian_delta_m: 0.01
+    max_joint_delta_degrees: 3.0
+  provider:
+    exact_goal_required: true
+    max_abs_error_degrees: 0.05
+  watchdog:
+    timeout_seconds: 0.25
+  acknowledgement:
+    required: true
+    timeout_seconds: 0.2
+    max_position_error_degrees: 0.1
+  post_state:
+    max_age_seconds: 0.2
+    max_tracking_error_degrees: 1.0
+  shadow:
+    min_cycles: 100
+    max_cycle_latency_seconds: 0.1
+    max_error_count: 1
+  single_step:
+    max_commands: 1
+  bounded_rollout:
+    max_commands: 10
+    max_duration_seconds: 30.0
+    max_path_length_m: 0.2
+    max_error_count: 1
+  operator:
+    deadman_required: true
+    stop_required: true
+    stop_behavior: latch_hold
+    acknowledgement_required: true
+owner_approval:
+  scheme: fake-production-sha256-v1
+  approval_id: fake-camera-policy-approval-v1
+  signer_id: camera-fixture-owner@example.invalid
+  policy_digest: ff40197a85358684f39c41ccaa359d940efbd655ad88c8a758fa7e364d0a6387
+  binding_signature: 56f783ea3eed8e881525ead83126849d39a5b385d27f57dbe0001688d1b62829

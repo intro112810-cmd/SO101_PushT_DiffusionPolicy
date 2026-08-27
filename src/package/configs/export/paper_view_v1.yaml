@@ -1,0 +1,9 @@
+schema: 1
+exporter_revision: paper_view_v1
+selected_view: top  # "top" = cam_top -> front, "side" = cam_side -> topdown
+runtime_lock: environments/sim-runtime.lock
+zarr:
+  format: 2
+  order: C
+  compressor: null
+  filters: null

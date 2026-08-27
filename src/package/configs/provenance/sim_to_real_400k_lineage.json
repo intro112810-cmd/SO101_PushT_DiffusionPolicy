@@ -1,0 +1,3065 @@
+{
+  "artifact_id": "local-dp_cnn-recovered-v3-seed0",
+  "identity": {
+    "artifact_id": "local-dp_cnn-recovered-v3-seed0",
+    "bundle_sha256": "1ed6749af998290b46393a15dae12d4a9e7a2153c6a26c5f8140b0f5b4a82823",
+    "camera_count": 1,
+    "camera_key": "cam_top",
+    "camera_resolution": [
+      96,
+      96
+    ],
+    "dataset_digest": "03e2c1b5abd2d08458da192f202b09000146e71500882fc212d731a203c19506",
+    "decoded_actions": 8,
+    "frozen_environment_manifest_digest": "4b89a0844fb7dad512384bd3fbcba5d4f65b555d67c6d67a822140b9348f9e73",
+    "model": "dp_cnn",
+    "observation_steps": 2,
+    "optimizer_updates": 400000,
+    "policy_target": "diffusion_policy.policy.diffusion_unet_hybrid_image_policy.DiffusionUnetHybridImagePolicy",
+    "prediction_horizon": 16,
+    "robomimic_commit": "62ed2de905caeb9133136e4d14d810a8b6baa96c",
+    "runtime_lock_digest": "ec33c6e8a4d10e82d637bca557e829786ce2e860c713195791e3534159108f30",
+    "source_checkpoint_sha256": "a7224ec4c8cd7172185f0160ede1944895eb9c5e6417cddc3d53ab40c3af84a8",
+    "split_digest": "251435abffefdd3c2b6bf55202678e47f66379e5722346b13ed79381907d5b68",
+    "stanford_commit": "5ba07ac6661db573af695b419a7947ecb704690f",
+    "workspace_target": "diffusion_policy.workspace.train_diffusion_unet_hybrid_workspace.TrainDiffusionUnetHybridWorkspace"
+  },
+  "members": [
+    {
+      "label": "artifact_index",
+      "path": "artifact-index.json",
+      "scope": "artifact",
+      "sha256": "8825a98d8ece50d04f4c3f62cdb4a7eae94b70cec3ca720dbfe7462b8d35866a"
+    },
+    {
+      "label": "policy",
+      "path": "inference/dp_cnn_recovered_v3/policy.safetensors",
+      "scope": "artifact",
+      "sha256": "1ed6749af998290b46393a15dae12d4a9e7a2153c6a26c5f8140b0f5b4a82823"
+    },
+    {
+      "label": "normalizer",
+      "path": "inference/dp_cnn_recovered_v3/normalizer.json",
+      "scope": "artifact",
+      "sha256": "8ccec7634a3cbc47c114cdfb0a662c2278e4ad24101a91e9c68e86015e40b4a5"
+    },
+    {
+      "label": "bundle_manifest",
+      "path": "inference/dp_cnn_recovered_v3/bundle_manifest.json",
+      "scope": "artifact",
+      "sha256": "eab1c5be3178a8917a2b922cbe59b617613951afb4f789a9d4bc6b6443dbbc5f"
+    },
+    {
+      "label": "resolved_config",
+      "path": "inference/dp_cnn_recovered_v3/resolved_config.json",
+      "scope": "artifact",
+      "sha256": "ccbc127d9eedeb25b2441fefa04dee0faf35f76ce5c79b78ce71b0784d976f1c"
+    },
+    {
+      "label": "source_checkpoint",
+      "path": "models/local_200ep/dp_cnn/seed-0/full/checkpoints/latest.ckpt",
+      "scope": "artifact",
+      "sha256": "a7224ec4c8cd7172185f0160ede1944895eb9c5e6417cddc3d53ab40c3af84a8"
+    },
+    {
+      "label": "training_receipt",
+      "path": "models/local_200ep/dp_cnn/seed-0/full/training_receipt.json",
+      "scope": "artifact",
+      "sha256": "9b88f1758d31d35b06cab736716d82edc063f501b5fd320ed2f424e1c378028c"
+    },
+    {
+      "label": "runtime_lock",
+      "path": "environments/sim-runtime.lock",
+      "scope": "package",
+      "sha256": "ec33c6e8a4d10e82d637bca557e829786ce2e860c713195791e3534159108f30"
+    },
+    {
+      "label": "frozen_environment_manifest",
+      "path": "configs/provenance/pusht_so100_upstream.json",
+      "scope": "package",
+      "sha256": "4b89a0844fb7dad512384bd3fbcba5d4f65b555d67c6d67a822140b9348f9e73"
+    },
+    {
+      "label": "upstream_environment",
+      "path": "05_references/external_repos/pushT-so100/environment.yml",
+      "scope": "project",
+      "sha256": "a7aab5a14bb18b6bb94cd1ecf13616384c6af87ba131ae5dc86fec7e94920f70"
+    },
+    {
+      "label": "upstream_runtime_00",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Base.stl",
+      "scope": "project",
+      "sha256": "bb8afb0303c0125f265a797625cfaf646ac214d5d2dc9c986348c415755e2a74"
+    },
+    {
+      "label": "upstream_runtime_01",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Base_Motor.stl",
+      "scope": "project",
+      "sha256": "aac4485d448eca418d2a93df3f78f449bd59b21ec1af2a579171819fd44ea576"
+    },
+    {
+      "label": "upstream_runtime_02",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Fixed_Jaw.stl",
+      "scope": "project",
+      "sha256": "5528867073033eaa4c27a8087180954f3f0635bd69d517d5cace92f01dd266b2"
+    },
+    {
+      "label": "upstream_runtime_03",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Fixed_Jaw_Collision_1.stl",
+      "scope": "project",
+      "sha256": "c6f83e6b45d9bd3e3af5f624bd514604230609ff9a941702ab890cf366c684dd"
+    },
+    {
+      "label": "upstream_runtime_04",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Fixed_Jaw_Collision_2.stl",
+      "scope": "project",
+      "sha256": "4b142e4390f13b15982612e705fa8e593a84c735ed4744aa72e555c06144a740"
+    },
+    {
+      "label": "upstream_runtime_05",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Fixed_Jaw_Motor.stl",
+      "scope": "project",
+      "sha256": "0321bfb902d5a119c4f2a934ab4be7e9ea8c93a02e1685f066f99c24a5ca3ecf"
+    },
+    {
+      "label": "upstream_runtime_06",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Lower_Arm.stl",
+      "scope": "project",
+      "sha256": "a04511bc65cbb702b2d6023764de947888b06a09fbf272803f39c22724329a3e"
+    },
+    {
+      "label": "upstream_runtime_07",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Lower_Arm_Motor.stl",
+      "scope": "project",
+      "sha256": "07368fa4c50dea70e8157accee71072120c0cb374f672c85aba1d081702bc476"
+    },
+    {
+      "label": "upstream_runtime_08",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Moving_Jaw.stl",
+      "scope": "project",
+      "sha256": "6d9c923024c75e6f0a8d8300317c4d8a17dd49880260cbc60b7fe5e0c6dadfa8"
+    },
+    {
+      "label": "upstream_runtime_09",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Moving_Jaw_Collision_1.stl",
+      "scope": "project",
+      "sha256": "2221d6aab391dda19dd6a65e20d6a6fab3614e375e4b663ec48bc6e71f5bd258"
+    },
+    {
+      "label": "upstream_runtime_10",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Moving_Jaw_Collision_2.stl",
+      "scope": "project",
+      "sha256": "090684040392589bdb07436debf17da0af8998c7b954c252fecf7a59515da020"
+    },
+    {
+      "label": "upstream_runtime_11",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Moving_Jaw_Collision_3.stl",
+      "scope": "project",
+      "sha256": "f7fd477de449365ba659425a01ac8c3c0f299b8609a6b832968b7fdb616d3746"
+    },
+    {
+      "label": "upstream_runtime_12",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Rotation_Pitch.stl",
+      "scope": "project",
+      "sha256": "4a1476f57d28d2c065bc0ede6a674cb3ebacf1193372916ef1e0ff32eeb92cf0"
+    },
+    {
+      "label": "upstream_runtime_13",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Rotation_Pitch_Motor.stl",
+      "scope": "project",
+      "sha256": "f4fbcf18d8f2e91d12a767c1679430140dce0c81ea1478cc153bfce3a162db61"
+    },
+    {
+      "label": "upstream_runtime_14",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Upper_Arm.stl",
+      "scope": "project",
+      "sha256": "d97ad37c90400fe39bb2d5ace8b4290f3d1262e13f1d4f166494421752d5f3b7"
+    },
+    {
+      "label": "upstream_runtime_15",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Upper_Arm_Motor.stl",
+      "scope": "project",
+      "sha256": "bafdb2cb9e9a884e62b5fbf15b1f706a65771da82764dbe703df128d9f34d723"
+    },
+    {
+      "label": "upstream_runtime_16",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Wrist_Pitch_Roll.stl",
+      "scope": "project",
+      "sha256": "58e83ce1c8b24e1fa3a79672ea965ea4143986c81a21386dcd6da1cbcfdc94bb"
+    },
+    {
+      "label": "upstream_runtime_17",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/assets/Wrist_Pitch_Roll_Motor.stl",
+      "scope": "project",
+      "sha256": "89ac3fb1d2536fa4f7c40e7449be4b934d7d776f9cd0453c842767f980ff6c18"
+    },
+    {
+      "label": "upstream_runtime_18",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/human_env.xml",
+      "scope": "project",
+      "sha256": "6c041a2e0eaa8c07410257bf870ae9966e9d9d95839bb97a3fc7fdea8e2cb5f1"
+    },
+    {
+      "label": "upstream_runtime_19",
+      "path": "05_references/external_repos/pushT-so100/chernyadev mujoco_menagerie add-so-arm100 trs_so_arm100/so_arm100_leader.xml",
+      "scope": "project",
+      "sha256": "05ec82924d43b66ed300ed1f51da8c3ec8f9b3fc7974b79b5f7f1dd5f2910ce7"
+    },
+    {
+      "label": "upstream_runtime_20",
+      "path": "05_references/external_repos/pushT-so100/src/env_gym_ee.py",
+      "scope": "project",
+      "sha256": "4b3dc360edfa1bfdc69eb25bb859541ce3f95638d316eb4792ef78a90c267cb3"
+    },
+    {
+      "label": "upstream_runtime_21",
+      "path": "05_references/external_repos/pushT-so100/src/env_human_ee.py",
+      "scope": "project",
+      "sha256": "d363ee5c63c3645a32beaa802df70f1afaf12d9eef1029132435116c4392501f"
+    },
+    {
+      "label": "upstream_runtime_22",
+      "path": "05_references/external_repos/pushT-so100/src/helper.py",
+      "scope": "project",
+      "sha256": "dc9c4d091c6ef783f1ee11c25b52351561f86fae42b646caf05ad7e0ccc28a41"
+    },
+    {
+      "label": "project_metadata",
+      "path": "pyproject.toml",
+      "scope": "package",
+      "sha256": "5e4ca6e0eec6f2f747fdc798a9078b13c3ceac0b3bbb5f1916e89244f3a1d9e1"
+    },
+    {
+      "label": "uv_lock",
+      "path": "uv.lock",
+      "scope": "package",
+      "sha256": "87c0d3a8aedce7b344a27c6fcb03329381c2b0a64923c30937a9e413acf8d231"
+    },
+    {
+      "label": "runtime_lock_sha256",
+      "path": "environments/sim-runtime.lock.sha256",
+      "scope": "package",
+      "sha256": "5fbb54ea6af7b733af2449332c2953d238dc88d009fbe4facec5e60aeccb80ae"
+    },
+    {
+      "label": "workspace_status",
+      "path": "configs/workspace_status.yaml",
+      "scope": "package",
+      "sha256": "c8780af24297da76eb6358bdb9d9a67d84a61317c5c9c2015ac53c9338a32fa3"
+    },
+    {
+      "label": "route_source_000",
+      "path": "scripts/audit_camera_registration.py",
+      "scope": "package",
+      "sha256": "ea49c7bd33b917852964ac8b42f547accd0cfaa295c94809136063a9c9df436a"
+    },
+    {
+      "label": "route_source_001",
+      "path": "scripts/audit_joint_equivalence_read_only.py",
+      "scope": "package",
+      "sha256": "1bac8074a0b7d812b4683d784838295a72a63e71de0264503a3b9b1d196b74a9"
+    },
+    {
+      "label": "route_source_002",
+      "path": "scripts/capture_sim_to_real_samples.py",
+      "scope": "package",
+      "sha256": "c7d92d4aa2fd9ec2d990bf78e48554653ffd6eefd124de8e2a2a490628faca02"
+    },
+    {
+      "label": "route_source_003",
+      "path": "scripts/generate_feedback_artifacts.py",
+      "scope": "package",
+      "sha256": "37aecf4af91a20c7a7a3d4441be07f65aa0afaa8d26a7d8b4c350c22d340a25c"
+    },
+    {
+      "label": "route_source_004",
+      "path": "scripts/run_recovered_checkpoint_rollout.py",
+      "scope": "package",
+      "sha256": "0c13636a36290dd125580e1a5b38ac2bc29ea249c7b4a5a96e9ba5b2b59a2762"
+    },
+    {
+      "label": "route_source_005",
+      "path": "src/so101_pusht_benchmark/__init__.py",
+      "scope": "package",
+      "sha256": "045aee488daf68543da7499b9af227db206072105b13b162c33c2cb419e4e13b"
+    },
+    {
+      "label": "route_source_006",
+      "path": "src/so101_pusht_benchmark/control/action_filter.py",
+      "scope": "package",
+      "sha256": "3db08f7ebef28ed77953807791296f9b18ddaa504c6f4b1fefa76603214a49c0"
+    },
+    {
+      "label": "route_source_007",
+      "path": "src/so101_pusht_benchmark/core/__init__.py",
+      "scope": "package",
+      "sha256": "a41cec0106d018008ea44d4dd1b2be070f14e230a96a2af240face5179e7c5b6"
+    },
+    {
+      "label": "route_source_008",
+      "path": "src/so101_pusht_benchmark/core/upstream_provenance.py",
+      "scope": "package",
+      "sha256": "56deb6b575aa4ab2c5099e6561bd07cceb8620fc952524eb07b08190affd1587"
+    },
+    {
+      "label": "route_source_009",
+      "path": "src/so101_pusht_benchmark/evaluation/__init__.py",
+      "scope": "package",
+      "sha256": "5befb93958bc9a91c7ff5bc658fed7abdc9ebd5e5f8b4eb2c2db7bebaad5b0ab"
+    },
+    {
+      "label": "route_source_010",
+      "path": "src/so101_pusht_benchmark/evaluation/frozen_env.py",
+      "scope": "package",
+      "sha256": "33ae751e81ebc04b3efe2a5d1b6e866937b57c3ec3e21de32a202b65440669d2"
+    },
+    {
+      "label": "route_source_011",
+      "path": "src/so101_pusht_benchmark/hardware_profile.py",
+      "scope": "package",
+      "sha256": "e930fdde473e812e0fefd171b1e955d14a59afc491b9cc9e326b77619b96e1ad"
+    },
+    {
+      "label": "route_source_012",
+      "path": "src/so101_pusht_benchmark/integrations/__init__.py",
+      "scope": "package",
+      "sha256": "ba66a9b3386cb321bcabb798ce3c0abeb3f734f72bfc658f68f8b8f05edb25c6"
+    },
+    {
+      "label": "route_source_013",
+      "path": "src/so101_pusht_benchmark/integrations/paper_baselines/__init__.py",
+      "scope": "package",
+      "sha256": "94203501475ce4a1a60c54480e6a9159b822f99d4deba999b1fc4403c5b97430"
+    },
+    {
+      "label": "route_source_014",
+      "path": "src/so101_pusht_benchmark/integrations/paper_baselines/configs.py",
+      "scope": "package",
+      "sha256": "016f591a5e7005ddc693541ddf78b064be7de64ce69cf383bf34e6dc3a9d188c"
+    },
+    {
+      "label": "route_source_015",
+      "path": "src/so101_pusht_benchmark/integrations/paper_baselines/robomimic.py",
+      "scope": "package",
+      "sha256": "68afddb29360ab961e914d4ccfa3f2be98fd81dc9fa34aed5b41e09ae62be5ae"
+    },
+    {
+      "label": "route_source_016",
+      "path": "src/so101_pusht_benchmark/integrations/paper_baselines/runner.py",
+      "scope": "package",
+      "sha256": "319139eb09315278d4b838945d481d96a9cbcb43f06f7f0bc78a7daa51e768fe"
+    },
+    {
+      "label": "route_source_017",
+      "path": "src/so101_pusht_benchmark/native_runtime.py",
+      "scope": "package",
+      "sha256": "8a85cf5ebb6451db45a2dcc69cd2fd78aa728060a7f1fd5c0363768cd1ca1d75"
+    },
+    {
+      "label": "route_source_018",
+      "path": "src/so101_pusht_benchmark/sim/__init__.py",
+      "scope": "package",
+      "sha256": "9cb4c9b00c1332ad57b161860d142ce9810925ca5ccb6f26ccf887b97f6e0fc7"
+    },
+    {
+      "label": "route_source_019",
+      "path": "src/so101_pusht_benchmark/sim/dls_ik.py",
+      "scope": "package",
+      "sha256": "ab82184554763a832a50feb69b37985030195a8b11b9af28653243103d754634"
+    },
+    {
+      "label": "route_source_020",
+      "path": "src/so101_pusht_benchmark/sim/env.py",
+      "scope": "package",
+      "sha256": "bf20c3d550e5ba8f9b87b435439462ce779181d72607708032071fd5de8c1174"
+    },
+    {
+      "label": "route_source_021",
+      "path": "src/so101_pusht_benchmark/sim/safety.py",
+      "scope": "package",
+      "sha256": "5a9f8e28bcded3288dfcf6ee0e7ab41514ecb7b6a62694ce3b6654158b85c0ed"
+    },
+    {
+      "label": "route_source_022",
+      "path": "src/so101_pusht_benchmark/sim/scene.py",
+      "scope": "package",
+      "sha256": "ad3a8ff640dd3922723ae15c94532e427c6e2d484a1d582be2e7c84f980b5789"
+    },
+    {
+      "label": "route_source_023",
+      "path": "src/so101_pusht_benchmark/sim_to_real/__init__.py",
+      "scope": "package",
+      "sha256": "0cd487f6eb930878e37234038625351df7f47057133d99abb9be8c4c9a4a66e6"
+    },
+    {
+      "label": "route_source_024",
+      "path": "src/so101_pusht_benchmark/sim_to_real/camera_audit_cli.py",
+      "scope": "package",
+      "sha256": "81ac29608df92e3ec3e15ef9988cede5629d1f1f38d85eabf63b9a0d3bc64fd1"
+    },
+    {
+      "label": "route_source_025",
+      "path": "src/so101_pusht_benchmark/sim_to_real/camera_authority.py",
+      "scope": "package",
+      "sha256": "8e595cea347e7e5f2403477612ec89731eaf733e719ccf878ff1e4c60d9bdc0e"
+    },
+    {
+      "label": "route_source_026",
+      "path": "src/so101_pusht_benchmark/sim_to_real/camera_corpus.py",
+      "scope": "package",
+      "sha256": "8d079121232a76c8ef57b121c6184b73fdecdebead921df6653f5ca3eab23a7a"
+    },
+    {
+      "label": "route_source_027",
+      "path": "src/so101_pusht_benchmark/sim_to_real/camera_geometry.py",
+      "scope": "package",
+      "sha256": "a7701fb896d7e53450382d7ca1cfaac6ded1e53d09caa62e5ba67a87e99db47a"
+    },
+    {
+      "label": "route_source_028",
+      "path": "src/so101_pusht_benchmark/sim_to_real/camera_registration.py",
+      "scope": "package",
+      "sha256": "c812fc13f91448811d9b727a87ee8c211775feb6e8a75949ebb7b74fda27c277"
+    },
+    {
+      "label": "route_source_029",
+      "path": "src/so101_pusht_benchmark/sim_to_real/contracts.py",
+      "scope": "package",
+      "sha256": "7ef9629ee7ed707d74dc4f4c4a51b9697191ffbc8c3e663ccccd89355bd7301c"
+    },
+    {
+      "label": "route_source_030",
+      "path": "src/so101_pusht_benchmark/sim_to_real/fixture_sample_capture.py",
+      "scope": "package",
+      "sha256": "5f7dff75c81a3e3449093612c035cdee5d7c352de557b45e2a59a13cbcea3497"
+    },
+    {
+      "label": "route_source_031",
+      "path": "src/so101_pusht_benchmark/sim_to_real/joint_equivalence.py",
+      "scope": "package",
+      "sha256": "de018dcd4b117bb845dd8d4f073bd7cc8f7082f6f684b4e5bc012354e01e3fbe"
+    },
+    {
+      "label": "route_source_032",
+      "path": "src/so101_pusht_benchmark/sim_to_real/joint_equivalence_affine.py",
+      "scope": "package",
+      "sha256": "e8b76fbcf5d2098b4eccd98c554fe6176c6eec4ce29c98673e0b3c754bcd5f75"
+    },
+    {
+      "label": "route_source_033",
+      "path": "src/so101_pusht_benchmark/sim_to_real/joint_equivalence_authority.py",
+      "scope": "package",
+      "sha256": "ef58f427d997bcb6bc1fd8b0d332bf63d18b9949392ece4405f1cefaadb6919e"
+    },
+    {
+      "label": "route_source_034",
+      "path": "src/so101_pusht_benchmark/sim_to_real/joint_equivalence_cli.py",
+      "scope": "package",
+      "sha256": "6a82bd33dd2184ae66305d5b9531c22511338ed12673ee53a02f1f2c677c4ff3"
+    },
+    {
+      "label": "route_source_035",
+      "path": "src/so101_pusht_benchmark/sim_to_real/joint_equivalence_corpus.py",
+      "scope": "package",
+      "sha256": "a08eedc84e8066de3e0ff005b15171dfdd4735d7088aa92e2cde4837e1e1fd93"
+    },
+    {
+      "label": "route_source_036",
+      "path": "src/so101_pusht_benchmark/sim_to_real/joint_equivalence_fk.py",
+      "scope": "package",
+      "sha256": "83ede66cc4c1252a4640e17ff925dc2ca57371460362b581692634cce3a4206d"
+    },
+    {
+      "label": "route_source_037",
+      "path": "src/so101_pusht_benchmark/sim_to_real/joint_mapping.py",
+      "scope": "package",
+      "sha256": "dfef4180eecf2a11c06556bf266eaf3f70881e5ca0a364a5ceab03ccdade5dec"
+    },
+    {
+      "label": "route_source_038",
+      "path": "src/so101_pusht_benchmark/sim_to_real/lineage.py",
+      "scope": "package",
+      "sha256": "8d93a58e5d4e01d0188e7ef87af9a916bf9967465e4c90f69dcd7a0f9d4f4c74"
+    },
+    {
+      "label": "route_source_039",
+      "path": "src/so101_pusht_benchmark/sim_to_real/lineage_documents.py",
+      "scope": "package",
+      "sha256": "67291e7d838093491329460bd6b93eef111f6b54ae81eb78ce169efcdb83eeff"
+    },
+    {
+      "label": "route_source_040",
+      "path": "src/so101_pusht_benchmark/sim_to_real/lineage_io.py",
+      "scope": "package",
+      "sha256": "6cbb1d7759d150240d6e40210c1316513792380cf0e3850b2740395cab148544"
+    },
+    {
+      "label": "route_source_041",
+      "path": "src/so101_pusht_benchmark/sim_to_real/lineage_manifest.py",
+      "scope": "package",
+      "sha256": "1f6b582d6993629720eef945d6b7525f3d4b3132fc70d0618828777de865ac51"
+    },
+    {
+      "label": "route_source_042",
+      "path": "src/so101_pusht_benchmark/sim_to_real/lineage_publish.py",
+      "scope": "package",
+      "sha256": "ae4a14eacd8727e28a1a9601224184ca6b8c1d8b2e7e9671ad53f018e6df37f9"
+    },
+    {
+      "label": "route_source_043",
+      "path": "src/so101_pusht_benchmark/sim_to_real/lineage_runtime.py",
+      "scope": "package",
+      "sha256": "432d02341fabc8561176410ac78d965a8d55bb69a8c348b14ee2988d76367e0c"
+    },
+    {
+      "label": "route_source_044",
+      "path": "src/so101_pusht_benchmark/sim_to_real/lineage_sources.py",
+      "scope": "package",
+      "sha256": "dbc489ae11ee51c5f60d3202df1619eb228aeb1be3b3eb41b1257380618814cf"
+    },
+    {
+      "label": "route_source_045",
+      "path": "src/so101_pusht_benchmark/sim_to_real/lineage_types.py",
+      "scope": "package",
+      "sha256": "b8a5b45e12270dc2a753e69e8d9e66ff09610fe34d2deba17d8ce6263ecdcfa0"
+    },
+    {
+      "label": "route_source_046",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture.py",
+      "scope": "package",
+      "sha256": "79e7735c28206f2c6ef172dafaa98e733d825a6e947a160bdddc2479c0d16e0b"
+    },
+    {
+      "label": "route_source_047",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_acceptance.py",
+      "scope": "package",
+      "sha256": "c66bfa52dd1f6dd8b562f5afb2d3b33a2434265ee704b95fa690084fb0a4c13f"
+    },
+    {
+      "label": "route_source_048",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_adapters.py",
+      "scope": "package",
+      "sha256": "419c3c8c36424466e0c3bf116283480bf99e6b7761993d40d829f588dd475e8d"
+    },
+    {
+      "label": "route_source_049",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_child_failure.py",
+      "scope": "package",
+      "sha256": "16d131307ceedcfa6daaa6e27626dde498e5c55d1eaa949b325ed5ffa3cd17b0"
+    },
+    {
+      "label": "route_source_050",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_child_runtime.py",
+      "scope": "package",
+      "sha256": "7c225903d712fb5d0deca7eba32b3c717f1dee8bad9b777eec473fdc4da2e25f"
+    },
+    {
+      "label": "route_source_051",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_cleanup.py",
+      "scope": "package",
+      "sha256": "9f452401e0a2f2d6a456462ecd3647423bfa9f8500547a78ab21d72d8f61fc41"
+    },
+    {
+      "label": "route_source_052",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_cli.py",
+      "scope": "package",
+      "sha256": "8337fef6793c52b48ccf26c5829e5af242a65af1321b12f72a29742d0c9d7ed3"
+    },
+    {
+      "label": "route_source_053",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_failure.py",
+      "scope": "package",
+      "sha256": "b39d264b1b25a4cf23006f53a3940774e42a37369d1aa163869f629350d156c8"
+    },
+    {
+      "label": "route_source_054",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_identity.py",
+      "scope": "package",
+      "sha256": "29054e5cb8c6f3451fefed192ca30ef9f04eaaef89a57c60c045561e8d1d1a4c"
+    },
+    {
+      "label": "route_source_055",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_pair.py",
+      "scope": "package",
+      "sha256": "ca614cace349c32f2242a2855309335dc1e579c8376f3b1aa57265da64db9673"
+    },
+    {
+      "label": "route_source_056",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_phase.py",
+      "scope": "package",
+      "sha256": "17ecd9736ac16ac9b7fffbde5de6a565409c718b34a3e9a2a5320709bd4ac6e0"
+    },
+    {
+      "label": "route_source_057",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_process.py",
+      "scope": "package",
+      "sha256": "e32b3d8689c950a3e874887aaae51728ffb1f854f3d12cc3ac9ccc6af2c6ce2d"
+    },
+    {
+      "label": "route_source_058",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_protocol.py",
+      "scope": "package",
+      "sha256": "55cf23cd48f1395844fd3ada3df0421f4cced66749227f934a1eb5d96a1f78bc"
+    },
+    {
+      "label": "route_source_059",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_provider.py",
+      "scope": "package",
+      "sha256": "8685ec69213ec37a67e1adfc24fb101c8e29604973422c0ce754863730a06a10"
+    },
+    {
+      "label": "route_source_060",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_readiness.py",
+      "scope": "package",
+      "sha256": "f0ee170afb3d3f7f53c702ef408d81ed15475b360b749e6259987dd4dcdf43bd"
+    },
+    {
+      "label": "route_source_061",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_runtime.py",
+      "scope": "package",
+      "sha256": "e2d5abd15e81b1f37f1787cc5d31f575d8282fb56bb619252f907c29a1dc3aca"
+    },
+    {
+      "label": "route_source_062",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_startup.py",
+      "scope": "package",
+      "sha256": "be70082c1389f57c59f20ae8cb8b4ffdcaa896a7642772025a880059e2ed0191"
+    },
+    {
+      "label": "route_source_063",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_supervisor.py",
+      "scope": "package",
+      "sha256": "3b2f6382b779f466fab5878be755ab4655daa50f628ce188aa04322abe755163"
+    },
+    {
+      "label": "route_source_064",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_types.py",
+      "scope": "package",
+      "sha256": "8529adb16c8c62a38967be1625bbf6137307bfe23c2eb6c30f4e1edd8377e8e1"
+    },
+    {
+      "label": "route_source_065",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_validation.py",
+      "scope": "package",
+      "sha256": "c3b1b9525f1f6ec5ccb2bcf454afa88dc3095cbccb033e10fc6b405ab34d497d"
+    },
+    {
+      "label": "route_source_066",
+      "path": "src/so101_pusht_benchmark/sim_to_real/live_capture_workers.py",
+      "scope": "package",
+      "sha256": "14ba19c0146d54f788d12e20fe57950f1b65b6e7dee4358044424adc6d5bc33f"
+    },
+    {
+      "label": "route_source_067",
+      "path": "src/so101_pusht_benchmark/sim_to_real/physical_ik_fk.py",
+      "scope": "package",
+      "sha256": "aae76bb948538819555030737b2b23708dbca57505aa3f3d9af98594f94fdae2"
+    },
+    {
+      "label": "route_source_068",
+      "path": "src/so101_pusht_benchmark/sim_to_real/policy_approval.py",
+      "scope": "package",
+      "sha256": "6b74360a77c0cc5ccb4d4965fbbd86f2c7cecaab37fb8a1891c3f3455cd90a4d"
+    },
+    {
+      "label": "route_source_069",
+      "path": "src/so101_pusht_benchmark/sim_to_real/policy_canonical.py",
+      "scope": "package",
+      "sha256": "1c4295304af0d1d0258efbb5d2d9ae9cdef0fa500d2e730d1a14a4700d6c5e2a"
+    },
+    {
+      "label": "route_source_070",
+      "path": "src/so101_pusht_benchmark/sim_to_real/policy_io.py",
+      "scope": "package",
+      "sha256": "035a3e6b024cb90bdcf245e0297e20c43607c53f44bbc8e1c50ce0c9952e431e"
+    },
+    {
+      "label": "route_source_071",
+      "path": "src/so101_pusht_benchmark/sim_to_real/policy_parser.py",
+      "scope": "package",
+      "sha256": "05bbeef6154b91e7ad1c66b01c07adb64f1fd776df2ecc6f09378027143bd6aa"
+    },
+    {
+      "label": "route_source_072",
+      "path": "src/so101_pusht_benchmark/sim_to_real/policy_schema.py",
+      "scope": "package",
+      "sha256": "571e72106a511697f27b908cc5d65e4bae42af2a02d97aa72bc119371bf6a5be"
+    },
+    {
+      "label": "route_source_073",
+      "path": "src/so101_pusht_benchmark/sim_to_real/policy_types.py",
+      "scope": "package",
+      "sha256": "05cbdc3c0e4b288bea2084adefb2b1a13cb82cc6e94d774498e4644abc4c4c1f"
+    },
+    {
+      "label": "route_source_074",
+      "path": "src/so101_pusht_benchmark/sim_to_real/policy_values.py",
+      "scope": "package",
+      "sha256": "49d435fd608fb6863276d3a7be8d0f69b4c7a773fbaaef3931a2852ff0965eb5"
+    },
+    {
+      "label": "route_source_075",
+      "path": "src/so101_pusht_benchmark/sim_to_real/read_only_authority.py",
+      "scope": "package",
+      "sha256": "524d27f776d83288d47c006845f616fb21fd50d1523e84c275a6d0dd3550d2a5"
+    },
+    {
+      "label": "route_source_076",
+      "path": "src/so101_pusht_benchmark/sim_to_real/read_only_authority_io.py",
+      "scope": "package",
+      "sha256": "88c05e7387c35ca5a4483a0350f98135a3ef06c7466cd68acb1f09bee5020efa"
+    },
+    {
+      "label": "route_source_077",
+      "path": "src/so101_pusht_benchmark/sim_to_real/read_only_authority_types.py",
+      "scope": "package",
+      "sha256": "738e4212997da4144135c2931849ab79c9d396e70a848f46bcecc8b1e88fc023"
+    },
+    {
+      "label": "route_source_078",
+      "path": "src/so101_pusht_benchmark/sim_to_real/readiness.py",
+      "scope": "package",
+      "sha256": "6c74c3d53e14c637e2236b9b63f99ccaba9e65131344c9eb3fffdf5e7b1aec85"
+    },
+    {
+      "label": "route_source_079",
+      "path": "src/so101_pusht_benchmark/sim_to_real/receipt_routing.py",
+      "scope": "package",
+      "sha256": "20a1e059cd767b4f2e05a20c9421dc87085f96cdb992ba602e6cdeac8d51d8b6"
+    },
+    {
+      "label": "route_source_080",
+      "path": "src/so101_pusht_benchmark/sim_to_real/replay_receipts.py",
+      "scope": "package",
+      "sha256": "0bee36538dba78e3e62149621d02837a187175b806e90c68351c332446f53028"
+    },
+    {
+      "label": "route_source_081",
+      "path": "src/so101_pusht_benchmark/sim_to_real/replay_types.py",
+      "scope": "package",
+      "sha256": "f7ec982cffd3a5d9e4d7af17ff7926ee49d6703d8dd4bf904cfc47b2dd816f27"
+    },
+    {
+      "label": "route_source_082",
+      "path": "src/so101_pusht_benchmark/sim_to_real/rollout_codes.py",
+      "scope": "package",
+      "sha256": "071567c48c246b2462dcaa5b6ac3a56e2bc8b3340f6eed3e215149d90c9d2d56"
+    },
+    {
+      "label": "route_source_083",
+      "path": "src/so101_pusht_benchmark/sim_to_real/rollout_identity.py",
+      "scope": "package",
+      "sha256": "742bc4ad50f3a4c0ce1b21d791d21e095ae1c060e601f416305df0b75ebf1912"
+    },
+    {
+      "label": "route_source_084",
+      "path": "src/so101_pusht_benchmark/sim_to_real/rollout_record_types.py",
+      "scope": "package",
+      "sha256": "8a84770c416d09b5810ddb4d13359538823313141230f9b623945de303281741"
+    },
+    {
+      "label": "route_source_085",
+      "path": "src/so101_pusht_benchmark/sim_to_real/sample_capture.py",
+      "scope": "package",
+      "sha256": "1aee903772809e8edb500816e10e1cf5847a1f33247cd5d126e83c9e7e81158b"
+    },
+    {
+      "label": "route_source_086",
+      "path": "src/so101_pusht_benchmark/sim_to_real/secure_io.py",
+      "scope": "package",
+      "sha256": "23d856c6490987622a70224a26b3a91fd38c65df5d62161512e05ef33dcb78cf"
+    },
+    {
+      "label": "route_source_087",
+      "path": "src/so101_pusht_benchmark/sim_to_real/task_frame.py",
+      "scope": "package",
+      "sha256": "a67fe53fa4456cf1df428c2eb8fda00de9cef8206891e6fb32d3e92f49a8c6cd"
+    },
+    {
+      "label": "route_source_088",
+      "path": "src/so101_pusht_benchmark/sim_to_real/task_frame_bridge.py",
+      "scope": "package",
+      "sha256": "1a51a5a7e257470471ee49ad587dc4e0701ed129642c6e86e672f999b35aab21"
+    },
+    {
+      "label": "route_source_089",
+      "path": "src/so101_pusht_benchmark/task/__init__.py",
+      "scope": "package",
+      "sha256": "52aa1827263c0b478945503b66a897a290d47a9663dd5452f2d1cbe56d81c3cd"
+    },
+    {
+      "label": "route_source_090",
+      "path": "src/so101_pusht_benchmark/task/metric.py",
+      "scope": "package",
+      "sha256": "ff638f4b10955f4cbe248a4de12357493a9df7fd0a18f2b0f3e0582cc1f47330"
+    },
+    {
+      "label": "route_source_091",
+      "path": "src/so101_pusht_benchmark/task/spec.py",
+      "scope": "package",
+      "sha256": "7d8e59a64cd911b9d84d40d0190a89bd607d2473bb9816344f9f5b22e1c36c0d"
+    },
+    {
+      "label": "route_source_092",
+      "path": "src/so101_pusht_benchmark/task/validation.py",
+      "scope": "package",
+      "sha256": "26f815d20cdedf121d8b282ee85fb482e29d0a058ce3461ee93d16f12d744096"
+    },
+    {
+      "label": "route_source_093",
+      "path": "src/so101_pusht_benchmark/training/__init__.py",
+      "scope": "package",
+      "sha256": "d3412fc40c829fb1a8c1ac1d6bd843e774e815b331a4dd9e6f1c21dd84f50e12"
+    },
+    {
+      "label": "route_source_094",
+      "path": "src/so101_pusht_benchmark/training/artifacts.py",
+      "scope": "package",
+      "sha256": "79a7c9f64450d863a0cf71b76d374854658a1324907f71a3d61e34e618538c80"
+    },
+    {
+      "label": "route_source_095",
+      "path": "src/so101_pusht_benchmark/training/budgets.py",
+      "scope": "package",
+      "sha256": "eda5ae495b94252f28c1241b8aa0845f101fdb72132efcf7e1078e70ac64cc27"
+    },
+    {
+      "label": "route_source_096",
+      "path": "src/so101_pusht_benchmark/training/bundle.py",
+      "scope": "package",
+      "sha256": "be681ccafda961ee8fecd00a281ca59954343167760716a5306ee821d46d90bd"
+    },
+    {
+      "label": "route_source_097",
+      "path": "src/so101_pusht_benchmark/training/identity.py",
+      "scope": "package",
+      "sha256": "f4823c7002d2dd8475816133d11be309cfd33751504f3aecafe26b30013460be"
+    },
+    {
+      "label": "route_source_098",
+      "path": "src/so101_pusht_benchmark/training/metadata.py",
+      "scope": "package",
+      "sha256": "d4a70c2ad2473e18c123fb178c9d86cd0ab09bf870aeafb8eea4498d724c5982"
+    },
+    {
+      "label": "route_source_099",
+      "path": "src/so101_pusht_benchmark/workspace.py",
+      "scope": "package",
+      "sha256": "4fb14fecc6821ecc8ac710f0172f2377bed66e6401c641b07ca83e50f0c5b84f"
+    },
+    {
+      "label": "stanford_source_000",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/common/checkpoint_util.py",
+      "scope": "project",
+      "sha256": "2640d4ceda252ee926b13b9ce6c828e5df2e36a9d36637a6a80a7bbe11dab543"
+    },
+    {
+      "label": "stanford_source_001",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/common/json_logger.py",
+      "scope": "project",
+      "sha256": "0678a15375ec22d85bf2deb499c1c3369aae885f35e214a884bf6bac7655d9ff"
+    },
+    {
+      "label": "stanford_source_002",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/common/pytorch_util.py",
+      "scope": "project",
+      "sha256": "96ce50e191b4c837532529040af65d2b9a1f433f33a5187f8cf256b62d84b6b4"
+    },
+    {
+      "label": "stanford_source_003",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/common/robomimic_config_util.py",
+      "scope": "project",
+      "sha256": "e782f9ba46ea433a77dfe95525a879bcf3033969f07ba9f776268c247e8a8a30"
+    },
+    {
+      "label": "stanford_source_004",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/dataset/base_dataset.py",
+      "scope": "project",
+      "sha256": "d2ad33b5af14a3a3ad9995701dd44790170c84b394a7bad899d607d809cbe8e3"
+    },
+    {
+      "label": "stanford_source_005",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/env_runner/base_image_runner.py",
+      "scope": "project",
+      "sha256": "bde19b7567aaa93de47093608c1a536ec14f787cfb44939eac9f33c1d50b989e"
+    },
+    {
+      "label": "stanford_source_006",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/common/dict_of_tensor_mixin.py",
+      "scope": "project",
+      "sha256": "158b63a244bcfb9aa377206730f5f59778c6aeb9138ff55c76d2c28ec46952d1"
+    },
+    {
+      "label": "stanford_source_007",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/common/lr_scheduler.py",
+      "scope": "project",
+      "sha256": "feb9453856bfd1ee10b1faba6c64814e071c5e70174398daf3bfcd8d430c80db"
+    },
+    {
+      "label": "stanford_source_008",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/common/module_attr_mixin.py",
+      "scope": "project",
+      "sha256": "658dececa20f7628960fc1a8db89e4be3693e1bba47f63d1ff8a4faa2d481e45"
+    },
+    {
+      "label": "stanford_source_009",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/common/normalizer.py",
+      "scope": "project",
+      "sha256": "92322852fc04d956d0dd43a2e41fb461dee246bbf97ddc7940186a9307525ed3"
+    },
+    {
+      "label": "stanford_source_010",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/common/tensor_util.py",
+      "scope": "project",
+      "sha256": "751b042aa5390ddf1f5b6220a465dfa20dbb9304e3c057f04512d6ee55f4e1b1"
+    },
+    {
+      "label": "stanford_source_011",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/diffusion/conditional_unet1d.py",
+      "scope": "project",
+      "sha256": "8a95014f8aa52ade086f967c9018a66bf0c68f2133969c8f7a8522da01b472ac"
+    },
+    {
+      "label": "stanford_source_012",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/diffusion/conv1d_components.py",
+      "scope": "project",
+      "sha256": "ea2aa10e297cf253bc1a1919ba47fe6ae32049b5eaaab292ed9cc145d8d2adc0"
+    },
+    {
+      "label": "stanford_source_013",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/diffusion/ema_model.py",
+      "scope": "project",
+      "sha256": "f683be124722abe0703e2cf003566ab2d446783383cdcd5202063e20148ae467"
+    },
+    {
+      "label": "stanford_source_014",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/diffusion/mask_generator.py",
+      "scope": "project",
+      "sha256": "23dba4c112ed57e41d530612c79d9841c9b3c5bd3d6790863d1739190a9ab7b0"
+    },
+    {
+      "label": "stanford_source_015",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/diffusion/positional_embedding.py",
+      "scope": "project",
+      "sha256": "2266c75ecc9c9ac8ca126839d39a7bafbdd7af8800d6de903f66815e64cc366c"
+    },
+    {
+      "label": "stanford_source_016",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/diffusion/transformer_for_diffusion.py",
+      "scope": "project",
+      "sha256": "c4cfd71a2f1b4f5181c7ccc391d71f19ebce74c698fc12725bb88317b6f8fd8f"
+    },
+    {
+      "label": "stanford_source_017",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/model/vision/crop_randomizer.py",
+      "scope": "project",
+      "sha256": "85787b6becd337352c2a1795f1e77be977c073134f91c3d0924b9d0e36c92978"
+    },
+    {
+      "label": "stanford_source_018",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/policy/base_image_policy.py",
+      "scope": "project",
+      "sha256": "32fd3fe35e2827f4472e195381e642dd8d78f4f0038f4f9625e0128c76e1aecd"
+    },
+    {
+      "label": "stanford_source_019",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/policy/diffusion_transformer_hybrid_image_policy.py",
+      "scope": "project",
+      "sha256": "e4166882bf0fc2e36e97beb27cdf701286230abceca1efaea9aae9a114a008e7"
+    },
+    {
+      "label": "stanford_source_020",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/policy/diffusion_unet_hybrid_image_policy.py",
+      "scope": "project",
+      "sha256": "d8ead767ed3b1501c358aa3dd97ab479ebdf77a62ec9ab7081d6a2211c2d2e76"
+    },
+    {
+      "label": "stanford_source_021",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/policy/ibc_dfo_hybrid_image_policy.py",
+      "scope": "project",
+      "sha256": "57a5c1e5100faa57325b3616d4e008f33ab6d13d1d99082a85a6a7cc3429f4a5"
+    },
+    {
+      "label": "stanford_source_022",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/policy/robomimic_image_policy.py",
+      "scope": "project",
+      "sha256": "81653cbb522980ca3424fe83ce1717dc8b7cf983ce19f9667e72a6230fb7a5e1"
+    },
+    {
+      "label": "stanford_source_023",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/workspace/base_workspace.py",
+      "scope": "project",
+      "sha256": "388b531260f2e0f91fc6bd2bdc90abd99367e9b7f7744f0010112ecc78d6c1e0"
+    },
+    {
+      "label": "stanford_source_024",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/workspace/train_diffusion_unet_hybrid_workspace.py",
+      "scope": "project",
+      "sha256": "1d69542bdb37906c899f25465e0c178b0581cbf4760de326a78899d67b0cd029"
+    },
+    {
+      "label": "stanford_source_025",
+      "path": "05_references/external_repos/real-stanford_diffusion_policy/diffusion_policy/workspace/train_robomimic_image_workspace.py",
+      "scope": "project",
+      "sha256": "ab779c25b632f5bbd11f5ca43b3dd2c779e0250568f3b8046ba0e6db1aabb3fe"
+    },
+    {
+      "label": "robomimic_source_000",
+      "path": "robomimic/__init__.py",
+      "scope": "runtime",
+      "sha256": "a1b4e1487b5d0dcea8e7684f5da53526cd108f91bfc09a00cdc1eaea72ddaade"
+    },
+    {
+      "label": "robomimic_source_001",
+      "path": "robomimic/algo/__init__.py",
+      "scope": "runtime",
+      "sha256": "52a111eb49f0fdbf37ca99bd5e074a0b2dce02229cbd10312214b1329a70f587"
+    },
+    {
+      "label": "robomimic_source_002",
+      "path": "robomimic/algo/algo.py",
+      "scope": "runtime",
+      "sha256": "d15dd0c501f6c715d8614887b04bc5ece9084d39d1e7cbc07de9ee9b5b93fe3e"
+    },
+    {
+      "label": "robomimic_source_003",
+      "path": "robomimic/algo/bc.py",
+      "scope": "runtime",
+      "sha256": "c74971d3da941e01fe0cfe97b5aebc6cddb9b8f7dbe13c2947fb5063e5765f42"
+    },
+    {
+      "label": "robomimic_source_004",
+      "path": "robomimic/algo/bcq.py",
+      "scope": "runtime",
+      "sha256": "f274fd5e4914082402459f8c9e32376c0c7ed4a1ff0d47c9c93b8d4b1994a670"
+    },
+    {
+      "label": "robomimic_source_005",
+      "path": "robomimic/algo/cql.py",
+      "scope": "runtime",
+      "sha256": "5715f0feaf38faa0f561e62a993851fd1f906e18c6b0a1844008d8131284a2bc"
+    },
+    {
+      "label": "robomimic_source_006",
+      "path": "robomimic/algo/gl.py",
+      "scope": "runtime",
+      "sha256": "61b44b48a535da07c8bc3e5fc343a590470ec6c0599275a17173f58a60afbf36"
+    },
+    {
+      "label": "robomimic_source_007",
+      "path": "robomimic/algo/hbc.py",
+      "scope": "runtime",
+      "sha256": "e16737325d78cb405ae251dc814bd1380668a6f6f8fe20ac15c3ba165f9c0ab8"
+    },
+    {
+      "label": "robomimic_source_008",
+      "path": "robomimic/algo/iql.py",
+      "scope": "runtime",
+      "sha256": "42636ca4de72381d5faf9d6f4e24193ad4f05e807b942f14a6665757d2e051be"
+    },
+    {
+      "label": "robomimic_source_009",
+      "path": "robomimic/algo/iris.py",
+      "scope": "runtime",
+      "sha256": "11f04c88233a41091181b5a8cb8b684982af527a5a47df87c69d0403f11751f9"
+    },
+    {
+      "label": "robomimic_source_010",
+      "path": "robomimic/algo/td3_bc.py",
+      "scope": "runtime",
+      "sha256": "1aeacc997c9f81e680c5a41e2b3ca01eea900263e4f9f5f65392a51ed5076310"
+    },
+    {
+      "label": "robomimic_source_011",
+      "path": "robomimic/config/__init__.py",
+      "scope": "runtime",
+      "sha256": "8c5c91a9c88bd254266e4fdcec19780e37c51d42cf2f6881356e7fad07287af0"
+    },
+    {
+      "label": "robomimic_source_012",
+      "path": "robomimic/config/base_config.py",
+      "scope": "runtime",
+      "sha256": "9ca10c3d443261ade58e69d612422688ff88d636719783a78f38f6c152839bf6"
+    },
+    {
+      "label": "robomimic_source_013",
+      "path": "robomimic/config/bc_config.py",
+      "scope": "runtime",
+      "sha256": "daff093a4f0eb63d01a29ce176bd881674b2ebd49bf7081b6ffd77eaae9a28f5"
+    },
+    {
+      "label": "robomimic_source_014",
+      "path": "robomimic/config/bcq_config.py",
+      "scope": "runtime",
+      "sha256": "edc34432b6aef845d887577c4eb2b19bffa45b59d309add9ec68f7bd88f29446"
+    },
+    {
+      "label": "robomimic_source_015",
+      "path": "robomimic/config/config.py",
+      "scope": "runtime",
+      "sha256": "c44204bfa69111e0c1cf50603cb9f929d5f3225d893860d45833da7712d460bd"
+    },
+    {
+      "label": "robomimic_source_016",
+      "path": "robomimic/config/cql_config.py",
+      "scope": "runtime",
+      "sha256": "cd7e302738c636a31957caefa095e40dd1ee5a2530db6612ccef43de4543f4b1"
+    },
+    {
+      "label": "robomimic_source_017",
+      "path": "robomimic/config/gl_config.py",
+      "scope": "runtime",
+      "sha256": "02dcc878ea51d6741f90c4bb7f8533ce78a81445b81e16cc0f726e0ae3c05ed2"
+    },
+    {
+      "label": "robomimic_source_018",
+      "path": "robomimic/config/hbc_config.py",
+      "scope": "runtime",
+      "sha256": "7393f094e726ce71d67106b1652eba9c8c21af87b0a4cb89432d70628ead07bc"
+    },
+    {
+      "label": "robomimic_source_019",
+      "path": "robomimic/config/iql_config.py",
+      "scope": "runtime",
+      "sha256": "4d6f1ace7a0b082ddfeda2f34be3d66d41aeee22933a36980093a9c58b572f1a"
+    },
+    {
+      "label": "robomimic_source_020",
+      "path": "robomimic/config/iris_config.py",
+      "scope": "runtime",
+      "sha256": "b59aabe86423c14f06ea393e95d44659dd5147e3703bf794f397390fad5dec49"
+    },
+    {
+      "label": "robomimic_source_021",
+      "path": "robomimic/config/td3_bc_config.py",
+      "scope": "runtime",
+      "sha256": "7c63475dfc09883f3fc3b703e6ebd427b6e467644b73f5da6762dbd74f74f2d3"
+    },
+    {
+      "label": "robomimic_source_022",
+      "path": "robomimic/macros.py",
+      "scope": "runtime",
+      "sha256": "2c2562a9834fbd5a555683f10badd1246d055b57ff0be5849c381a90e6e4533d"
+    },
+    {
+      "label": "robomimic_source_023",
+      "path": "robomimic/models/__init__.py",
+      "scope": "runtime",
+      "sha256": "c8c23346ad101e41610846558aa8c08543029771df10da16508fa3a324a3605b"
+    },
+    {
+      "label": "robomimic_source_024",
+      "path": "robomimic/models/base_nets.py",
+      "scope": "runtime",
+      "sha256": "5cd40616b3d770adc44e7fe2a27d384dbf380fc5ae74022c03de1e2e2a869feb"
+    },
+    {
+      "label": "robomimic_source_025",
+      "path": "robomimic/models/distributions.py",
+      "scope": "runtime",
+      "sha256": "fb14d4f2ffb73b79b4c619b5681f7dbda05991ac1d517d6ba4e3977213d0ebfe"
+    },
+    {
+      "label": "robomimic_source_026",
+      "path": "robomimic/models/obs_core.py",
+      "scope": "runtime",
+      "sha256": "75867a870f6d18abc832a0abb51c840a54baea6faeff0b4a63add731f4949494"
+    },
+    {
+      "label": "robomimic_source_027",
+      "path": "robomimic/models/obs_nets.py",
+      "scope": "runtime",
+      "sha256": "b2f04c5b6dc21bfe414f32a1e20c9f86ae77cc2af326e390a19eba70de8c288b"
+    },
+    {
+      "label": "robomimic_source_028",
+      "path": "robomimic/models/policy_nets.py",
+      "scope": "runtime",
+      "sha256": "8b74798ed8651ba19208dd8aed6250d03d78a5e28837254d57642be9ce944892"
+    },
+    {
+      "label": "robomimic_source_029",
+      "path": "robomimic/models/transformers.py",
+      "scope": "runtime",
+      "sha256": "b1977573fc615204c9cb2f8adad6b00e8db70c72a2725861d18a19f4ce6c7954"
+    },
+    {
+      "label": "robomimic_source_030",
+      "path": "robomimic/models/vae_nets.py",
+      "scope": "runtime",
+      "sha256": "89f7f8cc91d1c9fc873e9bf58859c9e30ed48d70c616dd8e2f2a0f17431825a3"
+    },
+    {
+      "label": "robomimic_source_031",
+      "path": "robomimic/models/value_nets.py",
+      "scope": "runtime",
+      "sha256": "28a08e3a723b67729e68fdbef12cc04bf67faf60a948a2b6c4684e77f579d660"
+    },
+    {
+      "label": "robomimic_source_032",
+      "path": "robomimic/scripts/generate_paper_configs.py",
+      "scope": "runtime",
+      "sha256": "34df666cb6953c29815eb69541a2ed26986437c5d8e3ca81775d109643740a55"
+    },
+    {
+      "label": "robomimic_source_033",
+      "path": "robomimic/utils/__init__.py",
+      "scope": "runtime",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "robomimic_source_034",
+      "path": "robomimic/utils/log_utils.py",
+      "scope": "runtime",
+      "sha256": "e990be8c66efc0c3b20351d62e7cbff331690aa3a55dbe0dd0e92d8179d04776"
+    },
+    {
+      "label": "robomimic_source_035",
+      "path": "robomimic/utils/loss_utils.py",
+      "scope": "runtime",
+      "sha256": "e350e00b9103f9de1bf1fa7703202abd50563ba6324784ec11515411cdb67901"
+    },
+    {
+      "label": "robomimic_source_036",
+      "path": "robomimic/utils/obs_utils.py",
+      "scope": "runtime",
+      "sha256": "b20278330ad8283a21886a4e79c457e31d0d1d599b5895010be1099a2c94c6e6"
+    },
+    {
+      "label": "robomimic_source_037",
+      "path": "robomimic/utils/python_utils.py",
+      "scope": "runtime",
+      "sha256": "d9f1981144ef8456531c8ed27d0be87903ed1eee540e773eb67785924948af2d"
+    },
+    {
+      "label": "robomimic_source_038",
+      "path": "robomimic/utils/tensor_utils.py",
+      "scope": "runtime",
+      "sha256": "fb761ab1dbe35f2d4124708e538d2f7c52f758983b2859e27482219af673aa03"
+    },
+    {
+      "label": "robomimic_source_039",
+      "path": "robomimic/utils/torch_utils.py",
+      "scope": "runtime",
+      "sha256": "a536c2c8525cbf32bb52c40dba55e0e912c1abbac75331465ccd411c0de23d67"
+    },
+    {
+      "label": "robomimic_source_040",
+      "path": "robomimic/utils/vis_utils.py",
+      "scope": "runtime",
+      "sha256": "28e769b7f238a6cf82fb38763e9d8d4c235c9b8996ed53c4615124365e97deb6"
+    }
+  ],
+  "runtime_fingerprint": {
+    "distributions": [
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/annotated_types-0.8.0.dist-info/METADATA",
+        "metadata_sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298",
+        "name": "annotated-types",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/annotated_types-0.8.0.dist-info/RECORD",
+        "record_sha256": "fdba84175c23174fbc72dbed163264690ba87561491166e4b48ab39b5c8eb0ff",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.8.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/antlr4_python3_runtime-4.9.3.dist-info/METADATA",
+        "metadata_sha256": "bf325e5155318385a2fcc4680742da710bbadf13a3d1c0979a98b3487980f261",
+        "name": "antlr4-python3-runtime",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/antlr4_python3_runtime-4.9.3.dist-info/RECORD",
+        "record_sha256": "ecc4c9a29084a35723f63c747903c401c8ddf70e2ead60a1c8c51d3db17a8f48",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "4.9.3"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/asciitree-0.3.3.dist-info/METADATA",
+        "metadata_sha256": "93474419a4c4646695c8e199816dd5ce3b43904eb7bd14ac9170b70985784c23",
+        "name": "asciitree",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/asciitree-0.3.3.dist-info/RECORD",
+        "record_sha256": "c1376fa3427deb2cd531d9133a1dfabaa63420df8ded5acc381d17d4421a5300",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.3.3"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/attrs-26.1.0.dist-info/METADATA",
+        "metadata_sha256": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc",
+        "name": "attrs",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/attrs-26.1.0.dist-info/RECORD",
+        "record_sha256": "54341b8c2856b0fced870ed87fc7b2e782e7707f8e6cd09a090a34c98413e16b",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "26.1.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av-15.1.0.dist-info/METADATA",
+        "metadata_sha256": "9ac27bdb13e15e236547d233094ae6eabf0b2fa0e8c100fd1be2e95272aa0f42",
+        "name": "av",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av-15.1.0.dist-info/RECORD",
+        "record_sha256": "935ed2c0a20073ab15d3d6f50cbf3633a92648d1e18e88708c77b5e82eef50d3",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "15.1.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/certifi-2026.7.22.dist-info/METADATA",
+        "metadata_sha256": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090",
+        "name": "certifi",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/certifi-2026.7.22.dist-info/RECORD",
+        "record_sha256": "9ada6a943d4067c8dab8f4a56522b710502405492907915403d3d57f9b168908",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2026.7.22"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/charset_normalizer-3.4.9.dist-info/METADATA",
+        "metadata_sha256": "0dd3de17609b0db64bd1d4643c5bd0dd35b5eb3c5be77f8b17bc190f2f4a2ac0",
+        "name": "charset-normalizer",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/charset_normalizer-3.4.9.dist-info/RECORD",
+        "record_sha256": "91e61dde8eb1b97bebb19a33dd824deab50840fcc50ec5267d86cee11dfc8748",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "3.4.9"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/click-8.4.2.dist-info/METADATA",
+        "metadata_sha256": "194c9dd81d567f9081f026c7e401060fbafa7bc147c8e0a58b3668b40a64c031",
+        "name": "click",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/click-8.4.2.dist-info/RECORD",
+        "record_sha256": "d80004e61b3a1060dbdd57a49506a9ab45976edb358ad6436b3f3d0d98c1a2a2",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "8.4.2"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/cloudpickle-3.1.2.dist-info/METADATA",
+        "metadata_sha256": "3d0263bfe9ee4f23b244bdcaff73acbe7a1957ebf82743b6ae42693adc48d721",
+        "name": "cloudpickle",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/cloudpickle-3.1.2.dist-info/RECORD",
+        "record_sha256": "1e01b896f5347f305a325cb12988d656c71fc8629059754d86a87e53b65a59a9",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "3.1.2"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/cycler-0.12.1.dist-info/METADATA",
+        "metadata_sha256": "23289e19b76f1e01394227696e6af2b6cd1ce79e89731209bf9195148b18ed36",
+        "name": "cycler",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/cycler-0.12.1.dist-info/RECORD",
+        "record_sha256": "cc7e94d56e5f6d77f3fc63948b54dccb481f6970595ee8ab6eda43d868e22261",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.12.1"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/diffusers-0.35.2.dist-info/METADATA",
+        "metadata_sha256": "44b5d29467522844c17a568c50c50c3d35e98ccdc56aa467dc0882aa5070bc57",
+        "name": "diffusers",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/diffusers-0.35.2.dist-info/RECORD",
+        "record_sha256": "75c856a939b0e9e4783068903c151e85c94be5ff46efc77b444cd1920bb7c694",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.35.2"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/dill-0.4.1.dist-info/METADATA",
+        "metadata_sha256": "040d6c84eddf29c8c14dc2aef214962a919803f557243824dd4f8aa3b49e3868",
+        "name": "dill",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/dill-0.4.1.dist-info/RECORD",
+        "record_sha256": "684f3cd8c826a77f20c08be4c1456217360ff51080f96e3248366aa5fcc43f1f",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.4.1"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/einops-0.8.2.dist-info/METADATA",
+        "metadata_sha256": "0bd65db043688a44f4a29608c1cba521c932f7ff76f238bbd869441e15012653",
+        "name": "einops",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/einops-0.8.2.dist-info/RECORD",
+        "record_sha256": "a86189ab048186c9111c93a37645bde1e5e4b9177eb7853733bf6b4cfbadf35c",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.8.2"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/feetech_servo_sdk-1.0.0.dist-info/METADATA",
+        "metadata_sha256": "2a313b217816c9abbb1dd62f1fb75c2655e00da7c86cd52e005fec595b196af8",
+        "name": "feetech-servo-sdk",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/feetech_servo_sdk-1.0.0.dist-info/RECORD",
+        "record_sha256": "b879790e6d7d310c4ad52bdc61ae75b49593c179a301f79569e518f2efed4010",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "1.0.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/filelock-3.32.2.dist-info/METADATA",
+        "metadata_sha256": "02c1fa9abf083b9bd5792cc1f300088bde118bbb3db9c9f7c19595cb4101d0ba",
+        "name": "filelock",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/filelock-3.32.2.dist-info/RECORD",
+        "record_sha256": "74a24d811e32fc0ca53bebc11fe47ac3c04271e9db18ed9a5e7d1001f0c14a08",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "3.32.2"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/huggingface_hub-0.35.3.dist-info/METADATA",
+        "metadata_sha256": "a123ddd70795cc50d0108215d5dedca13b4df6eca6b63c9594679fb5556ab36e",
+        "name": "huggingface-hub",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/huggingface_hub-0.35.3.dist-info/RECORD",
+        "record_sha256": "073b4ee567d72003399b81ad15605f1d67c2f4dbb7523fc1b89692b721da3e2c",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.35.3"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/hydra_core-1.3.5.dist-info/METADATA",
+        "metadata_sha256": "b104f662439e6dcdf46f6431f3e1a0342cc50df89b99f2b8c983e650e967f7d5",
+        "name": "hydra-core",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/hydra_core-1.3.5.dist-info/RECORD",
+        "record_sha256": "195cf232f00718581118b89fe3b699696ad5b2d0ec6989349696f0d827fba59a",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "1.3.5"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/idna-3.18.dist-info/METADATA",
+        "metadata_sha256": "46dfe6e5ac462d0f680ecd9abcf66e829b6a2334824b4d9e3979b31135caf281",
+        "name": "idna",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/idna-3.18.dist-info/RECORD",
+        "record_sha256": "2ca523c406dfbf3d0c70cb004fe9de1c788464ec297c6a4ccf7f94581542bf7e",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "3.18"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/imageio-2.37.4.dist-info/METADATA",
+        "metadata_sha256": "bdc8cb937fcc650149184c2b1bd58eb53cd62da5c8dca8e7bdde36dd4fce844b",
+        "name": "imageio",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/imageio-2.37.4.dist-info/RECORD",
+        "record_sha256": "7fa416987a4b781a7c2414cd26be8eaf4331c658b3c8eb3f7e9713d315518db2",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.37.4"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/kiwisolver-1.5.0.dist-info/METADATA",
+        "metadata_sha256": "bb843307a98b7bd2a7055f831cbfa2fe7c864716dea9d04c7a5c03e51f648b79",
+        "name": "kiwisolver",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/kiwisolver-1.5.0.dist-info/RECORD",
+        "record_sha256": "8c4a63a9d1b8bdd76baa3f280c74e5049f919ea6a7c4f5fae641bee81d0d5d81",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "1.5.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/matplotlib-3.10.9.dist-info/METADATA",
+        "metadata_sha256": "bea8a4672bbe4f26b7a4fe5bc5e5023a08c4fb7069cc951f39eef26a403c7ea6",
+        "name": "matplotlib",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/matplotlib-3.10.9.dist-info/RECORD",
+        "record_sha256": "98d3f8040cc6e809a8b720de58f97db26171aad66328f68f0b224d229de9d72e",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "3.10.9"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mpmath-1.3.0.dist-info/METADATA",
+        "metadata_sha256": "44b66ea444b9c0d19ae94815d356bf047ae6b680c19268b5c265687cd6a81406",
+        "name": "mpmath",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mpmath-1.3.0.dist-info/RECORD",
+        "record_sha256": "205c72eaa5058bc221713222d6533b28218df8104321e6fb945137b639a06527",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "1.3.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mujoco-3.3.7.dist-info/METADATA",
+        "metadata_sha256": "d17ef5c527a21b9b465e89c32b9b19cf04796298cde8c3131ad109bcdb8b35e3",
+        "name": "mujoco",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mujoco-3.3.7.dist-info/RECORD",
+        "record_sha256": "cc573f943da69cb5a0bfb0f447c0787df3001cabe4005d6e635afe94e0bc0493",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "3.3.7"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numcodecs-0.13.1.dist-info/METADATA",
+        "metadata_sha256": "e91a5d5f6fe73c2db7067b6945310cbde56d32785c84a8fb11bf0778c6c37854",
+        "name": "numcodecs",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numcodecs-0.13.1.dist-info/RECORD",
+        "record_sha256": "95377207cc1f3b58794edd8d6cf62cc6f02b735eb703b300c762dd7255646ccd",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.13.1"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy-2.2.6.dist-info/METADATA",
+        "metadata_sha256": "8e12ee9b6c37fd16c7aae910d76ef2857dc5eb3cb482fc872a6aa905f49f9ead",
+        "name": "numpy",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy-2.2.6.dist-info/RECORD",
+        "record_sha256": "a7e4ee32bb34596faed2d7a799dfe3c17e609edc4b1ba36ae405c046cc453bf9",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.2.6"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/omegaconf-2.3.1.dist-info/METADATA",
+        "metadata_sha256": "24dc07ea1b801810c63c386cc47376727a774cce4493bfddf6454fe8335eb84e",
+        "name": "omegaconf",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/omegaconf-2.3.1.dist-info/RECORD",
+        "record_sha256": "be50a2c18000cc5056c79ae514133e602308b7db3bcb0666a32d51a6fe39e139",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.3.1"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/opencv_python-5.0.0.93.dist-info/METADATA",
+        "metadata_sha256": "20749df4e7500c53075dee344cd02f63d4df0dce93526e49e7e1c90fbc094e3e",
+        "name": "opencv-python",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/opencv_python-5.0.0.93.dist-info/RECORD",
+        "record_sha256": "9d962921dda3bcd35262bfe8bf5a561ed166ead54ae3e5a034cbea700bc42133",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "5.0.0.93"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/opencv_python_headless-4.12.0.88.dist-info/METADATA",
+        "metadata_sha256": "d4a32c2de48a90b2171be532b443309cadaa6fe001fdbeb1429293df92f08d38",
+        "name": "opencv-python-headless",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/opencv_python_headless-4.12.0.88.dist-info/RECORD",
+        "record_sha256": "216bb8e9bc9ffbc81caa8fca8082a373abada1b267e1e48ee53551025a028d87",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "4.12.0.88"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/packaging-25.0.dist-info/METADATA",
+        "metadata_sha256": "5b611a609c38fefc3d616bf45d20aec98fb7d53f245daca9e2c30fc85c7ac282",
+        "name": "packaging",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/packaging-25.0.dist-info/RECORD",
+        "record_sha256": "527fb37d34fe2ce89b03509455008e24638e19dc444e9efac00dfa5b70aaa21b",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "25.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas-2.3.3.dist-info/METADATA",
+        "metadata_sha256": "40ee953dc7ca155840b639a1881ff84578075187fce0ac20eeda55a7fa0d9a90",
+        "name": "pandas",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas-2.3.3.dist-info/RECORD",
+        "record_sha256": "8fdcb789f7b3d9ca8a3f2d5e237e2648568070918f1238348541b9af05577365",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.3.3"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pillow-12.3.0.dist-info/METADATA",
+        "metadata_sha256": "8fc07146cab33ef7582361dab6eac596d340b03ec648f18217da7894f73838c8",
+        "name": "pillow",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pillow-12.3.0.dist-info/RECORD",
+        "record_sha256": "e4e4433c0c0f298745e85ce970d183c7d41e3a4607e24039bb39d8a01988a429",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "12.3.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/platformdirs-4.11.0.dist-info/METADATA",
+        "metadata_sha256": "5607d730c0017ca0afb8a2264079d3734eb48e74f33f1a2762c32a66138d0244",
+        "name": "platformdirs",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/platformdirs-4.11.0.dist-info/RECORD",
+        "record_sha256": "bd5d03616974a7f7a617cb1b6b173c94b8ab19811a2b48d38a65b44a608f37b2",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "4.11.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/protobuf-6.33.6.dist-info/METADATA",
+        "metadata_sha256": "6f3b31fd64380f5e60ed10f5a2954699bcc1f6266eb74316f0ba96702d30546f",
+        "name": "protobuf",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/protobuf-6.33.6.dist-info/RECORD",
+        "record_sha256": "c6c180f5b7385a3661f05a1927d2f0d33fad53b7d9d0c106be5178906620726b",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "6.33.6"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pyarrow-25.0.0.dist-info/METADATA",
+        "metadata_sha256": "ec5c33ae4ab245a331da32755edf8d2812bba1eb636c5d29f41f139d2fb90a17",
+        "name": "pyarrow",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pyarrow-25.0.0.dist-info/RECORD",
+        "record_sha256": "e9f9425134cabb0ddd85a738438a3d397785159f058a05577b426a3d2452432f",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "25.0.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pydantic-2.13.4.dist-info/METADATA",
+        "metadata_sha256": "d1e56c3412492512fb6b59a9dfc25ab7af2a8204585cd7bca000513023133394",
+        "name": "pydantic",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pydantic-2.13.4.dist-info/RECORD",
+        "record_sha256": "56793f745ab557b96a69e5b381712c8bc0ebe49b86d8e68abd1142d658e2110a",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.13.4"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pydantic_core-2.46.4.dist-info/METADATA",
+        "metadata_sha256": "135fa8b2f89473e9191c7078c2164e3ec6c8927a61c2379c2fddcc07f11f3bae",
+        "name": "pydantic-core",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pydantic_core-2.46.4.dist-info/RECORD",
+        "record_sha256": "e36bbc7a44fd2a4db2c236ac8e715048caceff89ca58ef04485f2bb8f46dca35",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.46.4"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pyparsing-3.3.2.dist-info/METADATA",
+        "metadata_sha256": "3311a8b949d70f71a2b9788a9327f11d9d5a6a8012d6c046ca254ad2de877f45",
+        "name": "pyparsing",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pyparsing-3.3.2.dist-info/RECORD",
+        "record_sha256": "2fe4f51753672db483d3b2246d113b5f53111e8fa8de59edb2334da2465b8df5",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "3.3.2"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pyserial-3.5.dist-info/METADATA",
+        "metadata_sha256": "42a8ab7e94ef0b7baa7e94cdac65d6b9254c608476f630120c990007bf472943",
+        "name": "pyserial",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pyserial-3.5.dist-info/RECORD",
+        "record_sha256": "164915c2b97ee9f521745e1a83cc4e53dcb0669018e40ee2bb41cac080504eef",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "3.5"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/python_dateutil-2.9.0.post0.dist-info/METADATA",
+        "metadata_sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+        "name": "python-dateutil",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/python_dateutil-2.9.0.post0.dist-info/RECORD",
+        "record_sha256": "1876f5982b4e1f1137988181f354b10fe2f28886dbe4ee638a96f5ed0e02a70e",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.9.0.post0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pytz-2026.3.post1.dist-info/METADATA",
+        "metadata_sha256": "25ef8a562377a28d8c6bd8c5c9e80d761d0e22ac4a7bed24e512f589644ed33d",
+        "name": "pytz",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pytz-2026.3.post1.dist-info/RECORD",
+        "record_sha256": "0430574a7072e5fd39c81bed38e3b290769713ea0d41d9a07426fabc3e82f40a",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2026.3.post1"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pyyaml-6.0.3.dist-info/METADATA",
+        "metadata_sha256": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34",
+        "name": "pyyaml",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pyyaml-6.0.3.dist-info/RECORD",
+        "record_sha256": "cb890276e02f3e482232f5c91a958e43830ffe7d7f9c26109ce7d6249607c735",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "6.0.3"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/requests-2.34.2.dist-info/METADATA",
+        "metadata_sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27",
+        "name": "requests",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/requests-2.34.2.dist-info/RECORD",
+        "record_sha256": "c06e539e4fdb12944e90cc028ffa9cea878c2effa696c8ccfa7926c052b2976f",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.34.2"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/robomimic-0.3.0.dist-info/METADATA",
+        "metadata_sha256": "4454a36e43b3c4adf6f26ebe6de30f0494e11bd9833a5e6b7c786203c11e75a7",
+        "name": "robomimic",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/robomimic-0.3.0.dist-info/RECORD",
+        "record_sha256": "124ef9555f27cdd234d0b8acc24c04db549885d234e0095c07e28a21c50a3ffa",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.3.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/safetensors-0.8.0.dist-info/METADATA",
+        "metadata_sha256": "645be7b8d55e91534f991d144dc9e279581ea8dbea1a8c5b0be14e529d01e345",
+        "name": "safetensors",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/safetensors-0.8.0.dist-info/RECORD",
+        "record_sha256": "0bd272a413cbb8dcfb68ba3a42ef97f73e98dcc9a70785dcbb366036ead31c4c",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.8.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/six-1.17.0.dist-info/METADATA",
+        "metadata_sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+        "name": "six",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/six-1.17.0.dist-info/RECORD",
+        "record_sha256": "5fa0bbc20b0426d59bd09f011e1c92cdc63216baa92ca252550d3518a6ce4f2d",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "1.17.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/sympy-1.14.0.dist-info/METADATA",
+        "metadata_sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595",
+        "name": "sympy",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/sympy-1.14.0.dist-info/RECORD",
+        "record_sha256": "df783a46fe54cb7f32e3facdad8c16de64ffa12ffcfcc8cf024d8f652483a336",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "1.14.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/termcolor-3.3.0.dist-info/METADATA",
+        "metadata_sha256": "880aeaba6300677d4ecc022fb63f8adcd57a753b6fd2b5ec17841f722f910196",
+        "name": "termcolor",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/termcolor-3.3.0.dist-info/RECORD",
+        "record_sha256": "dd371542c42479efec83df709b5350b73a0bdb8fc07ffe007044e56fe02c28fd",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "3.3.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/torch-2.10.0.dist-info/METADATA",
+        "metadata_sha256": "4b0f1217de69037355b4e582905cdb303a56a488ac6fd172f148d88fed634f54",
+        "name": "torch",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/torch-2.10.0.dist-info/RECORD",
+        "record_sha256": "3af333300f814554d215e9e9eb4e17ab5737f1685ecadda2ea19e8692e27af59",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.10.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/torchvision-0.25.0.dist-info/METADATA",
+        "metadata_sha256": "b13b6c09eb07623dd666e6eebd6e4af1c9f5c922cbe8be54802aba7931df4ba4",
+        "name": "torchvision",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/torchvision-0.25.0.dist-info/RECORD",
+        "record_sha256": "08755ddc4ee19fb549398da445cbe9c0623c6225ed0c15c65ebbf6fab369817c",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.25.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/tqdm-4.70.0.dist-info/METADATA",
+        "metadata_sha256": "0d95b85b90428f8776afc4a92b17c5094f78ee98d150b3255acbcdf4e9d57941",
+        "name": "tqdm",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/tqdm-4.70.0.dist-info/RECORD",
+        "record_sha256": "4641e18224ebd97e4a932689ce88825e8c0a7db3605c4fe78227d9ebf1715e4e",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "4.70.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/triton-3.6.0.dist-info/METADATA",
+        "metadata_sha256": "5c9071db9b057bec89cd6d7f76f61e5f28a5e8d3717ff6c85420cf8015ee0321",
+        "name": "triton",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/triton-3.6.0.dist-info/RECORD",
+        "record_sha256": "a76868156ca7479809b74e5211a6d3a7dfe3bafc085ec6ff87f9fa92c8470e58",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "3.6.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/typing_extensions-4.16.0.dist-info/METADATA",
+        "metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46",
+        "name": "typing-extensions",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/typing_extensions-4.16.0.dist-info/RECORD",
+        "record_sha256": "406a0f6918e4432e2cddcf7e67a91781c32cbeaa7a2b22c9877d8d60ad8b0b52",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "4.16.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/typing_inspection-0.4.2.dist-info/METADATA",
+        "metadata_sha256": "61096cd0bfe3c7040b6f98c22b02d190fe01936d0ff7616c5134fed02891953a",
+        "name": "typing-inspection",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/typing_inspection-0.4.2.dist-info/RECORD",
+        "record_sha256": "79fbc5684fe06c531ca7f5505dad2daae5a326b4dcd3c1854097c54ea63b399d",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.4.2"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/urllib3-2.7.0.dist-info/METADATA",
+        "metadata_sha256": "66147856d30bbb6bed01c6ce3326d0f48d84ed5f286ac177633a1486b82eace5",
+        "name": "urllib3",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/urllib3-2.7.0.dist-info/RECORD",
+        "record_sha256": "dbfebeaf1d2b8fbf3d3a40786291748642caf553c1b926da4782365c2bd3cd79",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.7.0"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/wandb-0.24.2.dist-info/METADATA",
+        "metadata_sha256": "458a5544ed254d61f205a119ef0f166f73ec76826fe26b0229bd7821f0e6d8b5",
+        "name": "wandb",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/wandb-0.24.2.dist-info/RECORD",
+        "record_sha256": "dde6b7e449195a13894699f3ef34a3c89d4030f7551a918e8306eec2a7e55388",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "0.24.2"
+      },
+      {
+        "metadata_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/zarr-2.18.3.dist-info/METADATA",
+        "metadata_sha256": "cc362528f1590b2d5c8026424857b8a4cff05a24000a3605e11423e399d69c78",
+        "name": "zarr",
+        "record_path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/zarr-2.18.3.dist-info/RECORD",
+        "record_sha256": "70db08b1dd42f0e1ff4db571e41ed06cf345d9c71c39236a4f57f587ca755c38",
+        "root": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages",
+        "version": "2.18.3"
+      }
+    ],
+    "extensions": [
+      {
+        "modules": [
+          "_asyncio"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_asyncio.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "163a147e67d7d95bf42bf3c52b75d115ba0da4c6655ec7d1a7f09f2599b6faa3"
+      },
+      {
+        "modules": [
+          "_bisect"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_bisect.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "79afd5c8b404452416c0b130fc461cdbadf708f364e4fa322315df444d80cdf5"
+      },
+      {
+        "modules": [
+          "_blake2"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_blake2.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f225a88298e08b234c0a5587d9162c7422d60f913e8ae75cd3d8555ce8cd359a"
+      },
+      {
+        "modules": [
+          "_bz2"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_bz2.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "9d7c312816c7a6f26ab1db87133d0286017bc81b321b806806feb53b994ff0f1"
+      },
+      {
+        "modules": [
+          "_codecs_cn"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_codecs_cn.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "83802f01fe9cdf78103df7c3fe2b15cbf377b0d4417e12eba8b576915ff73c4b"
+      },
+      {
+        "modules": [
+          "_codecs_hk"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_codecs_hk.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "64ea07c0fc7669fe9eb1b2c4fbcfabf635c83b77cc54e0c6eea2f0cec1712176"
+      },
+      {
+        "modules": [
+          "_codecs_iso2022"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_codecs_iso2022.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "9053c42647955eca929edfeec43161d53192282d3d96632a550577941e0b08a9"
+      },
+      {
+        "modules": [
+          "_codecs_jp"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_codecs_jp.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "93f5ae707d6bfa4abee218efbb4a66f8d69e0088858f561b2b8e6c2ebd565723"
+      },
+      {
+        "modules": [
+          "_codecs_kr"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_codecs_kr.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "5e78bad3819c212d9fdd7892510852fa49479e45918a49e054cbb2a49c9a301d"
+      },
+      {
+        "modules": [
+          "_codecs_tw"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_codecs_tw.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "81f8b2ca64423554adfc828721ec96867d1072b8f1f0c3e5f899336d14ca7bcd"
+      },
+      {
+        "modules": [
+          "_contextvars"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_contextvars.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "945f2f0b5ff33ab4949628985be8e9c95451ebb5e06c30f8c41938ffd7481448"
+      },
+      {
+        "modules": [
+          "_csv"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_csv.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7a883726b6abba65a86d91c991066500d386fa53abe7b21507e13c2d7ea7e7f1"
+      },
+      {
+        "modules": [
+          "_ctypes"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_ctypes.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "87fce182a0f1fddcf7f2a8e4e2710e7ea4a8ee371ea3152efe6a2d4c2f2318ba"
+      },
+      {
+        "modules": [
+          "_datetime"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_datetime.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "12564e402aa0af7c7ddcfed6ca782d9aac262d4e6c9488094da533761412222e"
+      },
+      {
+        "modules": [
+          "_decimal"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_decimal.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "fdc5c2a2efd72048658c2f92f6340add6aa71ea257b9f1221e7fa49bc27333fc"
+      },
+      {
+        "modules": [
+          "_elementtree"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_elementtree.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "bb742166e8eab112adacf8e0a357452f6afd7dbe576ada2f7934410a1bd726c8"
+      },
+      {
+        "modules": [
+          "_hashlib"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_hashlib.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "de64711b7a27c36cd9926b4ecbdf6a53301e11bc2704d02607cb76fc937253e9"
+      },
+      {
+        "modules": [
+          "_heapq"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_heapq.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "366de0d3388366174a4de2b42fb9c28c0b83514ab9aa3f6c64d98156d102464d"
+      },
+      {
+        "modules": [
+          "_lsprof"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_lsprof.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "61f5d79c874aebe9b2e74e296efe34e689daf784f6266c8eb805c729d710bdd3"
+      },
+      {
+        "modules": [
+          "_lzma"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_lzma.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "21d13f6ea79607814c47cb23d715c1fa052aaf29e3b8db536f66ccbc5530bf86"
+      },
+      {
+        "modules": [
+          "_multibytecodec"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_multibytecodec.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "4d43ef9cb7b2a538bb8034f9322ac31914d2dd7742af5f6ee8e53fff89ae15e3"
+      },
+      {
+        "modules": [
+          "_multiprocessing"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_multiprocessing.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "da898a4882223375cb18c2785693535effd095be4a99e64bc5213b8202d478c0"
+      },
+      {
+        "modules": [
+          "_opcode"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_opcode.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "e965e4087a95eb5ba4ab8e2458fa07e9dc8a8b04e4cef2a558f44743e5035973"
+      },
+      {
+        "modules": [
+          "_pickle"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_pickle.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "8990e2ec76eb04a6441255cd030bca8a9132bd707f91134ebadbec5b451dd623"
+      },
+      {
+        "modules": [
+          "_posixshmem"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_posixshmem.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "803f88571a246883fcf278290e378a93d2fb3bcf184290b601097f23c324034b"
+      },
+      {
+        "modules": [
+          "_posixsubprocess"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_posixsubprocess.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "aa69b658a1a61caa687fad0365860127b6e75f99d5e04de1ba362fa7d12a6842"
+      },
+      {
+        "modules": [
+          "_queue"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_queue.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "fc0e1a136b1f62c8fea76f4395dd3b21280a9fd3fcc34e7e028effa9eeb07ce3"
+      },
+      {
+        "modules": [
+          "_random"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_random.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "9939a488e479a09654582f2f7150a402797756476e82f74fc27ab66383a2f1aa"
+      },
+      {
+        "modules": [
+          "_sha512"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_sha512.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7f02b99db0c3bc923522c5b381a13e365c2f7ade9e5ae92972ac2736879396cf"
+      },
+      {
+        "modules": [
+          "_socket"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_socket.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "112a7b39f1972a0e61fa037f1540c13ce350a24b13a150b6cd4e2802ef5c33e9"
+      },
+      {
+        "modules": [
+          "_sqlite3"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_sqlite3.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "0d3f7b156e16e102be8c002897336fa2b97de01693f1066e2b361260de2a858e"
+      },
+      {
+        "modules": [
+          "_ssl"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_ssl.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "12abbfce73c7004416c6af1438688f2fb32d763b9986d6b8ade5248376e6237b"
+      },
+      {
+        "modules": [
+          "_statistics"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_statistics.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "91be16346b6831ddc3bb4c895f8e7b210987497a771bd315295e32308e9762e7"
+      },
+      {
+        "modules": [
+          "_struct"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_struct.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "9e86b388c02b64aab0e114366de725c4163557e1cef5ea037b00569df6c2c0fc"
+      },
+      {
+        "modules": [
+          "_uuid"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_uuid.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "0d64ead494445015ae287352b86448e9a486b28028d1fdf8a3a4c5bea4fef328"
+      },
+      {
+        "modules": [
+          "_zoneinfo"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/_zoneinfo.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "b4bc6c83a6a3456f8ab424880ac001e875b30decd0ad18fa6a4761377f8f98ee"
+      },
+      {
+        "modules": [
+          "array"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/array.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "becab944fac9eec0ca4c2b996c238d662d3493add60edab5de18ce7cf2d4f1bd"
+      },
+      {
+        "modules": [
+          "binascii"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/binascii.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "b4ce2de05e876b4e04ad3d9b157aa91b7c5435def928200ccb1746b31510ce0a"
+      },
+      {
+        "modules": [
+          "cmath"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/cmath.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "84a549b8a61c799afef86b24a90a52be8322008d87c2bc0c83986a2fe3e2c53e"
+      },
+      {
+        "modules": [
+          "fcntl"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/fcntl.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7bea6443831057c226c60564ff41f866576b4b9143afb3d3620cd0ecf1cf9e8b"
+      },
+      {
+        "modules": [
+          "grp"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/grp.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "dfa45ec6ab042a16f353081e0bf63624d6438325152c2e4c0afe88d49a3de3d9"
+      },
+      {
+        "modules": [
+          "math"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/math.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "19fcbedecc6d0105177fdfd1a6d7c004b1592d17809ff1886e3b048c11b38d69"
+      },
+      {
+        "modules": [
+          "mmap"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/mmap.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "c1782b1f1bd65eacbfefbb90fc52092528bba76f05c592cd1bef74d1c13019e5"
+      },
+      {
+        "modules": [
+          "pyexpat"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/pyexpat.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "fb83a320a821bb1d6678b92722aa0feae2100dbe196b5297c68e862be2a6f4da"
+      },
+      {
+        "modules": [
+          "select"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/select.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "2372db6f4c98f0b72a30180c1cc276491710c8698370b79e9822e96f683f5dd6"
+      },
+      {
+        "modules": [
+          "termios"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/termios.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "e4af6e7757176d2df2abcd4c7b05ad5d8548df37ec5db0174584143dc3a45302"
+      },
+      {
+        "modules": [
+          "unicodedata"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/unicodedata.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "8e6105b34170b123b9a73dc98b03682a2d42e41c2d3845163b66ed3f44bafc42"
+      },
+      {
+        "modules": [
+          "zlib"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/lib-dynload/zlib.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "66547e788ce96c0c9dd208f051ed4f9a506c941573c1bdf0fa28e2272d3fb5dc"
+      },
+      {
+        "modules": [
+          "PIL._imaging"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/PIL/_imaging.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "a153ea792195cdd15b7c50f6ae86527a8203373c63cdfce7302d8718a97d7d8d"
+      },
+      {
+        "modules": [
+          "PIL._imagingft"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/PIL/_imagingft.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "a32c4ab1a6372507e475110d03f43b97aa84c4533da52d14619871ac67d4437b"
+      },
+      {
+        "modules": [
+          "ada92cb5d92a588d1b93__mypyc"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/ada92cb5d92a588d1b93__mypyc.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "243c48045404540fdda511964bcd843a42cf4e4ea25b056631665554a0a9e079"
+      },
+      {
+        "modules": [
+          "av._core"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/_core.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "d984c8b37a653d8bca353d99d8c140ee5a1ed3ccc656971ab453bd6810d57c43"
+      },
+      {
+        "modules": [
+          "av.audio.codeccontext"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/audio/codeccontext.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7c3476b10055c123fdd304f4057725fb87cd6990bfc3209808128e1da753afc0"
+      },
+      {
+        "modules": [
+          "av.audio.fifo"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/audio/fifo.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "d6aab6f9ababe5110ded6a3c0b58cbffb9985b6192c262f278a8981f15441cca"
+      },
+      {
+        "modules": [
+          "av.audio.format"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/audio/format.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "4d571201ef299ce57d5bc2d4006962ef3afe7549764c4dc9da65ee58b0833dc2"
+      },
+      {
+        "modules": [
+          "av.audio.frame"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/audio/frame.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "c739cdd3301e34dea08c5dd025ff7b5341acbc3d1270a35a26e768c1922d7500"
+      },
+      {
+        "modules": [
+          "av.audio.layout"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/audio/layout.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "b2f85ad73c82ac4fe85eb606d573ac1259115b1c104c620a884f7a39356d34cf"
+      },
+      {
+        "modules": [
+          "av.audio.plane"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/audio/plane.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "0a51ed4dfac3aab5964c1eade5383ce58843506a5341d39a1c865e74fe6f01cd"
+      },
+      {
+        "modules": [
+          "av.audio.resampler"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/audio/resampler.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "581c413527728f6bc360ce53ae3415b10f27f78cd3ff93bf86e47fb583f3bc99"
+      },
+      {
+        "modules": [
+          "av.audio.stream"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/audio/stream.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "96e5d1fced2502f9350e2e2aa9c2ef13085aac55f466b988f0fcb606e2fb3ae5"
+      },
+      {
+        "modules": [
+          "av.bitstream"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/bitstream.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f56f6263f6a84d0f206d4613b77b77edeeaec79eb0257161c121d38c08fd38cd"
+      },
+      {
+        "modules": [
+          "av.buffer"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/buffer.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "244f3ac07de4b4f0ce7af38648acb70fed08c88b27fd76812155d36d37f3539c"
+      },
+      {
+        "modules": [
+          "av.bytesource"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/bytesource.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "36d107d0374008d49d1e38b6e9dc7aff459f8369db2f0e68632a1a8f7e75b2b3"
+      },
+      {
+        "modules": [
+          "av.codec.codec"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/codec/codec.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "32d7c9157b82a9ee34d072271fafc8c3216dd14c068f4b8f14146416c8fe582d"
+      },
+      {
+        "modules": [
+          "av.codec.context"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/codec/context.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "4fab1ea7fa17edbd7c9e41e1843f6d37cfd25beb66bace231be7c390cc1b87e6"
+      },
+      {
+        "modules": [
+          "av.codec.hwaccel"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/codec/hwaccel.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "72b2a262c6b239be22b012e31dd6e85c26145ee8befa1c5c555f0d003d539984"
+      },
+      {
+        "modules": [
+          "av.container.core"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/container/core.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "4ac85f58ee4ad63f58c3830019f55f3a76608c69b154e861103b8700754de3d3"
+      },
+      {
+        "modules": [
+          "av.container.input"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/container/input.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "80cba97061e06eda12e6987da6b80425bec78f4ef7ba63b857031af27940a41a"
+      },
+      {
+        "modules": [
+          "av.container.output"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/container/output.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "fb492dd469a04a552aaf572a98542713769baeb89c243534de7cece1b8114c01"
+      },
+      {
+        "modules": [
+          "av.container.pyio"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/container/pyio.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "220a265ff53845650e3e42c2284f00b2aa9e4a53acca9943548652b37648bbf2"
+      },
+      {
+        "modules": [
+          "av.container.streams"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/container/streams.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "81643b129b124059e68d0ae016d2100d5282a30f51e05c36825c2a7af0ca0414"
+      },
+      {
+        "modules": [
+          "av.descriptor"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/descriptor.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f25f4f40207cc8b2de91b74b433764144b33ef39c165b545e1c77216fb0990e4"
+      },
+      {
+        "modules": [
+          "av.dictionary"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/dictionary.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "ecaf572d71151e68e2ac2be40cfd5e4c2729da93c064ac61a5ec978c36e26f2a"
+      },
+      {
+        "modules": [
+          "av.error"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/error.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "860c158acac8dbf3ca50ab9e26600836c560c25635bb4240b69d4257c7b7fc6d"
+      },
+      {
+        "modules": [
+          "av.filter.context"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/filter/context.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "617cffb304ad6773c6d9f1269e15e6b456c34ecaa5cd1bb385cb9838958fc916"
+      },
+      {
+        "modules": [
+          "av.filter.filter"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/filter/filter.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7763f27448c616936080ffa55c18e21e6250c61b1d567ad13d2b8e8da512dfaf"
+      },
+      {
+        "modules": [
+          "av.filter.graph"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/filter/graph.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7668e90e2a7988d79a181f099eff9b847b5b89da070a887113e854c815876229"
+      },
+      {
+        "modules": [
+          "av.filter.link"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/filter/link.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "08c79691f519400a2c36cb39693c187b85a635b9584c00ae7c7980087d136d3d"
+      },
+      {
+        "modules": [
+          "av.filter.loudnorm"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/filter/loudnorm.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "c9571a21009d25b8d612d976fe2bf318756fa3458b9a3146b9959208e0b830dd"
+      },
+      {
+        "modules": [
+          "av.format"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/format.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "72e1c9629823b719c6513753abf9a01d0fabd38d4ff80576dbd2cb22ccaf2a91"
+      },
+      {
+        "modules": [
+          "av.frame"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/frame.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "4f593b08fae7ed4e41b331bd51395692b0109163614f453820dc3a7b55fd332f"
+      },
+      {
+        "modules": [
+          "av.logging"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/logging.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "447d59d91e71ab271524049c6bcb92af62815ceb84aeef92032c2e442dfbcf8d"
+      },
+      {
+        "modules": [
+          "av.opaque"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/opaque.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "e50a255ef7a88b396088279ac33c735295d35dee659f3b8660131d44e15f52d4"
+      },
+      {
+        "modules": [
+          "av.option"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/option.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "febea404fcfd103b52a3b7e3d1cf0c61789fa4b011dda118f85a7906399dacd8"
+      },
+      {
+        "modules": [
+          "av.packet"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/packet.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "fd9fac9fc222a69e3bdcc37d56049c9cb200068e954f4a87133028c44fc6702d"
+      },
+      {
+        "modules": [
+          "av.plane"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/plane.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7f984e4b763d1e22751bdb49099618f84f65c6ff237de1d92ce1060a25cff0fb"
+      },
+      {
+        "modules": [
+          "av.sidedata.motionvectors"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/sidedata/motionvectors.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "de3f88750f53dea1d5912228f7147ffa4e0a8cde4433ca316300483f835bea41"
+      },
+      {
+        "modules": [
+          "av.sidedata.sidedata"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/sidedata/sidedata.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "9d300ac075ba5b9e14f9a7d046fda3cea5e6d24f6532bcc1a0b5b73b2dd87b25"
+      },
+      {
+        "modules": [
+          "av.stream"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/stream.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "e45be94fa198a3638c5a994d2b6901ffbbae5aea4e48b79df8f516e6e91e7a51"
+      },
+      {
+        "modules": [
+          "av.utils"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/utils.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "3a421d47a8f2ee16fbd597355078f79750259569435aa4c89e2754819f12672f"
+      },
+      {
+        "modules": [
+          "av.video.codeccontext"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/video/codeccontext.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "2c63787b48a8fb594b264988fdf9b454a8febcfca61e1ae3f9169df2842824e5"
+      },
+      {
+        "modules": [
+          "av.video.format"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/video/format.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "a0d7827fe8bfd3aef933503bc94f81a778b546e8b0ae47364a680014c89a6166"
+      },
+      {
+        "modules": [
+          "av.video.frame"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/video/frame.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "1a667ca8d7003d5e8668a87e6f06ff6fa6c4f4e0c28d25ef6c48c8caa05b0ca6"
+      },
+      {
+        "modules": [
+          "av.video.plane"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/video/plane.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "5b69a1c341409892c130fd27482b7103232eaab3756e0a55d1d13bfcd73a7f50"
+      },
+      {
+        "modules": [
+          "av.video.reformatter"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/video/reformatter.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "0dd59fb5ed9aaee5f8427d16ee8229f258a5e7fa448e72bc2e3c9870744556ad"
+      },
+      {
+        "modules": [
+          "av.video.stream"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/av/video/stream.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "b0ee6f0738efcbd4846120ee9558d6785251619ee53f502ee8805bb2ef3f0b2b"
+      },
+      {
+        "modules": [
+          "charset_normalizer.cd",
+          "requests.packages.chardet.cd",
+          "requests.packages.charset_normalizer.cd"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/charset_normalizer/cd.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "020478e3d21b74046b4b7cb657cc4e5265ff6d890a995b282510063e6309bb08"
+      },
+      {
+        "modules": [
+          "charset_normalizer.md",
+          "requests.packages.chardet.md",
+          "requests.packages.charset_normalizer.md"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/charset_normalizer/md.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "bd710f5521c45c1ac581b4fa6bfe839a60406198521677b097fb1518b346c9a0"
+      },
+      {
+        "modules": [
+          "google._upb._message"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/google/_upb/_message.abi3.so",
+        "sha256": "3a60308c1b67d8f21cc2cf5058a01a4e36a35c09d03d31f95a90a7c73b56ffe2"
+      },
+      {
+        "modules": [
+          "kiwisolver._cext"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/kiwisolver/_cext.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "5a83716233eaabf6b67e947714f5e2cc26afe453a4bd0869d483446899ead985"
+      },
+      {
+        "modules": [
+          "matplotlib._c_internal_utils"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/matplotlib/_c_internal_utils.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "ac8785903ed669a9962b7a837efb02bffeea43e9552e5b047b39505b7a583d60"
+      },
+      {
+        "modules": [
+          "matplotlib._image"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/matplotlib/_image.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "a714960bb8827938e8d841b4a1d2ed1c1d4cb2f0d71bc01df129d7c4b2ea018e"
+      },
+      {
+        "modules": [
+          "matplotlib._path"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/matplotlib/_path.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "b8c8a9c21f7b7d90c0dd5ae04b76f45524dff0af455fe0c9e56668e7209a5810"
+      },
+      {
+        "modules": [
+          "matplotlib.ft2font"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/matplotlib/ft2font.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "d2da887bd5aba8f90b9726beefe1a4dd174e541ef39952f69b3492df0591a9ba"
+      },
+      {
+        "modules": [
+          "mujoco._callbacks"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mujoco/_callbacks.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "16173960fbfaa26512204dd503bb8badc063d772ba47f69c07ad4f9b83854426"
+      },
+      {
+        "modules": [
+          "mujoco._constants"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mujoco/_constants.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "8e4750079ab0b1a45e0862687513ca7771f7483d4ce85d30be84537f78991e31"
+      },
+      {
+        "modules": [
+          "mujoco._enums"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mujoco/_enums.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7a28505b400120d91b30fcc60987d0bd55a86a3e8bb440afbb4c5c9efa711c11"
+      },
+      {
+        "modules": [
+          "mujoco._errors"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mujoco/_errors.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "a30f9449bb046f8804f6756b7837b81135b92aa69ad0350e030faed0c3b13ec3"
+      },
+      {
+        "modules": [
+          "mujoco._functions"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mujoco/_functions.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "269240632edceead7751a44c67f4f89e440ba4b16b61c89f2bd59300e64059db"
+      },
+      {
+        "modules": [
+          "mujoco._render"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mujoco/_render.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "ae50c54bff4f8bbbcd19637123a951d0f86b6775c0c7a329fc3a28ab3f843fe7"
+      },
+      {
+        "modules": [
+          "mujoco._specs"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mujoco/_specs.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "9ab8580221a68fd5a343aeb02059f03504b96e0f29cb7dabf27c26650ffb0fe2"
+      },
+      {
+        "modules": [
+          "mujoco._structs"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/mujoco/_structs.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "3620e3d88db045b47dcb8e3038269296941a045da801ca93e05c2a97ebb5e361"
+      },
+      {
+        "modules": [
+          "numcodecs._shuffle"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numcodecs/_shuffle.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "334de9847ad9d23ebb87e4b62c982f507f9bf1c73f2e1bfbb4de2aeb2c77ce48"
+      },
+      {
+        "modules": [
+          "numcodecs.blosc"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numcodecs/blosc.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "0e44afd3d59b514fe26843301de65772e8ca6db271364b53c2589524394b8a16"
+      },
+      {
+        "modules": [
+          "numcodecs.compat_ext"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numcodecs/compat_ext.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "e1a4658100e6398c0d379bbda97f22b2952812899297932e75fdc0b2f49bbe20"
+      },
+      {
+        "modules": [
+          "numcodecs.fletcher32"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numcodecs/fletcher32.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "d6bd956a0bb1b6d5c3f6b18cd7c7ec20df1b8e2fefbb0ab8d9e8c3af59e9192c"
+      },
+      {
+        "modules": [
+          "numcodecs.jenkins"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numcodecs/jenkins.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "d10918858bb8acb62a587921989f9a7cbad827d1a2d899f3a2576cd0ffe99001"
+      },
+      {
+        "modules": [
+          "numcodecs.lz4"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numcodecs/lz4.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "e41080597e1c5dc8cbee6b846c99b5efbe5ef20327b5eb29bff0e3844ff987ce"
+      },
+      {
+        "modules": [
+          "numcodecs.vlen"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numcodecs/vlen.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "8bb05ac5cae85c8501f62dd5fddc3cd80c9e740ee945bad6115b89b4e2a2092b"
+      },
+      {
+        "modules": [
+          "numcodecs.zstd"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numcodecs/zstd.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "acd8016ddfb032708bf30704487b0f7b628a112ef45e923cc82c43bf969295b6"
+      },
+      {
+        "modules": [
+          "numpy._core._multiarray_umath"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/_core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "976528136f3bd69061486bef85d794257c24e4f9e0c755015260a6f85fcaca69"
+      },
+      {
+        "modules": [
+          "numpy.fft._pocketfft_umath"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/fft/_pocketfft_umath.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "a911f2a5726f6e4d573d98ac4e90ef4cd72feda289adb4b539d3fa74d6987b38"
+      },
+      {
+        "modules": [
+          "numpy.linalg._umath_linalg"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "5d70ca77e8a09235ad66ab62cc40d788ea045ed3d933d63488ae615754530d64"
+      },
+      {
+        "modules": [
+          "numpy.random._bounded_integers"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "14dac6b0ff584f6bc4fd557fbcd32262ecf7ec5c3ecfbe13502d65fcb6309b65"
+      },
+      {
+        "modules": [
+          "numpy.random._common"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "d83dbf9c8c6ebef40c2cdf64fdcf4f5c587c7e59d38db0bc02efc069f5f6caed"
+      },
+      {
+        "modules": [
+          "numpy.random._generator"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "fd7b5f4cb20c551f4c1fef698fef5bec4bef26e4fbcafcc4a69de56abac5391f"
+      },
+      {
+        "modules": [
+          "numpy.random._mt19937"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f63a5865c016b79214d34bcf12a6352090432e2fc4d324b672b15d19366869c0"
+      },
+      {
+        "modules": [
+          "numpy.random._pcg64"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f727fd68876ee7f337ac65682e42a42c034236ac79abc1327b9202048de2be7e"
+      },
+      {
+        "modules": [
+          "numpy.random._philox"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "499695f5c1b9a9e915c51cc4083b01903a07999ad48891c0870b31c76bd40b32"
+      },
+      {
+        "modules": [
+          "numpy.random._sfc64"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "8cf341206d2b23f2937d9c66accea7dc33f2c8abf40eaa6e1d0653c8cb4b3b9e"
+      },
+      {
+        "modules": [
+          "numpy.random.bit_generator"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "fc351a09e89546edb6b4bafd3a11b0524e7b9129e0a94fedbe08a8bf57dbc236"
+      },
+      {
+        "modules": [
+          "numpy.random.mtrand"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "df9f12f26997b23491d48884709b33806746814287a0e3a94608026ba9e9e9e3"
+      },
+      {
+        "modules": [
+          "pandas._libs.algos"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f2bd60cc1d7b27a3fb360675ae641ea48515a2585057704baa9bcd822edc151f"
+      },
+      {
+        "modules": [
+          "pandas._libs.arrays"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "1c5265c026d4f95460fea88d7444b6bc37705a0e333d380331c021893354d658"
+      },
+      {
+        "modules": [
+          "pandas._libs.groupby"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "6662e0d859a88c98d46d24e3097df0f175b63d8d1f82b2e40ee30268dbf805b0"
+      },
+      {
+        "modules": [
+          "pandas._libs.hashing"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "a5844d223cb2562fc4fe93f8ac5afdfc7c996fe61dd9bc391867440d8ca0bb97"
+      },
+      {
+        "modules": [
+          "pandas._libs.hashtable"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "0c970bb293c370090976daae51eb3d7be5ed70cadeb6b0ae6de6201c3eb08b43"
+      },
+      {
+        "modules": [
+          "pandas._libs.index"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "453349bb31bd4758057336ad43d3952dc870c6fd837280d7870b47cbfe67de24"
+      },
+      {
+        "modules": [
+          "pandas._libs.indexing"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7484d24147715147ed1c7955c787cb5a1245700bad45332ca1bcdfbdbf216b03"
+      },
+      {
+        "modules": [
+          "pandas._libs.internals"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "93be5133161c949795a98533fc7ff6ecc23218e17af1c3c0e0b36daa12457153"
+      },
+      {
+        "modules": [
+          "pandas._libs.interval"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "fd62b9cd62b0a56836dade53e3195b8b2a71ba4fd4775bc293b3959c9b365145"
+      },
+      {
+        "modules": [
+          "pandas._libs.join"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "3d08ceffbcdbef7267538d48e639959c8a7570891a9e33fa2735ac2bd61c2b1b"
+      },
+      {
+        "modules": [
+          "pandas._libs.json"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "5dab9143926222b83ca42064f42d686fda93dca2bb08084b5007a73a54e081a3"
+      },
+      {
+        "modules": [
+          "pandas._libs.lib"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "c96bf267ac948815d59c9ab5d0472ea581c9f918554500230c3863f10bad3d75"
+      },
+      {
+        "modules": [
+          "pandas._libs.missing"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f1ecf2be8a00c102f4259b6322356cd0918b886355d6dae073e6d516ae7497d5"
+      },
+      {
+        "modules": [
+          "pandas._libs.ops"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7772e1b01ca6bc9bef27435aa768bd090aeb51c6eee183081721a914ca4b02e5"
+      },
+      {
+        "modules": [
+          "pandas._libs.ops_dispatch"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "345f0974bbd6ad26adb25940d1f4646bc2b58becccfb8e281b1ccc4fd5fcc733"
+      },
+      {
+        "modules": [
+          "pandas._libs.pandas_datetime"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/pandas_datetime.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "ff978e245c52296a47022dc39bf64b059d94f47babd38924811344daa4f795b3"
+      },
+      {
+        "modules": [
+          "pandas._libs.pandas_parser"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/pandas_parser.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "0f973d6fa8b6d41d22d3b8de781d223a5131c3ab6252331bf28a4762475a7653"
+      },
+      {
+        "modules": [
+          "pandas._libs.parsers"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "fd80bb61a89e519b1083ebc98e9eb73935514a8eb46ac4858b88e820058f4b95"
+      },
+      {
+        "modules": [
+          "pandas._libs.properties"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "21663d3b51a7cc62f7c14bdc1f898208ac723bc4c588eef8fe383d56d8a68912"
+      },
+      {
+        "modules": [
+          "pandas._libs.reshape"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "8cbe5d21569103e83cc659ea0fbcb604479711feffc7cbc8f42d18d16fdec3e9"
+      },
+      {
+        "modules": [
+          "pandas._libs.sparse"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "e175ba23d9cffbe843892a0cae168150c1634502c54b12897e9c8b1c28190df9"
+      },
+      {
+        "modules": [
+          "pandas._libs.testing"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "456fe124e1b71c1475a9e79a2994a4479bb135308d992d06200d53a0ad7d941e"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslib"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "da0b1d5a9e110945f9e9ef4818ec51c13eb6156c877acc105b062b2906968e60"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.base"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "8eb5fd54eb3271d99ba5680fd0927bc7436135957cbb9041a571777bc749d06e"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.ccalendar"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "199ba3213a12c50f05486e6003395f3e00d8882754287494bc28022184fbe63f"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.conversion"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "40290eaf506143c7ee7f0c93aff243e7a89eb7e22b891448a6af9ea896e936ec"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.dtypes"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f5c5545cad3f0cc2161afe8ab687378e500794fbae19834d934f88bc0ad7ce41"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.fields"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f114548d632091f613cc6be05e3cbb48a78bd3c67fdda0202ed4475d318b2821"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.nattype"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "6f31bad832b5ef56fec05de7d5e56fedeb7cc8f187ddf829a9390b6ade900eb4"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.np_datetime"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "361fb220df3bffa802190bfe83d64b2c04324d7498150e2ead4491f4ca226d72"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.offsets"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "8e5fb3e5090f1b8b279994f9cb5a5eee4a5b24fa449c9b742065f494bde6f2fc"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.parsing"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "2f78f2961eda0d1fbe672fd4e14692d4c36f2a6a6a570e634cb347bec89c7e35"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.period"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "d8b6fa43da7b6ba1c79b4e8b7a6e74e1a8e6b90a9db7eab1e20341ea7b7ee7d7"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.strptime"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "1492b83afa52bb7cd364315628a396e9a5f412f83faf8518767285ccaa3f34f7"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.timedeltas"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "b3b84b6589c6c3d6d71b538d7df9a545e072feafc13f950d077f932a762884bf"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.timestamps"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f1fa5831699d234bd5e99187f7166a11559b7b020bf9603f3926c978604b8f73"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.timezones"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "07ec62e718c772cda488c50484de7e6b005ffe671567dbe6421685e6874be75d"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.tzconversion"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "fa055df2d1e30ef1d62e6ffb0af2c6e1e3ae1de42312f71fbb90a4840c6e3be7"
+      },
+      {
+        "modules": [
+          "pandas._libs.tslibs.vectorized"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "53feed8a3a38ffcdb15296c4d7059085cdc62525ffdffc47b592e93038aa82c9"
+      },
+      {
+        "modules": [
+          "pandas._libs.window.aggregations"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "79ab3b3a83c989c9d106b98ecf98acb0f6f254535ca75ac54c298f56b55672c1"
+      },
+      {
+        "modules": [
+          "pandas._libs.window.indexers"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "f6231647e971a905eb0548e034b0a1d9b7e8a71218021e25114f1e0ae80ab8ed"
+      },
+      {
+        "modules": [
+          "pandas._libs.writers"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "7a20c7231ab9446379bf4a8abab27edcc2155734357d4d88e7861c15d9693c01"
+      },
+      {
+        "modules": [
+          "pyarrow._compute"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pyarrow/_compute.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "b472504ce234d114485a7af81c38a03c2fd982f70a096c8f9b629bca2d4fc375"
+      },
+      {
+        "modules": [
+          "pyarrow.lib"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pyarrow/lib.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "4d6dfa8bd0436cea6b89c676b933e13056239fdc124fecaaad29083803b804ec"
+      },
+      {
+        "modules": [
+          "pydantic_core._pydantic_core"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/pydantic_core/_pydantic_core.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "55d2cbf6a3a20929e4d9ba5a1983fce0e368fa0055940afd5940158381a85b92"
+      },
+      {
+        "modules": [
+          "safetensors._safetensors_rust"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/safetensors/_safetensors_rust.abi3.so",
+        "sha256": "e6f17a9e9846bc2bc4ad94cc5431746b59785de3d2681ef2666e8890ae192dfb"
+      },
+      {
+        "modules": [
+          "torch._C",
+          "torch._C._autograd",
+          "torch._C._distributed_autograd",
+          "torch._C._distributed_c10d",
+          "torch._C._distributed_rpc"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/torch/_C.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "b1fc7e58206d478db8b55d41b5c4925b432e181f38c7bce11d62bf40de978090"
+      },
+      {
+        "modules": [
+          "triton._C.libtriton",
+          "triton._C.libtriton.amd",
+          "triton._C.libtriton.amd.hipblas",
+          "triton._C.libtriton.amd.passes",
+          "triton._C.libtriton.amd.passes.ttgpuir",
+          "triton._C.libtriton.gluon_ir",
+          "triton._C.libtriton.interpreter",
+          "triton._C.libtriton.ir",
+          "triton._C.libtriton.linear_layout",
+          "triton._C.libtriton.llvm",
+          "triton._C.libtriton.nvidia",
+          "triton._C.libtriton.nvidia.cublas",
+          "triton._C.libtriton.nvidia.passes",
+          "triton._C.libtriton.nvidia.passes.hopper",
+          "triton._C.libtriton.nvidia.passes.nvws",
+          "triton._C.libtriton.nvidia.passes.ttgpuir",
+          "triton._C.libtriton.nvidia.passes.ttnvgpuir",
+          "triton._C.libtriton.passes",
+          "triton._C.libtriton.passes.analysis",
+          "triton._C.libtriton.passes.common",
+          "triton._C.libtriton.passes.convert",
+          "triton._C.libtriton.passes.gluon",
+          "triton._C.libtriton.passes.llvmir",
+          "triton._C.libtriton.passes.ttgpuir",
+          "triton._C.libtriton.passes.ttir",
+          "triton._C.libtriton.proton"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/triton/_C/libtriton.so",
+        "sha256": "8a84317b77c34bb6aea78bb0e8ee730e49cc07ee18707e68931c77bab6f04e5f"
+      },
+      {
+        "modules": [
+          "yaml._yaml"
+        ],
+        "path": "/home/intro/miniforge3/envs/so100test/lib/python3.10/site-packages/yaml/_yaml.cpython-310-x86_64-linux-gnu.so",
+        "sha256": "12590fe11e786938f966436d459e083ba6a2f252e9abbac634521364c58d467d"
+      }
+    ],
+    "schema": "so101-third-party-runtime-fingerprint-v1"
+  },
+  "schema": "so101-sim-to-real-lineage-manifest-v1"
+}

@@ -1,0 +1,139 @@
+{
+  "as_of": "2026-08-27",
+  "canonical_root": "/home/intro/InternLab/02_InTro_Project/03_code/so101_pusht_benchmark",
+  "copied_files": [
+    {
+      "path": "configs/provenance/dirty_work_baseline.patch",
+      "sha256": "7d699f85f44fc2ee2bd2321a2c3ad3af03c74e82c5a521cc7ceb1459bbbcf36f",
+      "size_bytes": 10421
+    },
+    {
+      "path": "configs/provenance/dirty_work_receipt.json",
+      "sha256": "d77ace00d510b4ee27dd1919771e3a3076c79260e230650e50f05b1c06efd573",
+      "size_bytes": 5372
+    },
+    {
+      "path": "configs/provenance/sim_to_real_dirty_work_baseline.json",
+      "sha256": "efc85622bfa9eabd610f6c9b339d68164c4ba04f437b5e04a5b4f1dbac3f03a1",
+      "size_bytes": 74682
+    },
+    {
+      "path": "configs/provenance/todo2_cli_extension.patch",
+      "sha256": "c7453e707e8a58b992f8d4d64f8f0ddbe7dc86b0978a2f500549098b4ca6b5f4",
+      "size_bytes": 499
+    },
+    {
+      "path": "scripts/generate_benchmark_table.py",
+      "sha256": "26d2bdc009688a2f1bb64a8b9679f1d52766fcb4a59941b32a40ffcb0c2f02ac",
+      "size_bytes": 3358
+    },
+    {
+      "path": "scripts/generate_three_view_reels.py",
+      "sha256": "0a39b5702b00439129b35b599e7a2705647482b5632bca61a4ed2d3b6d416e92",
+      "size_bytes": 6517
+    },
+    {
+      "path": "scripts/generate_three_view_walkthrough.py",
+      "sha256": "2352c486bf2ddfb2a7f68f44d1eeb330b6cecf89cbe26aeead2bc29f03c39077",
+      "size_bytes": 1618
+    },
+    {
+      "path": "scripts/generate_trajectory_montage.py",
+      "sha256": "a75ff1966542658fa73307f1b51c23dffc1b6df93b1d3289ba3aa3f4626a7813",
+      "size_bytes": 7402
+    },
+    {
+      "path": "scripts/run_professor_evaluation.py",
+      "sha256": "c7e6dd1b845de31b4ae75ce1bed7cbe2beeb7576d81a88e68bd26d12de105df2",
+      "size_bytes": 3469
+    },
+    {
+      "path": "scripts/slow_seed_positioning.py",
+      "sha256": "12e96a440aafd3da05a2bfbf67a7b2af5bd7cc4df34d2a7cdd5a4c8caf172aa2",
+      "size_bytes": 4426
+    },
+    {
+      "path": "src/so101_pusht_benchmark/evaluation/professor_artifacts.py",
+      "sha256": "bcaa677f07eca5cea0ff2bff43abb36c06589227a8bc9f516f5b4ce655279ae9",
+      "size_bytes": 4585
+    },
+    {
+      "path": "src/so101_pusht_benchmark/evaluation/reel.py",
+      "sha256": "eac4df6e80ace9df799ce61a9e8edd4b40b222130a92cbca9976e7ea0afac17a",
+      "size_bytes": 2654
+    },
+    {
+      "path": "src/so101_pusht_benchmark/sim_to_real/lineage_documents.py",
+      "sha256": "83ee4eb6c09dead1b8508318672b84ab5cc313651738e912d11657e618270a0c",
+      "size_bytes": 7381
+    },
+    {
+      "path": "src/so101_pusht_benchmark/sim_to_real/physical_ik.py",
+      "sha256": "f4621a6e5c81481e8fd7ba07658531a4a5b76518aaee074385c0763bcded6aa1",
+      "size_bytes": 8544
+    },
+    {
+      "path": "src/so101_pusht_benchmark/sim_to_real/physical_ik_collision.py",
+      "sha256": "7492d77fdbce992a5ad90e7a26e1baa390238e2c2797a51e3bee96b83d69bd00",
+      "size_bytes": 9103
+    },
+    {
+      "path": "src/so101_pusht_benchmark/sim_to_real/physical_ik_fk.py",
+      "sha256": "eb8cfe1cf871187f7b544fa69d66074d5b9160bf296f3bdb3019a057a095e4eb",
+      "size_bytes": 10070
+    },
+    {
+      "path": "src/so101_pusht_benchmark/sim_to_real/replay_assemble.py",
+      "sha256": "3a1ea1d1662d9499ccaf881a5c78a21cbc1e64e673f3a8e45a6400a7f91b14bd",
+      "size_bytes": 7792
+    },
+    {
+      "path": "src/so101_pusht_benchmark/sim_to_real/replay_policy.py",
+      "sha256": "44606e717c9d70440e8880651fd0700547bf1d06d47bc4666a57eb94d5337e19",
+      "size_bytes": 7180
+    },
+    {
+      "path": "src/so101_pusht_benchmark/sim_to_real/replay_policy_loader.py",
+      "sha256": "ee91b34f8be0f147d7597ab43d68244aaaf2d00004ec55716d139fff637f09a4",
+      "size_bytes": 3072
+    },
+    {
+      "path": "src/so101_pusht_benchmark/sim_to_real/replay_types.py",
+      "sha256": "10ccc7251da90d856d2a1429ce5fb00f1516f6fd62dbd8d6ac4b95d33e2fb86f",
+      "size_bytes": 7164
+    },
+    {
+      "path": "src/so101_pusht_benchmark/sim_to_real/shadow_lineage_builder.py",
+      "sha256": "6976634dd41386cdb8c9651aaff6b1f3ef73e361ace133d81b6e493e42e01d03",
+      "size_bytes": 1806
+    },
+    {
+      "path": "tests/test_professor_artifacts.py",
+      "sha256": "4fb517952a83d6c073f970ca311e62aae6bb9b0f863da842744ab94d2cf2b3ea",
+      "size_bytes": 2003
+    },
+    {
+      "path": "tests/test_professor_reels.py",
+      "sha256": "1912bd4c2f7eae5245e3c7614d699b742480871b28fa4a374b3b553a3e5be507",
+      "size_bytes": 1748
+    },
+    {
+      "path": "tests/test_replay_policy_loader.py",
+      "sha256": "8a60dc75de2594aeda3dcfc8d63f2095c863774d5f08cc30e5d62f5fb9383ac0",
+      "size_bytes": 489
+    },
+    {
+      "path": "tests/test_slow_seed_positioning.py",
+      "sha256": "1137661618d433ac130ea1e94e95cf1581f9dbec2ccaf08d72aeb1adb1fb55e2",
+      "size_bytes": 375
+    }
+  ],
+  "destination_root": "src/package",
+  "excluded_noncanonical": [
+    "AGENTS.md",
+    "README.md",
+    "**/*.orig"
+  ],
+  "mismatches": [],
+  "schema": "intro-source-snapshot-sync-v1"
+}

@@ -1,0 +1,13 @@
+schema: 2
+mode: human_gamepad
+fps: 10
+deadzone: 0.08
+xy_meters_per_tick: 0.012
+z_axis: 2
+z_meters_per_tick: 0.005
+z_contact_m: 0.045
+z_approach_m: 0.050
+deadman_required: true
+stale_timeout_s: 0.35
+button_debounce_ticks: 2
+buttons: {success: success, stop: stop, rerecord: rerecord}
